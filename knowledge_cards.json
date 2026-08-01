@@ -1,6 +1,6 @@
 {
-  "version": 6,
-  "updatedAt": "2026-08-01T06:12:28Z",
+  "version": 8,
+  "updatedAt": "2026-08-01T08:07:18Z",
   "cards": [
     {
       "id": "history-001",
@@ -1351,6 +1351,114 @@
       "sourceName": "內政部國家公園署太魯閣國家公園管理處",
       "sourceURL": "https://www.taroko.gov.tw",
       "funFactValue": "大理岩質地堅硬不易塌落，因而能形成近乎垂直的峽谷懸崖"
+    },
+    {
+      "id": "od-gemini-20260801-history-07",
+      "title": "安平追想曲與台南安平港",
+      "content": "著名台灣歌謠《安平追想曲》描繪荷蘭時期至清代安平港的異國情感故事，安平港為台灣早期重要通商港口灣之一。",
+      "category": "history",
+      "sourceName": "台南市政府文化局",
+      "sourceURL": "https://culture.tainan.gov.tw",
+      "funFactValue": "安平古堡與周邊港埠見證大航海時代臺灣入世歷史"
+    },
+    {
+      "id": "od-gemini-20260801-history-08",
+      "title": "新竹城隍廟歷史與市集文化",
+      "content": "新竹都城隍廟建於清乾隆年間，為全台官位最高的城隍廟之一，廟前聚集的經典小吃市集形成獨特廟宇飲食文化。",
+      "category": "history",
+      "sourceName": "新竹市文化局",
+      "sourceURL": "https://www.hccg.gov.tw",
+      "funFactValue": "新竹城隍爺曾獲清光緒皇帝賜頒金門保障匾額"
+    },
+    {
+      "id": "od-gemini-20260801-food-07",
+      "title": "宜蘭糕渣的熱度科學",
+      "content": "宜蘭國宴名菜糕渣以雞湯與高湯加太白粉結凍後切塊高溫油炸，外表看起來溫涼，內部卻非常燙口，常被比喻為宜蘭人外冷內熱的性格。",
+      "category": "food",
+      "sourceName": "農業部農業知識入口網",
+      "sourceURL": "https://kmweb.moa.gov.tw",
+      "funFactValue": "糕渣外層粉漿阻絕熱氣散失，入口時需特別注意高溫"
+    },
+    {
+      "id": "od-gemini-20260801-food-08",
+      "title": "台南虱目魚肚的清蒸與煎炸工藝",
+      "content": "台南虱目魚養殖歷史悠久，虱目魚肚蘊含豐富油脂，不論是煎至金黃酥脆或搭配薑絲作清湯，皆為台南府城經典早餐精神象徵。",
+      "category": "food",
+      "sourceName": "農業部漁業署",
+      "sourceURL": "https://www.fa.gov.tw",
+      "funFactValue": "虱目魚在台南有國寶魚之稱，全魚皆可入菜"
+    },
+    {
+      "id": "od-gemini-20260801-geo-07",
+      "title": "高雄旗津海岸沙洲地形",
+      "content": "旗津為高雄港外的狹長濱外沙洲，隔著高雄港與鹽埕對望，自然形成保護高雄內港的天然防波堤地形。",
+      "category": "geo",
+      "sourceName": "交通部觀光署",
+      "sourceURL": "https://www.taiwan.net.tw",
+      "funFactValue": "旗津過港隧道是台灣第一座海底隧道"
+    },
+    {
+      "id": "od-gemini-20260801-geo-08",
+      "title": "雪山山脈圈谷冰河地形",
+      "content": "雪山主峰附近的雪山圈谷（碗狀窪地）為台灣珍貴的高山冰河遺跡，證明台灣高山在冰河時期曾有冰川作用痕跡。",
+      "category": "geo",
+      "sourceName": "內政部國家公園署雪霸國家公園管理處",
+      "sourceURL": "https://www.spnp.gov.tw",
+      "funFactValue": "雪山一號圈谷是台灣規模最大且構造最完整的冰斗地形之一"
+    },
+    {
+      "id": "od-gemini-20260801-history-09",
+      "title": "九份昇平戲院與金礦歷史",
+      "content": "位於新北市瑞芳區的昇平戲院，初建於日治時期，曾是九份金礦鼎盛時期北台灣最大的戲院，見證了山城採金歲月與電影文化的興衰。",
+      "category": "history",
+      "sourceName": "新北市政府文化局",
+      "sourceURL": "https://www.culture.ntpc.gov.tw",
+      "funFactValue": "昇平戲院取名意指「歌舞昇平」，是九份第一座戲院"
+    },
+    {
+      "id": "od-gemini-20260801-history-10",
+      "title": "台南鹽水蜂炮的傳統禦病起源",
+      "content": "鹽水蜂炮起源於清光緒年間，據傳當時為驅除疫病，地方民眾於元宵節迎請關聖帝君繞境並一路燃放煙火蜂炮，演變至今成為國際聞名的民俗慶典。",
+      "category": "history",
+      "sourceName": "台南市政府文化局",
+      "sourceURL": "https://culture.tainan.gov.tw",
+      "funFactValue": "鹽水蜂炮已被登錄為台灣無形文化資產"
+    },
+    {
+      "id": "od-gemini-20260801-food-09",
+      "title": "台灣傳統刨冰配料「黑糖粉粿」的植物天然黃色",
+      "content": "傳統古早味粉粿呈現鮮黃色，並非人工色素，而是利用山梔子（黃梔子）果實煮水取色，再混合地瓜粉蒸煮而成，天然且帶有淡淡草本香。",
+      "category": "food",
+      "sourceName": "農業部農業知識入口網",
+      "sourceURL": "https://kmweb.moa.gov.tw",
+      "funFactValue": "黃梔子果實是台灣早期民間極常見的天然食用染色劑"
+    },
+    {
+      "id": "od-gemini-20260801-food-10",
+      "title": "宜蘭特色小吃「蒜味肉羹」的重蒜風味",
+      "content": "宜蘭肉羹之所以特別濃郁，關鍵在於肉羹湯底加入大量新鮮蒜碎一同熬煮，蒜香融入勾芡湯汁中，勾勒出外地少見的獨特辛香風味。",
+      "category": "food",
+      "sourceName": "宜蘭縣政府文化局",
+      "sourceURL": "https://www.ilccb.gov.tw",
+      "funFactValue": "蒜頭中的蒜素在高溫下會轉化為甜香與辛香交織的風味"
+    },
+    {
+      "id": "od-gemini-20260801-geo-09",
+      "title": "基隆和平島公園的豆腐岩地形",
+      "content": "基隆和平島海岸屬於砂岩地形，因地層節理受海水長期沿縫隙侵蝕與風化，切割出塊塊形似豆腐的「豆腐岩」地質景觀。",
+      "category": "geo",
+      "sourceName": "交通部觀光署北海岸及觀音山國家風景區管理處",
+      "sourceURL": "https://www.northguan-nsa.gov.tw",
+      "funFactValue": "和平島豆腐岩在退潮時格外清晰，是觀察風化與侵蝕作用的天然教室"
+    },
+    {
+      "id": "od-gemini-20260801-geo-10",
+      "title": "南投日月潭的「拉魯島」與邵族聖地",
+      "content": "日月潭中央的拉魯島（Lalu）是邵族傳統信仰中的祖靈聖地。水力發電工程築壩蓄水後日月潭水位上升，拉魯島面積因而縮小，目前已劃為族人聖地受保護。",
+      "category": "geo",
+      "sourceName": "交通部觀光署日月潭國家風景區管理處",
+      "sourceURL": "https://www.sunmoonlake.gov.tw",
+      "funFactValue": "邵族傳說中，祖先因追逐白鹿而發現了美麗的日月潭"
     }
   ]
 }
