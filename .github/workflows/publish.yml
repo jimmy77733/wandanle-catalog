@@ -1,0 +1,50 @@
+name: Publish catalog
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "knowledge_cards.json"
+      - "public/knowledge_cards.json"
+      - "firebase.json"
+      - ".firebaserc"
+      - ".github/workflows/publish.yml"
+  workflow_dispatch:
+
+jobs:
+  sync-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Keep public/ mirror in sync
+        run: |
+          mkdir -p public
+          cp knowledge_cards.json public/knowledge_cards.json
+
+      - name: Validate JSON
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          d = json.loads(Path("knowledge_cards.json").read_text(encoding="utf-8"))
+          assert set(d) == {"version", "updatedAt", "cards"}
+          ids = [c["id"] for c in d["cards"]]
+          assert len(ids) == len(set(ids)), "duplicate id"
+          allowed = {"history", "food", "geo"}
+          for c in d["cards"]:
+              assert c["category"] in allowed, c["id"]
+          print("OK", d["version"], len(ids))
+          PY
+
+      - name: Deploy Firebase Hosting
+        if: ${{ secrets.FIREBASE_TOKEN != '' }}
+        env:
+          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
+        run: |
+          npm i -g firebase-tools
+          firebase deploy --only hosting --non-interactive --token "$FIREBASE_TOKEN"
+
+      - name: Skip Firebase note
+        if: ${{ secrets.FIREBASE_TOKEN == '' }}
+        run: echo "FIREBASE_TOKEN secret not set — raw GitHub URL remains the live fallback."

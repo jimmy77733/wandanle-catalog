@@ -1,0 +1,1248 @@
+{
+  "version": 4,
+  "updatedAt": "2026-08-01T05:00:00Z",
+  "cards": [
+    {
+      "id": "history-001",
+      "title": "全台最老的國定古蹟之一",
+      "content": "從清治時期留存至今的古蹟，見證台灣城市紋理如何一層層疊出來。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw/",
+      "funFactValue": "300+年"
+    },
+    {
+      "id": "history-002",
+      "title": "三級古蹟其實已經改名了",
+      "content": "現行文資法改以國定／直轄市定／縣市定分級，老一輩口中的三級是舊制說法。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": null,
+      "funFactValue": "分級改制"
+    },
+    {
+      "id": "history-003",
+      "title": "台灣有活的文化資產",
+      "content": "不只磚瓦建築，傳統表演、工藝技術也能登錄為文化資產，強調人在傳承。",
+      "category": "history",
+      "sourceName": "文化部",
+      "sourceURL": null,
+      "funFactValue": "無形文化資產"
+    },
+    {
+      "id": "history-004",
+      "title": "諺語：青狂驚空",
+      "content": "閩南語提醒別太衝動，空忙一場；語言本身就是生活智慧資料庫。",
+      "category": "history",
+      "sourceName": "教育部臺灣閩南語常用詞辭典",
+      "sourceURL": null,
+      "funFactValue": "青狂"
+    },
+    {
+      "id": "history-005",
+      "title": "呷飽未不是真的只問肚子",
+      "content": "招呼語承載人情溫度，比直接問你好嗎更日常台味。",
+      "category": "history",
+      "sourceName": "文化部",
+      "sourceURL": null,
+      "funFactValue": "寒暄學"
+    },
+    {
+      "id": "history-006",
+      "title": "紅磚建築為何常見於老街",
+      "content": "建材易取得、耐候，搭配騎樓形成台灣街屋經典風景。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": null,
+      "funFactValue": "街屋騎樓"
+    },
+    {
+      "id": "history-007",
+      "title": "神社遺跡為何還留在校園",
+      "content": "戰後許多空間被轉用，遺構成為歷史層累的見證而非單純懷舊。",
+      "category": "history",
+      "sourceName": "文化資產觀察",
+      "sourceURL": null,
+      "funFactValue": "空間轉用"
+    },
+    {
+      "id": "history-008",
+      "title": "燈塔也曾是高科技",
+      "content": "在衛星導航之前，沿岸燈塔是航海安全的關鍵基礎設施。",
+      "category": "history",
+      "sourceName": "交通部航港局",
+      "sourceURL": null,
+      "funFactValue": "航海安全"
+    },
+    {
+      "id": "history-009",
+      "title": "老地圖上的堡不一定是城堡",
+      "content": "清治行政區劃常用堡字，讀起來很武俠，其實是地方單位。",
+      "category": "history",
+      "sourceName": "內政部",
+      "sourceURL": null,
+      "funFactValue": "行政堡"
+    },
+    {
+      "id": "history-010",
+      "title": "鐵路讓市鎮重新洗牌",
+      "content": "縱貫線通車後，沿線聚落興衰改寫，車站成為新的生活中心。",
+      "category": "history",
+      "sourceName": "交通史／鐵道文化",
+      "sourceURL": null,
+      "funFactValue": "縱貫線"
+    },
+    {
+      "id": "history-011",
+      "title": "台灣錢淹腳目從哪來",
+      "content": "形容某時期商業熱絡的俗語，後來變成調侃很會賺的口頭禪。",
+      "category": "history",
+      "sourceName": "民間諺語",
+      "sourceURL": null,
+      "funFactValue": "俗語"
+    },
+    {
+      "id": "history-012",
+      "title": "古蹟修復不是修舊如舊而已",
+      "content": "現代修復強調可逆性與史料依據，避免為了好看而造假。",
+      "category": "history",
+      "sourceName": "文資修復原則",
+      "sourceURL": null,
+      "funFactValue": "可逆性"
+    },
+    {
+      "id": "history-013",
+      "title": "老戲院為何有二輪",
+      "content": "電影檔期分級讓票價與檔次分流，成了城市夜生活的共同記憶。",
+      "category": "history",
+      "sourceName": "影視文化史",
+      "sourceURL": null,
+      "funFactValue": "二輪戲院"
+    },
+    {
+      "id": "history-014",
+      "title": "隘勇線聽起來很電玩",
+      "content": "其實是清治／日治時期的邊界防衛線概念，地名裡常留下痕跡。",
+      "category": "history",
+      "sourceName": "歷史地理",
+      "sourceURL": null,
+      "funFactValue": "隘勇"
+    },
+    {
+      "id": "history-015",
+      "title": "博物館不只是放古董",
+      "content": "當代館舍更強調敘事、教育與社群參與，展品是對話的起點。",
+      "category": "history",
+      "sourceName": "文化部博物館政策",
+      "sourceURL": null,
+      "funFactValue": "公共敘事"
+    },
+    {
+      "id": "history-016",
+      "title": "台灣的神社數量曾很多",
+      "content": "日治時期神社系統深入地方，戰後多數改建或拆除，留下地名與遺構。",
+      "category": "history",
+      "sourceName": "歷史研究",
+      "sourceURL": null,
+      "funFactValue": "神社系統"
+    },
+    {
+      "id": "history-017",
+      "title": "開台不只是口號",
+      "content": "不同族群的移墾路線，決定了今天的方言島與姓氏分布。",
+      "category": "history",
+      "sourceName": "移墾史",
+      "sourceURL": null,
+      "funFactValue": "移墾路線"
+    },
+    {
+      "id": "history-018",
+      "title": "老照片裡的電線杆也是史料",
+      "content": "基礎設施出現的時間點，能幫助判斷街道現代化的節奏。",
+      "category": "history",
+      "sourceName": "影像史方法",
+      "sourceURL": null,
+      "funFactValue": "視覺史料"
+    },
+    {
+      "id": "history-019",
+      "title": "義民信仰很在地",
+      "content": "客家地區的義民爺信仰，連結拓墾衝突記憶與社區凝聚力。",
+      "category": "history",
+      "sourceName": "民俗信仰研究",
+      "sourceURL": null,
+      "funFactValue": "義民爺"
+    },
+    {
+      "id": "history-020",
+      "title": "城牆拆了路名還在",
+      "content": "東門西門常是舊城門方位的地名化石。",
+      "category": "history",
+      "sourceName": "都市史",
+      "sourceURL": null,
+      "funFactValue": "城門地名"
+    },
+    {
+      "id": "history-021",
+      "title": "古蹟導覽其實是翻譯",
+      "content": "把專業史料轉成一般人聽得懂的故事，正是本 App 想做的事。",
+      "category": "history",
+      "sourceName": "公共史學",
+      "sourceURL": null,
+      "funFactValue": "白話轉譯"
+    },
+    {
+      "id": "history-022",
+      "title": "戰後眷村是獨特地景",
+      "content": "單位配住形成緊密鄰里，如今多轉型文化園區或都更基地。",
+      "category": "history",
+      "sourceName": "眷村文化資產",
+      "sourceURL": null,
+      "funFactValue": "眷村"
+    },
+    {
+      "id": "history-023",
+      "title": "午時水不是普通的水",
+      "content": "民俗裡特定時辰取水被賦予儀式意義，反映時間觀與身體觀。",
+      "category": "history",
+      "sourceName": "民俗資料",
+      "sourceURL": null,
+      "funFactValue": "午時"
+    },
+    {
+      "id": "history-024",
+      "title": "老街的騎樓為了什麼",
+      "content": "遮陽避雨、延續步行，是熱帶亞熱帶城市的智慧設計。",
+      "category": "history",
+      "sourceName": "建築類型學",
+      "sourceURL": null,
+      "funFactValue": "騎樓"
+    },
+    {
+      "id": "history-025",
+      "title": "地名裡的寮坑埔",
+      "content": "常對應拓墾聚落、河谷與開墾地，是地理編碼的日常版。",
+      "category": "history",
+      "sourceName": "地名學",
+      "sourceURL": null,
+      "funFactValue": "地名語素"
+    },
+    {
+      "id": "history-026",
+      "title": "台灣燈塔有最南最北話題",
+      "content": "極點燈塔常成打卡點，也提醒島嶼邊界意識。",
+      "category": "history",
+      "sourceName": "航港與觀光資料",
+      "sourceURL": null,
+      "funFactValue": "極點燈塔"
+    },
+    {
+      "id": "history-027",
+      "title": "古蹟本體與保存區不同",
+      "content": "保護範圍不只一棟房子，還包含歷史風貌與環境。",
+      "category": "history",
+      "sourceName": "文資法",
+      "sourceURL": null,
+      "funFactValue": "保存範圍"
+    },
+    {
+      "id": "history-028",
+      "title": "隘寮地名超多的原因",
+      "content": "拓墾前線的防衛與居住機能，讓寮字大量進入地名。",
+      "category": "history",
+      "sourceName": "歷史地理",
+      "sourceURL": null,
+      "funFactValue": "隘寮"
+    },
+    {
+      "id": "history-029",
+      "title": "史料數位化改變挖寶方式",
+      "content": "政府開放資料讓古蹟座標、照片與詮釋資料更容易被 App 使用。",
+      "category": "history",
+      "sourceName": "政府資料開放平台",
+      "sourceURL": "https://data.gov.tw/",
+      "funFactValue": "公開資料"
+    },
+    {
+      "id": "history-030",
+      "title": "冷知識也可以很嚴謹",
+      "content": "趣味包裝背後仍應對來源負責，本 App 每張卡都留出處欄位。",
+      "category": "history",
+      "sourceName": "本專案設計原則",
+      "sourceURL": null,
+      "funFactValue": "出處透明"
+    },
+    {
+      "id": "food-001",
+      "title": "全台最常見姓氏常變動前段班",
+      "content": "陳林黃張李長期佔據姓氏排行前列，實際名次會隨年度統計微調。",
+      "category": "food",
+      "sourceName": "內政部戶政司開放資料",
+      "sourceURL": "https://www.ris.gov.tw/",
+      "funFactValue": "陳林黃張李"
+    },
+    {
+      "id": "food-002",
+      "title": "菜市場名也有排行榜",
+      "content": "戶政統計不只姓氏，常見名字世代感超明顯，各代表一個時代。",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "sourceURL": null,
+      "funFactValue": "名字世代"
+    },
+    {
+      "id": "food-003",
+      "title": "統一發票其實是消費大數據",
+      "content": "中獎門市熱區常反映人潮與消費力，但別把它當成投資建議。",
+      "category": "food",
+      "sourceName": "財政部發票概念資料",
+      "sourceURL": null,
+      "funFactValue": "中獎熱點"
+    },
+    {
+      "id": "food-004",
+      "title": "夜市文化是都市基礎建設",
+      "content": "攤商、動線、排水與時段管理，決定一個夜市能不能長久。",
+      "category": "food",
+      "sourceName": "地方市集觀察",
+      "sourceURL": null,
+      "funFactValue": "夜市治理"
+    },
+    {
+      "id": "food-005",
+      "title": "珍珠奶茶是台灣輸出的語言",
+      "content": "從地方飲料店到全球菜單，台味甜度半糖已經是國際溝通術語。",
+      "category": "food",
+      "sourceName": "飲食文化",
+      "sourceURL": null,
+      "funFactValue": "半糖去冰"
+    },
+    {
+      "id": "food-006",
+      "title": "滷味的關鍵其實是湯頭時間",
+      "content": "同一攤的靈魂往往是反覆熬煮的醬香，而非單一食材。",
+      "category": "food",
+      "sourceName": "小吃技藝",
+      "sourceURL": null,
+      "funFactValue": "老湯"
+    },
+    {
+      "id": "food-007",
+      "title": "刈包為什麼像漢堡又不是",
+      "content": "長橢圓刈包夾配料，是台式手持正餐的經典結構。",
+      "category": "food",
+      "sourceName": "飲食史",
+      "sourceURL": null,
+      "funFactValue": "刈包"
+    },
+    {
+      "id": "food-008",
+      "title": "雞排外酥內嫩靠溫度差",
+      "content": "油溫與拍打粉層決定口感，夜市技師其實是熱傳導工程師。",
+      "category": "food",
+      "sourceName": "炸物工藝",
+      "sourceURL": null,
+      "funFactValue": "油溫"
+    },
+    {
+      "id": "food-009",
+      "title": "豆花鹹甜戰線超長",
+      "content": "有人加花生粉，有人加肉燥，台灣人對豆花的想像沒有上限。",
+      "category": "food",
+      "sourceName": "地方小吃",
+      "sourceURL": null,
+      "funFactValue": "鹹甜豆花"
+    },
+    {
+      "id": "food-010",
+      "title": "牛肉麵流派比偶像團體還多",
+      "content": "紅燒清燉番茄藥膳，一碗麵能裝進整個移民與口味史。",
+      "category": "food",
+      "sourceName": "飲食流派",
+      "sourceURL": null,
+      "funFactValue": "牛肉麵"
+    },
+    {
+      "id": "food-011",
+      "title": "蚵仔煎是沿海常識題",
+      "content": "新鮮蚵加上地瓜粉漿，是海口城市的氣味記憶。",
+      "category": "food",
+      "sourceName": "沿海飲食",
+      "sourceURL": null,
+      "funFactValue": "蚵仔煎"
+    },
+    {
+      "id": "food-012",
+      "title": "便當文化等於移動式營養學",
+      "content": "鐵路便當到超商便當，反映通勤社會如何快速解決一餐。",
+      "category": "food",
+      "sourceName": "日常飲食",
+      "sourceURL": null,
+      "funFactValue": "便當"
+    },
+    {
+      "id": "food-013",
+      "title": "手搖飲糖度是精密工程",
+      "content": "少糖微糖落差可能只有幾克糖漿，卻能引發客訴哲學辯論。",
+      "category": "food",
+      "sourceName": "手搖產業",
+      "sourceURL": null,
+      "funFactValue": "糖度"
+    },
+    {
+      "id": "food-014",
+      "title": "刈包碗粿筒仔米糕的共同點",
+      "content": "米食多樣化讓主食不一定是白飯，蒸煮體系超豐富。",
+      "category": "food",
+      "sourceName": "米食文化",
+      "sourceURL": null,
+      "funFactValue": "米食"
+    },
+    {
+      "id": "food-015",
+      "title": "鹹酥雞的雙重酥脆",
+      "content": "粉漿加酥粉層創造層次，外帶紙袋吸油也是體驗的一部分。",
+      "category": "food",
+      "sourceName": "夜市炸物",
+      "sourceURL": null,
+      "funFactValue": "鹹酥雞"
+    },
+    {
+      "id": "food-016",
+      "title": "愛玉是氣溫的朋友",
+      "content": "凝凍需要合適溫度與操作，夏天排隊看凝結也是一種樂趣。",
+      "category": "food",
+      "sourceName": "甜品工藝",
+      "sourceURL": null,
+      "funFactValue": "愛玉"
+    },
+    {
+      "id": "food-017",
+      "title": "粉圓跟珍珠不是同一種情緒",
+      "content": "口感彈牙程度不同，點餐時講清楚可以少很多心碎。",
+      "category": "food",
+      "sourceName": "飲料配料",
+      "sourceURL": null,
+      "funFactValue": "粉圓不等於珍珠"
+    },
+    {
+      "id": "food-018",
+      "title": "滷肉飯的肥瘦比是信仰",
+      "content": "有人要入口即化，有人要瘦肉口感，沒有標準答案只有家味。",
+      "category": "food",
+      "sourceName": "家常菜",
+      "sourceURL": null,
+      "funFactValue": "滷肉飯"
+    },
+    {
+      "id": "food-019",
+      "title": "早餐店是台灣的社交基礎設施",
+      "content": "蛋餅加奶茶組合拳，撐起學生與上班族的早晨儀式。",
+      "category": "food",
+      "sourceName": "日常觀察",
+      "sourceURL": null,
+      "funFactValue": "早餐店"
+    },
+    {
+      "id": "food-020",
+      "title": "貢丸湯的彈很科學",
+      "content": "打漿與溫度控制決定彈性，口感好的貢丸是力學作品。",
+      "category": "food",
+      "sourceName": "食品加工常識",
+      "sourceURL": null,
+      "funFactValue": "彈牙"
+    },
+    {
+      "id": "food-021",
+      "title": "芒果冰戰報每年開打",
+      "content": "產季一到，冰品店用產地與甜度互相叫陣，是夏天的季節劇。",
+      "category": "food",
+      "sourceName": "水果經濟",
+      "sourceURL": null,
+      "funFactValue": "芒果季"
+    },
+    {
+      "id": "food-022",
+      "title": "大腸包小腸是結構幽默",
+      "content": "名字本身就是梗，口感反差讓它成為觀光景點常客。",
+      "category": "food",
+      "sourceName": "台式小吃",
+      "sourceURL": null,
+      "funFactValue": "大腸包小腸"
+    },
+    {
+      "id": "food-023",
+      "title": "麻辣鍋是調味全球化現場",
+      "content": "台式麻辣融合各地香料，變成聚餐社交的高容錯選擇。",
+      "category": "food",
+      "sourceName": "鍋物文化",
+      "sourceURL": null,
+      "funFactValue": "麻辣"
+    },
+    {
+      "id": "food-024",
+      "title": "鳳梨酥的鳳梨有時很複雜",
+      "content": "餡料配方與餅皮酥度是品牌護城河，伴手禮經濟學經典案例。",
+      "category": "food",
+      "sourceName": "伴手禮產業",
+      "sourceURL": null,
+      "funFactValue": "鳳梨酥"
+    },
+    {
+      "id": "food-025",
+      "title": "蛋餅加起司是近代發明",
+      "content": "傳統蛋餅遇到乳製品創新，證明小吃菜單會持續演化。",
+      "category": "food",
+      "sourceName": "菜單演化",
+      "sourceURL": null,
+      "funFactValue": "起司蛋餅"
+    },
+    {
+      "id": "food-026",
+      "title": "米糕的油飯親戚很多",
+      "content": "油飯米糕筒仔米糕共享糯米宇宙，祭典與日常都能登場。",
+      "category": "food",
+      "sourceName": "米食系譜",
+      "sourceURL": null,
+      "funFactValue": "糯米宇宙"
+    },
+    {
+      "id": "food-027",
+      "title": "鹽酥與椒鹽是兩種宇宙",
+      "content": "調味粉配方差一點，夜市師傅就能做出招牌辨識度。",
+      "category": "food",
+      "sourceName": "炸物調味",
+      "sourceURL": null,
+      "funFactValue": "椒鹽"
+    },
+    {
+      "id": "food-028",
+      "title": "豆干的百變身分",
+      "content": "滷炒炸燙都可以，是宵夜裡的萬用角色。",
+      "category": "food",
+      "sourceName": "加工豆製品",
+      "sourceURL": null,
+      "funFactValue": "豆干"
+    },
+    {
+      "id": "food-029",
+      "title": "姓氏統計也能變冷知識卡",
+      "content": "把開放資料轉成全台最多人姓什麼故事，就是本 App 的黃蛋主軸之一。",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "sourceURL": "https://data.gov.tw/dataset/42518",
+      "funFactValue": "姓氏 公開資料"
+    },
+    {
+      "id": "food-030",
+      "title": "發票載具改變了對獎儀式",
+      "content": "從對紙本到雲端載具，中獎體驗變了，但期待感沒變。",
+      "category": "food",
+      "sourceName": "財政部",
+      "sourceURL": null,
+      "funFactValue": "載具"
+    },
+    {
+      "id": "geo-001",
+      "title": "台灣有超長的路名詩",
+      "content": "門牌資料裡藏著各種奇特路名，有的像散文，有的像彩蛋。",
+      "category": "geo",
+      "sourceName": "內政部地政司",
+      "sourceURL": null,
+      "funFactValue": "奇特路名"
+    },
+    {
+      "id": "geo-002",
+      "title": "極端高溫往往出現在特定盆地",
+      "content": "地形與都市熱島讓某些測站常亮紅燈，氣象開放資料年年提醒。",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "sourceURL": "https://opendata.cwa.gov.tw/",
+      "funFactValue": "熱島與地形"
+    },
+    {
+      "id": "geo-003",
+      "title": "單日降雨可以很誇張",
+      "content": "颱風與西南氣流時期，山區測站常寫下驚人累積雨量。",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "sourceURL": null,
+      "funFactValue": "極端降雨"
+    },
+    {
+      "id": "geo-004",
+      "title": "地震測報是島嶼日常基礎建設",
+      "content": "密集測站網絡讓你幾秒內收到警訊，是開放資料背後的硬實力。",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "sourceURL": null,
+      "funFactValue": "測站網"
+    },
+    {
+      "id": "geo-005",
+      "title": "步道分級不是嚇你的",
+      "content": "林務與國家公園系統用分級提醒體能與風險，出門前真的該看。",
+      "category": "geo",
+      "sourceName": "農業部林業及自然保育署",
+      "sourceURL": null,
+      "funFactValue": "步道分級"
+    },
+    {
+      "id": "geo-006",
+      "title": "坑字路名常跟河谷有關",
+      "content": "地形語彙直接寫進住址，住在坑裡不一定可憐，可能風景很好。",
+      "category": "geo",
+      "sourceName": "地名／地形",
+      "sourceURL": null,
+      "funFactValue": "坑"
+    },
+    {
+      "id": "geo-007",
+      "title": "橋樑名字有時比橋還有故事",
+      "content": "紀念人物、事件或地形特徵，讓通勤路變成微型史書。",
+      "category": "geo",
+      "sourceName": "交通部／地方政府橋梁資料",
+      "sourceURL": null,
+      "funFactValue": "橋名"
+    },
+    {
+      "id": "geo-008",
+      "title": "海岸線每年都在微調",
+      "content": "侵淤與人工結構改變岸線，地圖上的藍線不是永遠固定。",
+      "category": "geo",
+      "sourceName": "海洋與水利觀測",
+      "sourceURL": null,
+      "funFactValue": "岸線變遷"
+    },
+    {
+      "id": "geo-009",
+      "title": "離島天氣可以跟本島完全不同檔",
+      "content": "同一天北雨南晴都常見，更別說離島的風與浪。",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "sourceURL": null,
+      "funFactValue": "空間天氣差"
+    },
+    {
+      "id": "geo-010",
+      "title": "海拔一高溫度公式就上場",
+      "content": "粗估每上升一定海拔氣溫下降，登山穿衣是物理題。",
+      "category": "geo",
+      "sourceName": "大氣科學常識",
+      "sourceURL": null,
+      "funFactValue": "減溫率"
+    },
+    {
+      "id": "geo-011",
+      "title": "崙崎坡都是地形小抄",
+      "content": "路名與地名常直接描述起伏，騎車的人最有感。",
+      "category": "geo",
+      "sourceName": "地名學",
+      "sourceURL": null,
+      "funFactValue": "地形語素"
+    },
+    {
+      "id": "geo-012",
+      "title": "濕地是城市的海綿",
+      "content": "保留滯洪與生態功能，比水泥排水更有韌性。",
+      "category": "geo",
+      "sourceName": "環境與濕力保育",
+      "sourceURL": null,
+      "funFactValue": "濕地"
+    },
+    {
+      "id": "geo-013",
+      "title": "台灣河流短而陡",
+      "content": "河流短急，治水與生態挑戰並存，是地理課經典句。",
+      "category": "geo",
+      "sourceName": "自然地理",
+      "sourceURL": null,
+      "funFactValue": "短急河流"
+    },
+    {
+      "id": "geo-014",
+      "title": "風櫃風口地名超直球",
+      "content": "常代表強風通道，洗車店老闆可能比氣象粉更早知道。",
+      "category": "geo",
+      "sourceName": "地方風土",
+      "sourceURL": null,
+      "funFactValue": "風口"
+    },
+    {
+      "id": "geo-015",
+      "title": "國家公園不是只有爬山",
+      "content": "保育、研究、環境教育並重，步道只是使用介面之一。",
+      "category": "geo",
+      "sourceName": "內政部國家公園署",
+      "sourceURL": null,
+      "funFactValue": "國家公園"
+    },
+    {
+      "id": "geo-016",
+      "title": "寮也可能在山上",
+      "content": "拓墾與林業聚落遺名，讓登山口附近的地名很有層次。",
+      "category": "geo",
+      "sourceName": "歷史地理",
+      "sourceURL": null,
+      "funFactValue": "山寮"
+    },
+    {
+      "id": "geo-017",
+      "title": "都市熱島晚上更明顯",
+      "content": "水泥與車流蓄熱，夜間降溫慢，夏天睡眠品質地理學。",
+      "category": "geo",
+      "sourceName": "都市氣候",
+      "sourceURL": null,
+      "funFactValue": "熱島夜"
+    },
+    {
+      "id": "geo-018",
+      "title": "雨量站密度影響預報體感",
+      "content": "你覺得明明沒下可能是測站不在你頭頂，空間解析度很重要。",
+      "category": "geo",
+      "sourceName": "氣象觀測",
+      "sourceURL": null,
+      "funFactValue": "測站密度"
+    },
+    {
+      "id": "geo-019",
+      "title": "潮潮表是海邊行程的隱藏主線",
+      "content": "趕潮汐看生態或拍照，比趕捷運轉乘還精準。",
+      "category": "geo",
+      "sourceName": "海洋潮汐資料",
+      "sourceURL": null,
+      "funFactValue": "潮汐"
+    },
+    {
+      "id": "geo-020",
+      "title": "台灣有雨影現象",
+      "content": "山脈擋雨，背風側可能明顯偏乾，同島不同命。",
+      "category": "geo",
+      "sourceName": "氣候地理",
+      "sourceURL": null,
+      "funFactValue": "雨影"
+    },
+    {
+      "id": "geo-021",
+      "title": "地標座標開放後更好玩",
+      "content": "古蹟與步道點位可被地圖 App 串接，冷知識也能導航。",
+      "category": "geo",
+      "sourceName": "內政部",
+      "sourceURL": null,
+      "funFactValue": "座標開放"
+    },
+    {
+      "id": "geo-022",
+      "title": "溪圳溝水系三兄弟",
+      "content": "自然河與灌溉系統交織，地名就是水利史。",
+      "category": "geo",
+      "sourceName": "水利地名",
+      "sourceURL": null,
+      "funFactValue": "溪圳溝"
+    },
+    {
+      "id": "geo-023",
+      "title": "冬季東北季風塑造北海岸性格",
+      "content": "風大浪大景美，攝影與防風外套產業一起發達。",
+      "category": "geo",
+      "sourceName": "氣候與觀光",
+      "sourceURL": null,
+      "funFactValue": "東北季風"
+    },
+    {
+      "id": "geo-024",
+      "title": "泥火山聽起來像科幻",
+      "content": "局部地質奇觀讓台灣地貌清單又多一項會呼吸的土地。",
+      "category": "geo",
+      "sourceName": "地質景觀",
+      "sourceURL": null,
+      "funFactValue": "泥火山"
+    },
+    {
+      "id": "geo-025",
+      "title": "路名重複是導航惡夢",
+      "content": "同名路不同縣市，門牌開放資料幫得上忙，但還是要看縣市碼。",
+      "category": "geo",
+      "sourceName": "門牌資料",
+      "sourceURL": null,
+      "funFactValue": "同名路"
+    },
+    {
+      "id": "geo-026",
+      "title": "高山觀測站是寂寞的英雄",
+      "content": "極端風雪資料常來自人力與儀器都辛苦的高海拔站。",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "sourceURL": null,
+      "funFactValue": "高山站"
+    },
+    {
+      "id": "geo-027",
+      "title": "河口是生態熱點也是風險帶",
+      "content": "豐沛營養與洪水風險並存，土地利用要很小心。",
+      "category": "geo",
+      "sourceName": "河川地理",
+      "sourceURL": null,
+      "funFactValue": "河口"
+    },
+    {
+      "id": "geo-028",
+      "title": "段小段是地籍語言",
+      "content": "地址之外還有地籍編碼世界，土地資料的骨架。",
+      "category": "geo",
+      "sourceName": "地政資料",
+      "sourceURL": null,
+      "funFactValue": "地籍"
+    },
+    {
+      "id": "geo-029",
+      "title": "衛星雲圖讓颱風變得可視化",
+      "content": "開放氣象圖資讓非氣象人也能看懂風暴結構。",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "sourceURL": "https://opendata.cwa.gov.tw/",
+      "funFactValue": "雲圖"
+    },
+    {
+      "id": "geo-030",
+      "title": "把氣象極值寫成故事就是藍蛋",
+      "content": "最高溫、最大雨、最強陣風，數字一白話，就變成可分享的灣蛋。",
+      "category": "geo",
+      "sourceName": "中央氣象署開放資料",
+      "sourceURL": null,
+      "funFactValue": "極值故事"
+    },
+    {
+      "id": "od-surname-陳",
+      "title": "台灣超常見的姓：陳",
+      "content": "「陳」長年出現在台灣姓氏排行前列。下次點名或發票對獎，說不定就遇到好多同姓朋友。",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "sourceURL": "https://data.gov.tw/dataset/42518",
+      "funFactValue": "陳"
+    },
+    {
+      "id": "od-surname-林",
+      "title": "台灣超常見的姓：林",
+      "content": "「林」長年出現在台灣姓氏排行前列。下次點名或發票對獎，說不定就遇到好多同姓朋友。",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "sourceURL": "https://data.gov.tw/dataset/42518",
+      "funFactValue": "林"
+    },
+    {
+      "id": "od-surname-黃",
+      "title": "台灣超常見的姓：黃",
+      "content": "「黃」長年出現在台灣姓氏排行前列。下次點名或發票對獎，說不定就遇到好多同姓朋友。",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "sourceURL": "https://data.gov.tw/dataset/42518",
+      "funFactValue": "黃"
+    },
+    {
+      "id": "od-surname-張",
+      "title": "台灣超常見的姓：張",
+      "content": "「張」長年出現在台灣姓氏排行前列。下次點名或發票對獎，說不定就遇到好多同姓朋友。",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "sourceURL": "https://data.gov.tw/dataset/42518",
+      "funFactValue": "張"
+    },
+    {
+      "id": "od-surname-李",
+      "title": "台灣超常見的姓：李",
+      "content": "「李」長年出現在台灣姓氏排行前列。下次點名或發票對獎，說不定就遇到好多同姓朋友。",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "sourceURL": "https://data.gov.tw/dataset/42518",
+      "funFactValue": "李"
+    },
+    {
+      "id": "od-surname-王",
+      "title": "台灣超常見的姓：王",
+      "content": "「王」長年出現在台灣姓氏排行前列。下次點名或發票對獎，說不定就遇到好多同姓朋友。",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "sourceURL": "https://data.gov.tw/dataset/42518",
+      "funFactValue": "王"
+    },
+    {
+      "id": "od-surname-吳",
+      "title": "台灣超常見的姓：吳",
+      "content": "「吳」長年出現在台灣姓氏排行前列。下次點名或發票對獎，說不定就遇到好多同姓朋友。",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "sourceURL": "https://data.gov.tw/dataset/42518",
+      "funFactValue": "吳"
+    },
+    {
+      "id": "od-surname-劉",
+      "title": "台灣超常見的姓：劉",
+      "content": "「劉」長年出現在台灣姓氏排行前列。下次點名或發票對獎，說不定就遇到好多同姓朋友。",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "sourceURL": "https://data.gov.tw/dataset/42518",
+      "funFactValue": "劉"
+    },
+    {
+      "id": "od-surname-蔡",
+      "title": "台灣超常見的姓：蔡",
+      "content": "「蔡」長年出現在台灣姓氏排行前列。下次點名或發票對獎，說不定就遇到好多同姓朋友。",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "sourceURL": "https://data.gov.tw/dataset/42518",
+      "funFactValue": "蔡"
+    },
+    {
+      "id": "od-surname-楊",
+      "title": "台灣超常見的姓：楊",
+      "content": "「楊」長年出現在台灣姓氏排行前列。下次點名或發票對獎，說不定就遇到好多同姓朋友。",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "sourceURL": "https://data.gov.tw/dataset/42518",
+      "funFactValue": "楊"
+    },
+    {
+      "id": "od-surname-許",
+      "title": "台灣超常見的姓：許",
+      "content": "「許」長年出現在台灣姓氏排行前列。下次點名或發票對獎，說不定就遇到好多同姓朋友。",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "sourceURL": "https://data.gov.tw/dataset/42518",
+      "funFactValue": "許"
+    },
+    {
+      "id": "od-surname-鄭",
+      "title": "台灣超常見的姓：鄭",
+      "content": "「鄭」長年出現在台灣姓氏排行前列。下次點名或發票對獎，說不定就遇到好多同姓朋友。",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "sourceURL": "https://data.gov.tw/dataset/42518",
+      "funFactValue": "鄭"
+    },
+    {
+      "id": "od-surname-謝",
+      "title": "台灣超常見的姓：謝",
+      "content": "「謝」長年出現在台灣姓氏排行前列。下次點名或發票對獎，說不定就遇到好多同姓朋友。",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "sourceURL": "https://data.gov.tw/dataset/42518",
+      "funFactValue": "謝"
+    },
+    {
+      "id": "od-surname-郭",
+      "title": "台灣超常見的姓：郭",
+      "content": "「郭」長年出現在台灣姓氏排行前列。下次點名或發票對獎，說不定就遇到好多同姓朋友。",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "sourceURL": "https://data.gov.tw/dataset/42518",
+      "funFactValue": "郭"
+    },
+    {
+      "id": "od-surname-洪",
+      "title": "台灣超常見的姓：洪",
+      "content": "「洪」長年出現在台灣姓氏排行前列。下次點名或發票對獎，說不定就遇到好多同姓朋友。",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "sourceURL": "https://data.gov.tw/dataset/42518",
+      "funFactValue": "洪"
+    },
+    {
+      "id": "od-weather-玉山",
+      "title": "氣象冷知識：玉山",
+      "content": "玉山測站周邊常是全台最低溫候選。追蹤氣象署公開觀測，能把天氣變成藍蛋故事。",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "sourceURL": "https://opendata.cwa.gov.tw/",
+      "funFactValue": "玉山"
+    },
+    {
+      "id": "od-weather-台北",
+      "title": "氣象冷知識：台北",
+      "content": "台北測站周邊盆地熱島效應明顯。追蹤氣象署公開觀測，能把天氣變成藍蛋故事。",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "sourceURL": "https://opendata.cwa.gov.tw/",
+      "funFactValue": "台北"
+    },
+    {
+      "id": "od-weather-高雄",
+      "title": "氣象冷知識：高雄",
+      "content": "高雄測站周邊南部夏季午後雷陣雨常客。追蹤氣象署公開觀測，能把天氣變成藍蛋故事。",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "sourceURL": "https://opendata.cwa.gov.tw/",
+      "funFactValue": "高雄"
+    },
+    {
+      "id": "od-weather-花蓮",
+      "title": "氣象冷知識：花蓮",
+      "content": "花蓮測站周邊東岸颱風風雨前緣。追蹤氣象署公開觀測，能把天氣變成藍蛋故事。",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "sourceURL": "https://opendata.cwa.gov.tw/",
+      "funFactValue": "花蓮"
+    },
+    {
+      "id": "od-weather-阿里山",
+      "title": "氣象冷知識：阿里山",
+      "content": "阿里山測站周邊高山雲霧與溫差劇烈。追蹤氣象署公開觀測，能把天氣變成藍蛋故事。",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "sourceURL": "https://opendata.cwa.gov.tw/",
+      "funFactValue": "阿里山"
+    },
+    {
+      "id": "od-weather-澎湖",
+      "title": "氣象冷知識：澎湖",
+      "content": "澎湖測站周邊強風與乾季特色鮮明。追蹤氣象署公開觀測，能把天氣變成藍蛋故事。",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "sourceURL": "https://opendata.cwa.gov.tw/",
+      "funFactValue": "澎湖"
+    },
+    {
+      "id": "od-weather-金門",
+      "title": "氣象冷知識：金門",
+      "content": "金門測站周邊離島海象變化快。追蹤氣象署公開觀測，能把天氣變成藍蛋故事。",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "sourceURL": "https://opendata.cwa.gov.tw/",
+      "funFactValue": "金門"
+    },
+    {
+      "id": "od-weather-台中",
+      "title": "氣象冷知識：台中",
+      "content": "台中測站周邊中部平原雨量分布不均。追蹤氣象署公開觀測，能把天氣變成藍蛋故事。",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "sourceURL": "https://opendata.cwa.gov.tw/",
+      "funFactValue": "台中"
+    },
+    {
+      "id": "od-weather-宜蘭",
+      "title": "氣象冷知識：宜蘭",
+      "content": "宜蘭測站周邊東北季風地形雨。追蹤氣象署公開觀測，能把天氣變成藍蛋故事。",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "sourceURL": "https://opendata.cwa.gov.tw/",
+      "funFactValue": "宜蘭"
+    },
+    {
+      "id": "od-weather-恆春",
+      "title": "氣象冷知識：恆春",
+      "content": "恆春測站周邊落山風與熱帶氣候交界。追蹤氣象署公開觀測，能把天氣變成藍蛋故事。",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "sourceURL": "https://opendata.cwa.gov.tw/",
+      "funFactValue": "恆春"
+    },
+    {
+      "id": "od-weather-嘉義",
+      "title": "氣象冷知識：嘉義",
+      "content": "嘉義測站周邊平原日照時數亮眼。追蹤氣象署公開觀測，能把天氣變成藍蛋故事。",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "sourceURL": "https://opendata.cwa.gov.tw/",
+      "funFactValue": "嘉義"
+    },
+    {
+      "id": "od-weather-基隆",
+      "title": "氣象冷知識：基隆",
+      "content": "基隆測站周邊雨都稱號實至名歸。追蹤氣象署公開觀測，能把天氣變成藍蛋故事。",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "sourceURL": "https://opendata.cwa.gov.tw/",
+      "funFactValue": "基隆"
+    },
+    {
+      "id": "od-heritage-赤崁樓",
+      "title": "文資亮點：赤崁樓",
+      "content": "「赤崁樓」是台灣常見的文化資產話題地景，台南經典文資地標。公開文資資料讓更多人認識在地故事。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw/",
+      "funFactValue": "赤崁樓"
+    },
+    {
+      "id": "od-heritage-龍山寺",
+      "title": "文資亮點：龍山寺",
+      "content": "「龍山寺」是台灣常見的文化資產話題地景，香火與城市信仰中心。公開文資資料讓更多人認識在地故事。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw/",
+      "funFactValue": "龍山寺"
+    },
+    {
+      "id": "od-heritage-總統府",
+      "title": "文資亮點：總統府",
+      "content": "「總統府」是台灣常見的文化資產話題地景，巴洛克官署建築代表。公開文資資料讓更多人認識在地故事。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw/",
+      "funFactValue": "總統府"
+    },
+    {
+      "id": "od-heritage-淡水紅毛城",
+      "title": "文資亮點：淡水紅毛城",
+      "content": "「淡水紅毛城」是台灣常見的文化資產話題地景，淡水河口岸防歷史。公開文資資料讓更多人認識在地故事。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw/",
+      "funFactValue": "淡水紅毛城"
+    },
+    {
+      "id": "od-heritage-鹿港龍山寺",
+      "title": "文資亮點：鹿港龍山寺",
+      "content": "「鹿港龍山寺」是台灣常見的文化資產話題地景，中部古廟建築群。公開文資資料讓更多人認識在地故事。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw/",
+      "funFactValue": "鹿港龍山寺"
+    },
+    {
+      "id": "od-heritage-霧峰林家",
+      "title": "文資亮點：霧峰林家",
+      "content": "「霧峰林家」是台灣常見的文化資產話題地景，台灣中部大家族宅第。公開文資資料讓更多人認識在地故事。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw/",
+      "funFactValue": "霧峰林家"
+    },
+    {
+      "id": "od-heritage-金門風獅爺",
+      "title": "文資亮點：金門風獅爺",
+      "content": "「金門風獅爺」是台灣常見的文化資產話題地景，離島辟邪地景。公開文資資料讓更多人認識在地故事。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw/",
+      "funFactValue": "金門風獅爺"
+    },
+    {
+      "id": "od-heritage-北門",
+      "title": "文資亮點：北門",
+      "content": "「北門」是台灣常見的文化資產話題地景，台北城門遺構。公開文資資料讓更多人認識在地故事。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw/",
+      "funFactValue": "北門"
+    },
+    {
+      "id": "od-heritage-安平古堡",
+      "title": "文資亮點：安平古堡",
+      "content": "「安平古堡」是台灣常見的文化資產話題地景，大航海時期遺跡。公開文資資料讓更多人認識在地故事。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw/",
+      "funFactValue": "安平古堡"
+    },
+    {
+      "id": "od-heritage-台中州廳",
+      "title": "文資亮點：台中州廳",
+      "content": "「台中州廳」是台灣常見的文化資產話題地景，近代公共建築。公開文資資料讓更多人認識在地故事。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw/",
+      "funFactValue": "台中州廳"
+    },
+    {
+      "id": "od-heritage-松山文創園區",
+      "title": "文資亮點：松山文創園區",
+      "content": "「松山文創園區」是台灣常見的文化資產話題地景，菸廠轉型案例。公開文資資料讓更多人認識在地故事。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw/",
+      "funFactValue": "松山文創園區"
+    },
+    {
+      "id": "od-heritage-華山1914",
+      "title": "文資亮點：華山1914",
+      "content": "「華山1914」是台灣常見的文化資產話題地景，酒廠再生文創聚落。公開文資資料讓更多人認識在地故事。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw/",
+      "funFactValue": "華山1914"
+    },
+    {
+      "id": "od-heritage-駁二藝術特區",
+      "title": "文資亮點：駁二藝術特區",
+      "content": "「駁二藝術特區」是台灣常見的文化資產話題地景，高雄港灣倉庫再生。公開文資資料讓更多人認識在地故事。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw/",
+      "funFactValue": "駁二藝術特區"
+    },
+    {
+      "id": "od-heritage-九份老街",
+      "title": "文資亮點：九份老街",
+      "content": "「九份老街」是台灣常見的文化資產話題地景，山城聚落景觀。公開文資資料讓更多人認識在地故事。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw/",
+      "funFactValue": "九份老街"
+    },
+    {
+      "id": "od-heritage-十分老街",
+      "title": "文資亮點：十分老街",
+      "content": "「十分老街」是台灣常見的文化資產話題地景，鐵道聚落氛圍。公開文資資料讓更多人認識在地故事。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw/",
+      "funFactValue": "十分老街"
+    },
+    {
+      "id": "od-gemini-20260801-history-01",
+      "title": "台北府城門的東門與西門設計",
+      "content": "台北府城建造於清光緒年間，共開有五座城門。其中西門（寶成門）在日治時期拆除，而東門（景福門）則保留了傳統閩南式城樓構造風格。",
+      "category": "history",
+      "sourceName": "台北市文化局文化資產資料庫",
+      "sourceURL": "https://culture.gov.taipei",
+      "funFactValue": "台北城是台灣歷史上最後一座興建的傳統清代府城"
+    },
+    {
+      "id": "od-gemini-20260801-history-02",
+      "title": "台灣鐵路集集線的由來",
+      "content": "集集支線鐵路最初是由台灣電力株式會社於1920年代興建，主要用於運送日月潭水力發電工程所需的建築材料與設備。",
+      "category": "history",
+      "sourceName": "交通部觀光署",
+      "sourceURL": "https://www.taiwan.net.tw",
+      "funFactValue": "集集線是台鐵現存最長的客運支線鐵路"
+    },
+    {
+      "id": "od-gemini-20260801-food-01",
+      "title": "蚵仔煎地瓜粉醬汁特色",
+      "content": "台灣夜市經典小吃蚵仔煎，勾芡主要使用地瓜粉或太白粉水，再搭上以甜辣醬、番茄醬或味噌調配的特製紅醬，呈現獨特軟Q口感。",
+      "category": "food",
+      "sourceName": "農業部農業知識入口網",
+      "sourceURL": "https://kmweb.moa.gov.tw",
+      "funFactValue": "台灣沿海養蚵歷史已有數百年歷史"
+    },
+    {
+      "id": "od-gemini-20260801-food-02",
+      "title": "凍頂烏龍茶的烘焙工藝",
+      "content": "南投鹿谷凍頂烏龍茶以傳統中發酵、重烘焙聞名，茶湯呈金黃偏琥珀色，帶有獨特的熟果香與焙火香氣。",
+      "category": "food",
+      "sourceName": "農業部茶及飲料作物改良場",
+      "sourceURL": "https://www.tbri.gov.tw",
+      "funFactValue": "「凍頂」據傳意指早期農民赤腳踩在寒冷山頂採茶"
+    },
+    {
+      "id": "od-gemini-20260801-geo-01",
+      "title": "台灣極東點三貂角燈塔",
+      "content": "三貂角位於新北市貢寮區，是本島的最東端。十七世紀西班牙艦隊航經此地時將其命名為「San Santiago」，後經閩南語音譯為「三貂角」。",
+      "category": "geo",
+      "sourceName": "交通部航港局",
+      "sourceURL": "https://www.motcmpb.gov.tw",
+      "funFactValue": "三貂角燈塔有「台灣眼睛」之稱，也是本島最早迎接日出的地點之一"
+    },
+    {
+      "id": "od-gemini-20260801-geo-02",
+      "title": "澎湖桶盤嶼柱狀玄武岩",
+      "content": "澎湖群島由火山噴發火山岩冷卻形成，桶盤嶼擁有一整圈結構完整的柱狀玄武岩節理，被譽為澎湖的「黃石公園」。",
+      "category": "geo",
+      "sourceName": "澎湖國家風景區管理處",
+      "sourceURL": "https://www.penghu-nsa.gov.tw",
+      "funFactValue": "玄武岩在冷卻凝固時因收縮容易形成五角或六角形柱狀節理"
+    }
+  ]
+}
