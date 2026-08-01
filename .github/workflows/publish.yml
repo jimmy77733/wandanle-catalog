@@ -39,6 +39,7 @@ jobs:
 
       # Do not use `if: secrets.*` (GitHub forbids/breaks that). Check env at runtime.
       - name: Deploy Firebase Hosting
+        continue-on-error: true
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         run: |
@@ -47,5 +48,6 @@ jobs:
             exit 0
           fi
           npm i -g firebase-tools
-          firebase deploy --only hosting --non-interactive --token "$FIREBASE_TOKEN"
+          # Project id must match an existing Firebase project you can access.
+          firebase deploy --only hosting --non-interactive --token "$FIREBASE_TOKEN" --project "$(node -p "require('./.firebaserc').projects.default")"
           echo "Firebase deploy finished."
