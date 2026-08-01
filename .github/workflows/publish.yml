@@ -37,14 +37,15 @@ jobs:
           print("OK", d["version"], len(ids))
           PY
 
+      # Do not use `if: secrets.*` (GitHub forbids/breaks that). Check env at runtime.
       - name: Deploy Firebase Hosting
-        if: ${{ secrets.FIREBASE_TOKEN != '' }}
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
         run: |
+          if [ -z "${FIREBASE_TOKEN}" ]; then
+            echo "FIREBASE_TOKEN secret empty — skip Firebase; raw GitHub URL still works."
+            exit 0
+          fi
           npm i -g firebase-tools
           firebase deploy --only hosting --non-interactive --token "$FIREBASE_TOKEN"
-
-      - name: Skip Firebase note
-        if: ${{ secrets.FIREBASE_TOKEN == '' }}
-        run: echo "FIREBASE_TOKEN secret not set — raw GitHub URL remains the live fallback."
+          echo "Firebase deploy finished."
