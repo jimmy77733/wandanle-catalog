@@ -1,63 +1,58 @@
 # Drive → GitHub 自動轉發（Apps Script）
 
-Gemini Spark **無法覆寫既有 Drive 檔內容**（工具多半只能改 metadata 或**新建檔**）。因此正式做法是：
+**現行做法：** AI 每次在 Drive 資料夾**新建** `knowledge_cards_v{N}_{日期}.json`；本腳本用 `DRIVE_FOLDER_ID` 取最新 `knowledge_cards*.json` 寫入本 repo，再由 Action 部署 Firebase。
 
-1. AI **每次上傳一份新的** `knowledge_cards_….json` 到約定資料夾  
-2. 本腳本用 **`DRIVE_FOLDER_ID`** 自動選「最新修改」的那份同步到 GitHub  
-3. GitHub Action 再部署 Firebase  
+（部分 AI 的 Drive 工具無法覆寫檔案內容、也不能刪檔。）
 
-## 一次設定
+## 設定
 
-### 1. Drive 約定資料夾
+### 1. Drive
 
-1. 建立資料夾，例如：`灣蛋啦圖鑑`
-2. 打開資料夾，網址形如：  
-   `https://drive.google.com/drive/folders/【FOLDER_ID】`  
-   複製 `FOLDER_ID`
-3. （可選）先放一份底稿 `knowledge_cards.json`
-
-> 資料夾內可有多個 `knowledge_cards*.json`；腳本永遠取**最後修改時間最新**的那份。舊檔可手動清，不影響同步。
+1. 資料夾例如 `灣蛋啦圖鑑`  
+2. 網址 `/folders/【FOLDER_ID】` → 複製 ID  
+3. 資料夾內可多檔；永遠同步**最後修改最新**且檔名符合 `knowledge_cards*.json` 者  
 
 ### 2. GitHub Fine-grained PAT
 
-1. GitHub → Settings → Developer settings → Personal access tokens → Fine-grained  
-2. Repository access：只選 **`wandanle-catalog`**  
-3. Permissions → **Contents: Read and write**  
-4. 產生後複製 token（只顯示一次）
+- 僅授權本 repo  
+- **Contents: Read and write**（必要；不要只開 Advisories）  
+- Token 只放 Script Properties  
 
-### 3. 建立 Apps Script 專案
+### 3. Apps Script
 
-1. 打開 [script.google.com](https://script.google.com/) → 新增專案  
-2. 將 [`Code.gs`](./Code.gs) 全文貼上  
-3. 專案設定 → **指令碼屬性**：
+1. 貼上 [`Code.gs`](./Code.gs)  
+2. 指令碼屬性：
 
-| 屬性 | 值 |
-|------|-----|
+| 屬性 | 說明 |
+|------|------|
 | `GITHUB_TOKEN` | PAT |
-| `DRIVE_FOLDER_ID` | 資料夾 ID（**建議**） |
-| `DRIVE_FILE_ID` | 單一檔 ID（僅在沒設 folder 時當備援） |
-| `GITHUB_OWNER` | `jimmy77733`（可省略） |
-| `GITHUB_REPO` | `wandanle-catalog`（可省略） |
-| `GITHUB_BRANCH` | `main`（可省略） |
+| `DRIVE_FOLDER_ID` | 資料夾 ID（建議） |
+| `DRIVE_FILE_ID` | 備援：單一檔 ID |
+| `GITHUB_OWNER` / `REPO` / `BRANCH` | 可省略 |
 
-4. 執行 `syncCatalogFromDrive` 一次並授權  
-5. 時間觸發器：每 15–60 分鐘跑 `syncCatalogFromDrive`
+3. 執行一次 `syncCatalogFromDrive` 並授權  
+4. 時間觸發：每 15–60 分鐘  
 
 ### 4. 驗收
 
-1. 讓 AI 上傳新檔（檔名須以 `knowledge_cards` 開頭、`.json` 結尾）  
-2. 手動執行腳本或等觸發  
-3. 日誌應出現：`來源檔：…` 與 `已更新 GitHub。version=…`  
-4. 檢查 commits 與 https://wandanle-catalog.web.app/knowledge_cards.json  
+日誌：`來源檔：…` → `已更新 GitHub。version=…`  
+再查 commits 與 https://wandanle-catalog.web.app/knowledge_cards.json  
 
 ## 函式
 
 | 函式 | 用途 |
 |------|------|
-| `syncCatalogFromDrive` | **主路徑**：Contents API 寫兩份 JSON → push 觸發 Firebase |
-| `dispatchCatalogFromDrive` | 小檔備援（payload 約 &lt; 60KB） |
+| `syncCatalogFromDrive` | 主路徑（Contents API） |
+| `dispatchCatalogFromDrive` | 小檔備援（約 &lt; 60KB） |
+
+## 曾踩過的坑
+
+| 現象 | 處理 |
+|------|------|
+| HTTP 403 Resource not accessible by PAT | Contents 改 Read and write，更新 `GITHUB_TOKEN` |
+| 一直跳過舊 version | 改用／檢查 `DRIVE_FOLDER_ID`，勿釘死舊檔 |
+| 張數變少被拒 | 上傳完整 catalog，勿只交增量 |
 
 ## 安全
 
-- PAT 只放 Script Properties，不要貼進 Gemini 對話或公開 README  
-- 腳本會拒絕「張數變少」或「version 倒退」
+PAT 勿貼進 AI 對話或公開 README。腳本會拒絕張數變少與 version 倒退。
