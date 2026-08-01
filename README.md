@@ -5,7 +5,7 @@
 ## 下載
 
 - 主站（Firebase Hosting，部署後可用）：  
-  https://wandanle.web.app/knowledge_cards.json
+  https://wandanle-catalog.web.app/knowledge_cards.json
 - 本倉庫備援：  
   https://raw.githubusercontent.com/jimmy77733/wandanle-catalog/main/knowledge_cards.json
 

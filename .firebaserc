@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "wandanle"
+    "default": "wandanle-catalog",
+    "catalog": "wandanle-catalog"
   }
 }
