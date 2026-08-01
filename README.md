@@ -4,11 +4,14 @@
 
 ## 下載
 
-- 主站（Firebase Hosting，部署後可用）：  
+- 主站（Firebase Hosting）：  
   https://wandanle-catalog.web.app/knowledge_cards.json
 - 本倉庫備援：  
   https://raw.githubusercontent.com/jimmy77733/wandanle-catalog/main/knowledge_cards.json
 
 檔案：`knowledge_cards.json`（與 `public/knowledge_cards.json` 內容相同）。
 
-本倉庫僅提供可公開下載的圖鑑內容，供 App 同步使用。
+## 自動更新（維護者）
+
+Gemini 寫入 Google Drive 後，由 Apps Script 轉寫本 repo，再由 GitHub Action 部署 Firebase。  
+設定說明見 [`automation/apps-script/README.md`](automation/apps-script/README.md)。

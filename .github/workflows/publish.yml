@@ -10,6 +10,11 @@ on:
       - ".firebaserc"
       - ".github/workflows/publish.yml"
   workflow_dispatch:
+  repository_dispatch:
+    types: [catalog-update]
+
+permissions:
+  contents: write
 
 jobs:
   sync-and-deploy:
@@ -17,7 +22,29 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Apply catalog from repository_dispatch
+        if: github.event_name == 'repository_dispatch'
+        env:
+          CATALOG_TEXT: ${{ github.event.client_payload.catalog_text }}
+        run: |
+          if [ -z "$CATALOG_TEXT" ]; then
+            echo "repository_dispatch missing client_payload.catalog_text" >&2
+            exit 1
+          fi
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          raw = os.environ["CATALOG_TEXT"]
+          data = json.loads(raw)
+          text = json.dumps(data, ensure_ascii=False, indent=2) + "\n"
+          Path("knowledge_cards.json").write_text(text, encoding="utf-8")
+          Path("public").mkdir(exist_ok=True)
+          Path("public/knowledge_cards.json").write_text(text, encoding="utf-8")
+          print("wrote catalog from dispatch", data.get("version"), len(data.get("cards", [])))
+          PY
+
       - name: Keep public/ mirror in sync
+        if: github.event_name != 'repository_dispatch'
         run: |
           mkdir -p public
           cp knowledge_cards.json public/knowledge_cards.json
@@ -28,16 +55,32 @@ jobs:
           import json
           from pathlib import Path
           d = json.loads(Path("knowledge_cards.json").read_text(encoding="utf-8"))
-          assert set(d) == {"version", "updatedAt", "cards"}
+          assert set(d) == {"version", "updatedAt", "cards"}, set(d)
           ids = [c["id"] for c in d["cards"]]
           assert len(ids) == len(set(ids)), "duplicate id"
           allowed = {"history", "food", "geo"}
+          need = {"id","title","content","category","sourceName","sourceURL","funFactValue"}
           for c in d["cards"]:
+              assert set(c.keys()) == need, c.get("id")
               assert c["category"] in allowed, c["id"]
+              assert c["sourceURL"] is None or isinstance(c["sourceURL"], str)
+              assert c["sourceURL"] != ""
           print("OK", d["version"], len(ids))
           PY
 
-      # Do not use `if: secrets.*` (GitHub forbids/breaks that). Check env at runtime.
+      - name: Commit dispatch updates
+        if: github.event_name == 'repository_dispatch'
+        run: |
+          git config user.name "wandanle-bot"
+          git config user.email "wandanle-bot@users.noreply.github.com"
+          git add knowledge_cards.json public/knowledge_cards.json
+          if git diff --cached --quiet; then
+            echo "No file changes to commit"
+          else
+            git commit -m "catalog: update from repository_dispatch"
+            git push
+          fi
+
       - name: Deploy Firebase Hosting
         continue-on-error: true
         env:
@@ -48,6 +91,5 @@ jobs:
             exit 0
           fi
           npm i -g firebase-tools
-          # Project id must match an existing Firebase project you can access.
           firebase deploy --only hosting --non-interactive --token "$FIREBASE_TOKEN" --project "$(node -p "require('./.firebaserc').projects.default")"
           echo "Firebase deploy finished."
