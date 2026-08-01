@@ -1,6 +1,6 @@
 {
-  "version": 4,
-  "updatedAt": "2026-08-01T05:00:00Z",
+  "version": 6,
+  "updatedAt": "2026-08-01T06:12:28Z",
   "cards": [
     {
       "id": "history-001",
@@ -684,7 +684,7 @@
       "category": "geo",
       "sourceName": "歷史地理",
       "sourceURL": null,
-      "funFactValue": "山寮"
+      "funFactValue": "寮"
     },
     {
       "id": "geo-017",
@@ -1243,6 +1243,114 @@
       "sourceName": "澎湖國家風景區管理處",
       "sourceURL": "https://www.penghu-nsa.gov.tw",
       "funFactValue": "玄武岩在冷卻凝固時因收縮容易形成五角或六角形柱狀節理"
+    },
+    {
+      "id": "od-gemini-20260801-history-03",
+      "title": "淡水紅毛城的旗幟變遷史",
+      "content": "淡水紅毛城建立以來，曾先後升過西班牙、荷蘭、清朝、英國、美國與中華民國等九面不同旗幟，見證了淡水河口的國際歷史走廊。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw",
+      "funFactValue": "紅毛城主堡牆厚達1.9公尺，具有極強的防禦功能"
+    },
+    {
+      "id": "od-gemini-20260801-history-04",
+      "title": "台灣古道隘勇線與隘丁制度",
+      "content": "清治時期設有「隘丁」與「隘寮」維護山林開墾邊界防務，日治時期則進一步延伸為「隘勇線」，許多舊址如今成為山友熱門登山步道。",
+      "category": "history",
+      "sourceName": "農業部林業及自然保育署",
+      "sourceURL": "https://www.forest.gov.tw",
+      "funFactValue": "如淡蘭古道與樟之細路皆保留了豐富的隘勇線遺構"
+    },
+    {
+      "id": "od-gemini-20260801-food-03",
+      "title": "台式香腸配生蒜頭的科學道理",
+      "content": "台灣吃烤香腸習慣搭配生蒜頭，生蒜中的蒜素（Allicin）除了帶來辛辣爽口風味，還具有殺菌與促進消化等作用。",
+      "category": "food",
+      "sourceName": "農業部農業知識入口網",
+      "sourceURL": "https://kmweb.moa.gov.tw",
+      "funFactValue": "蒜頭經過切碎或咬破後，蒜氨酸受蒜氨酸酶催化才會大量產生蒜素"
+    },
+    {
+      "id": "od-gemini-20260801-food-04",
+      "title": "天然愛玉洗愛玉籽的凝膠機制",
+      "content": "天然愛玉凍是將愛玉子放在含鈣、鎂等礦物質的冷開水中搓洗，利用愛玉子果膠酯酶與水中二價金屬離子結合凝結而成。",
+      "category": "food",
+      "sourceName": "農業部苗栗區農業改良場",
+      "sourceURL": "https://www.mdares.gov.tw",
+      "funFactValue": "使用純水或蒸餾水因缺乏礦物質離子，愛玉漿無法成功凝固"
+    },
+    {
+      "id": "od-gemini-20260801-geo-03",
+      "title": "台灣高山氣候降溫率",
+      "content": "在大氣科學中，海拔每升高1,000公尺，氣溫平均下降約6.5度C。登玉山或合歡山時，山頂與平地的溫差可達20度C以上。",
+      "category": "geo",
+      "sourceName": "交通部中央氣象署",
+      "sourceURL": "https://www.cwa.gov.tw",
+      "funFactValue": "即使平地夏季高溫達35度C，海拔3,000公尺的高山山頂氣溫仍僅約12至15度C"
+    },
+    {
+      "id": "od-gemini-20260801-geo-04",
+      "title": "台灣最南點鵝鑾鼻燈塔",
+      "content": "位於屏東墾丁的鵝鑾鼻燈塔興建於1883年，是台灣本島最南端的燈塔，也是世上少見的武裝燈塔，牆面設有槍眼與壕溝。",
+      "category": "geo",
+      "sourceName": "交通部航港局",
+      "sourceURL": "https://www.motcmpb.gov.tw",
+      "funFactValue": "鵝鑾鼻燈塔光力強大，被譽為「東亞之光」"
+    },
+    {
+      "id": "od-gemini-20260801-history-05",
+      "title": "基隆清代與日治砲台群",
+      "content": "基隆港周邊因戰略位置重要，留存有槓子寮、白米甕、大武崙等多座砲台遺構，展現自清代至日治時期北台灣港灣防線演變。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw",
+      "funFactValue": "基隆是全台古蹟砲台密度最高的港灣城市"
+    },
+    {
+      "id": "od-gemini-20260801-history-06",
+      "title": "高雄港蓬萊商港區史蹟",
+      "content": "高雄港蓬萊商港區早期為高雄港發祥地，港區內保存有日治時期港務鐵路哈瑪星鐵道園區與棧貳庫等歷史建築，記錄港市合一發展史。",
+      "category": "history",
+      "sourceName": "高雄市政府文化局",
+      "sourceURL": "https://khcc.kcg.gov.tw",
+      "funFactValue": "棧貳庫是台灣目前保存最大的老水岸歷史磚造倉庫"
+    },
+    {
+      "id": "od-gemini-20260801-food-05",
+      "title": "彰化肉圓低溫油炸工藝",
+      "content": "彰化肉圓以地瓜粉與太白粉調製皮材，包裹豬肉與筍丁，經典作法採用低溫油泡熟化而非高溫大火炸，保持外皮軟Q不硬。",
+      "category": "food",
+      "sourceName": "農業部農業知識入口網",
+      "sourceURL": "https://kmweb.moa.gov.tw",
+      "funFactValue": "低溫油泡能使肉圓皮維持彈牙透亮口感"
+    },
+    {
+      "id": "od-gemini-20260801-food-06",
+      "title": "新竹米粉的十七份風乾法",
+      "content": "新竹米粉享譽全台的關鍵在於九降風（秋冬強烈東北季風），天然強風急速帶走米粉水分，使米粉口感特別紮實Q彈。",
+      "category": "food",
+      "sourceName": "新竹市政府文化局",
+      "sourceURL": "https://www.hccg.gov.tw",
+      "funFactValue": "乾燥過程「三分日曬、七分風乾」是新竹米粉靈魂"
+    },
+    {
+      "id": "od-gemini-20260801-geo-05",
+      "title": "野柳地質公園海蝕奇觀",
+      "content": "新北市萬里區的野柳岬角伸入海中，因地層差異侵蝕與海水沖刷，形成女王頭、仙女鞋、蕈狀岩等聞名國際的海蝕地貌。",
+      "category": "geo",
+      "sourceName": "交通部觀光署北海岸及觀音山國家風景區管理處",
+      "sourceURL": "https://www.northguan-nsa.gov.tw",
+      "funFactValue": "野柳岬角全長約1.7公里，是天然的地質教室"
+    },
+    {
+      "id": "od-gemini-20260801-geo-06",
+      "title": "太魯閣立霧溪切穿大理岩峽谷",
+      "content": "花蓮太魯閣國家公園以發達的大理岩峽谷地形著稱，立霧溪經千百萬年地殼抬升與強烈侵蝕切穿，下切出深邃雄偉的V型峽谷。",
+      "category": "geo",
+      "sourceName": "內政部國家公園署太魯閣國家公園管理處",
+      "sourceURL": "https://www.taroko.gov.tw",
+      "funFactValue": "大理岩質地堅硬不易塌落，因而能形成近乎垂直的峽谷懸崖"
     }
   ]
 }
