@@ -2,14 +2,18 @@
  * 灣蛋啦圖鑑：Google Drive → GitHub（wandanle-catalog）轉發腳本
  *
  * 設定（專案設定 → 指令碼屬性 Script properties）：
- *   GITHUB_TOKEN   Fine-grained PAT，僅授權 jimmy77733/wandanle-catalog Contents: Read and write
- *   DRIVE_FILE_ID  Drive 上 knowledge_cards.json 的檔案 ID（網址 /d/FILE_ID/ 那段）
- *   GITHUB_OWNER   預設 jimmy77733
- *   GITHUB_REPO    預設 wandanle-catalog
- *   GITHUB_BRANCH  預設 main
+ *   GITHUB_TOKEN     Fine-grained PAT，僅授權 jimmy77733/wandanle-catalog Contents: Read and write
+ *   DRIVE_FOLDER_ID  （建議）「灣蛋啦圖鑑」資料夾 ID；腳本會取其中最新的 knowledge_cards*.json
+ *   DRIVE_FILE_ID    （備援）單一檔案 ID；僅在未設 DRIVE_FOLDER_ID 時使用
+ *   GITHUB_OWNER     預設 jimmy77733
+ *   GITHUB_REPO      預設 wandanle-catalog
+ *   GITHUB_BRANCH    預設 main
+ *
+ * 為何用資料夾而不是固定檔案：
+ *   部分 AI（如 Gemini Spark）的 Drive 工具只能「新建檔」或改 metadata，
+ *   無法覆寫既有 JSON 內容。改為每次上傳新檔，由此腳本挑最新一份同步。
  *
  * 觸發：時間驅動（建議每 15–60 分鐘）執行 syncCatalogFromDrive
- * 或手動在編輯器選 syncCatalogFromDrive → 執行
  */
 
 var DEFAULT_OWNER = 'jimmy77733';
@@ -17,11 +21,12 @@ var DEFAULT_REPO = 'wandanle-catalog';
 var DEFAULT_BRANCH = 'main';
 var ROOT_PATH = 'knowledge_cards.json';
 var PUBLIC_PATH = 'public/knowledge_cards.json';
+/** 檔名需以此開頭且以 .json 結尾，例如 knowledge_cards.json / knowledge_cards_v7_20260801.json */
+var FILE_NAME_PREFIX = 'knowledge_cards';
 
 function syncCatalogFromDrive() {
   var props = PropertiesService.getScriptProperties();
   var token = props.getProperty('GITHUB_TOKEN');
-  var fileId = props.getProperty('DRIVE_FILE_ID');
   var owner = props.getProperty('GITHUB_OWNER') || DEFAULT_OWNER;
   var repo = props.getProperty('GITHUB_REPO') || DEFAULT_REPO;
   var branch = props.getProperty('GITHUB_BRANCH') || DEFAULT_BRANCH;
@@ -29,23 +34,44 @@ function syncCatalogFromDrive() {
   if (!token) {
     throw new Error('缺少 Script Property：GITHUB_TOKEN');
   }
-  if (!fileId) {
-    throw new Error('缺少 Script Property：DRIVE_FILE_ID');
-  }
 
-  var raw = DriveApp.getFileById(fileId).getBlob().getDataAsString('UTF-8');
+  var picked = resolveDriveCatalogFile_(props);
+  var raw = picked.file.getBlob().getDataAsString('UTF-8');
   var catalog = validateCatalog_(raw);
   var pretty = JSON.stringify(catalog, null, 2) + '\n';
+
+  Logger.log(
+    '來源檔：' +
+      picked.file.getName() +
+      ' id=' +
+      picked.file.getId() +
+      ' updated=' +
+      picked.file.getLastUpdated()
+  );
 
   var remote = fetchGitHubJson_(owner, repo, ROOT_PATH, branch, token);
   if (remote && remote.catalog) {
     assertNotRegressing_(remote.catalog, catalog);
-    if (remote.catalog.version === catalog.version &&
-        remote.catalog.cards.length === catalog.cards.length &&
-        remote.sha) {
-      // 以 version + 張數判斷大致相同則略過（避免無謂 commit）
-      var same = JSON.stringify(remote.catalog.cards.map(function (c) { return c.id; }).sort()) ===
-        JSON.stringify(catalog.cards.map(function (c) { return c.id; }).sort());
+    if (
+      remote.catalog.version === catalog.version &&
+      remote.catalog.cards.length === catalog.cards.length &&
+      remote.sha
+    ) {
+      var same =
+        JSON.stringify(
+          remote.catalog.cards
+            .map(function (c) {
+              return c.id;
+            })
+            .sort()
+        ) ===
+        JSON.stringify(
+          catalog.cards
+            .map(function (c) {
+              return c.id;
+            })
+            .sort()
+        );
       if (same) {
         Logger.log('GitHub 已是相同 version/ids，跳過。version=' + catalog.version);
         return { skipped: true, version: catalog.version, total: catalog.cards.length };
@@ -54,31 +80,52 @@ function syncCatalogFromDrive() {
   }
 
   var rootSha = remote && remote.sha ? remote.sha : null;
-  putGitHubFile_(owner, repo, ROOT_PATH, branch, token, pretty, rootSha,
-    'catalog: sync v' + catalog.version + ' (' + catalog.cards.length + ' cards) from Drive');
+  putGitHubFile_(
+    owner,
+    repo,
+    ROOT_PATH,
+    branch,
+    token,
+    pretty,
+    rootSha,
+    'catalog: sync v' + catalog.version + ' (' + catalog.cards.length + ' cards) from Drive'
+  );
 
   var publicMeta = fetchGitHubJson_(owner, repo, PUBLIC_PATH, branch, token);
   var publicSha = publicMeta && publicMeta.sha ? publicMeta.sha : null;
-  putGitHubFile_(owner, repo, PUBLIC_PATH, branch, token, pretty, publicSha,
-    'catalog: sync public/ v' + catalog.version + ' from Drive');
+  putGitHubFile_(
+    owner,
+    repo,
+    PUBLIC_PATH,
+    branch,
+    token,
+    pretty,
+    publicSha,
+    'catalog: sync public/ v' + catalog.version + ' from Drive'
+  );
 
   Logger.log('已更新 GitHub。version=' + catalog.version + ' total=' + catalog.cards.length);
-  return { skipped: false, version: catalog.version, total: catalog.cards.length };
+  return {
+    skipped: false,
+    version: catalog.version,
+    total: catalog.cards.length,
+    driveFile: picked.file.getName()
+  };
 }
 
-/** 可選：若 JSON 較小（payload < ~60KB），改打 repository_dispatch 給 Action 寫檔。大檔請用 syncCatalogFromDrive。 */
+/** 可選：若 JSON 較小（payload < ~60KB），改打 repository_dispatch。大檔請用 syncCatalogFromDrive。 */
 function dispatchCatalogFromDrive() {
   var props = PropertiesService.getScriptProperties();
   var token = props.getProperty('GITHUB_TOKEN');
-  var fileId = props.getProperty('DRIVE_FILE_ID');
   var owner = props.getProperty('GITHUB_OWNER') || DEFAULT_OWNER;
   var repo = props.getProperty('GITHUB_REPO') || DEFAULT_REPO;
 
-  if (!token || !fileId) {
-    throw new Error('需要 GITHUB_TOKEN 與 DRIVE_FILE_ID');
+  if (!token) {
+    throw new Error('需要 GITHUB_TOKEN');
   }
 
-  var raw = DriveApp.getFileById(fileId).getBlob().getDataAsString('UTF-8');
+  var picked = resolveDriveCatalogFile_(props);
+  var raw = picked.file.getBlob().getDataAsString('UTF-8');
   validateCatalog_(raw);
 
   if (raw.length > 60000) {
@@ -110,8 +157,59 @@ function dispatchCatalogFromDrive() {
   if (code !== 204 && code !== 200) {
     throw new Error('repository_dispatch 失敗 HTTP ' + code + ' ' + res.getContentText());
   }
-  Logger.log('已送出 catalog-update dispatch');
-  return { dispatched: true };
+  Logger.log('已送出 catalog-update dispatch；來源=' + picked.file.getName());
+  return { dispatched: true, driveFile: picked.file.getName() };
+}
+
+// --- Drive resolve ---
+
+/**
+ * 優先 DRIVE_FOLDER_ID：在資料夾內找檔名以 knowledge_cards 開頭、.json 結尾的最新檔。
+ * 否則退回 DRIVE_FILE_ID。
+ */
+function resolveDriveCatalogFile_(props) {
+  var folderId = props.getProperty('DRIVE_FOLDER_ID');
+  if (folderId) {
+    var folder = DriveApp.getFolderById(folderId);
+    var files = folder.getFiles();
+    var best = null;
+    var bestTime = 0;
+    while (files.hasNext()) {
+      var f = files.next();
+      var name = f.getName();
+      if (!isCatalogFileName_(name)) {
+        continue;
+      }
+      var t = f.getLastUpdated().getTime();
+      if (t >= bestTime) {
+        bestTime = t;
+        best = f;
+      }
+    }
+    if (!best) {
+      throw new Error(
+        '資料夾內找不到 knowledge_cards*.json。請讓 AI 上傳新檔，或檢查 DRIVE_FOLDER_ID。'
+      );
+    }
+    return { file: best, mode: 'folder' };
+  }
+
+  var fileId = props.getProperty('DRIVE_FILE_ID');
+  if (!fileId) {
+    throw new Error('請設定 DRIVE_FOLDER_ID（建議）或 DRIVE_FILE_ID');
+  }
+  return { file: DriveApp.getFileById(fileId), mode: 'file' };
+}
+
+function isCatalogFileName_(name) {
+  if (!name || name.charAt(0) === '.') {
+    return false;
+  }
+  var lower = name.toLowerCase();
+  return (
+    lower.indexOf(FILE_NAME_PREFIX) === 0 &&
+    lower.slice(-5) === '.json'
+  );
 }
 
 // --- validation ---
@@ -174,9 +272,7 @@ function assertNotRegressing_(oldCat, newCat) {
     );
   }
   if (newCat.version < oldCat.version) {
-    throw new Error(
-      '拒絕覆寫：新 version ' + newCat.version + ' < 線上 ' + oldCat.version
-    );
+    throw new Error('拒絕覆寫：新 version ' + newCat.version + ' < 線上 ' + oldCat.version);
   }
 }
 
