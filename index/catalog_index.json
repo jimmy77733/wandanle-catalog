@@ -1,7 +1,7 @@
 {
-  "version": 9,
-  "updatedAt": "2026-08-02T02:00:00Z",
-  "cardCount": 168,
+  "version": 10,
+  "updatedAt": "2026-08-02T03:42:46Z",
+  "cardCount": 169,
   "cards": [
     {
       "id": "history-001",
@@ -1178,6 +1178,13 @@
       "category": "geo",
       "sourceName": "交通部觀光署東北角及宜蘭海岸國家風景區管理處",
       "titleKey": "宜蘭龜山島活火山地形"
+    },
+    {
+      "id": "od-web-20260802-history-01",
+      "title": "你這樣操作不正確啊",
+      "category": "history",
+      "sourceName": "來自睡路邊的公園阿伯",
+      "titleKey": "你這樣操作不正確啊"
     }
   ]
 }
