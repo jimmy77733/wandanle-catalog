@@ -522,6 +522,8 @@
     dirty = true;
     fillSourceFilters();
     renderCards();
+    const listPanel = $("card-list-panel");
+    if (listPanel) listPanel.open = true;
     const fresh = el.cardList.querySelector(`.egg-card[data-id="${CSS.escape(card.id)}"]`);
     if (fresh) fresh.open = true;
     updateStats(working);

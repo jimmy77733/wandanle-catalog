@@ -338,13 +338,48 @@ button:disabled { opacity: 0.45; cursor: not-allowed; transform: none; }
 }
 .filters .grow { min-width: 0; }
 
+.list-panel {
+  margin-top: 8px;
+  border-top: 1px dashed var(--line);
+  padding-top: 12px;
+}
+.list-panel-summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--ink);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 14px;
+  list-style: none;
+  user-select: none;
+}
+.list-panel-summary::-webkit-details-marker { display: none; }
+.list-panel-summary::marker { content: ""; }
+.list-panel-summary::before {
+  content: "▸";
+  display: inline-block;
+  margin-right: 2px;
+  transition: transform 0.15s ease;
+  color: var(--muted);
+}
+.list-panel[open] > .list-panel-summary::before {
+  transform: rotate(90deg);
+}
+.list-panel-title { font-size: 1rem; }
+.list-panel-summary .hint {
+  margin: 0;
+  font-weight: 600;
+}
+.list-panel-body { margin-top: 12px; }
+
 .filter-meta-row {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 8px 12px;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 .filter-meta-row .hint { margin: 0; }
 .filter-fold-actions { margin-top: 0; }
@@ -424,7 +459,26 @@ button:disabled { opacity: 0.45; cursor: not-allowed; transform: none; }
 .field input, .field textarea { font-weight: 500; }
 
 .add-panel { margin-top: 18px; border-top: 1px dashed var(--line); padding-top: 12px; }
-.add-panel summary { cursor: pointer; font-weight: 700; margin-bottom: 10px; color: var(--ink); }
+.add-panel summary {
+  cursor: pointer;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: var(--ink);
+  list-style: none;
+  user-select: none;
+}
+.add-panel summary::-webkit-details-marker { display: none; }
+.add-panel summary::marker { content: ""; }
+.add-panel summary::before {
+  content: "▸";
+  display: inline-block;
+  margin-right: 6px;
+  transition: transform 0.15s ease;
+  color: var(--muted);
+}
+.add-panel[open] > summary::before {
+  transform: rotate(90deg);
+}
 .add-grid {
   display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
 }

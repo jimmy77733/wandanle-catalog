@@ -119,14 +119,21 @@
             <input id="filter-q" type="text" placeholder="標題／內容／編號" />
           </label>
         </div>
-        <div class="filter-meta-row">
-          <p class="hint" id="filter-meta"></p>
-          <div class="row tight filter-fold-actions">
-            <button type="button" class="btn-ghost btn-mini" id="expand-all-btn">全部展開</button>
-            <button type="button" class="btn-ghost btn-mini" id="collapse-all-btn">全部收合</button>
+        <details class="list-panel" id="card-list-panel" open>
+          <summary class="list-panel-summary">
+            <span class="list-panel-title">題目列表</span>
+            <span class="hint" id="filter-meta"></span>
+          </summary>
+          <div class="list-panel-body">
+            <div class="filter-meta-row">
+              <div class="row tight filter-fold-actions">
+                <button type="button" class="btn-ghost btn-mini" id="expand-all-btn">內容全部展開</button>
+                <button type="button" class="btn-ghost btn-mini" id="collapse-all-btn">內容全部收合</button>
+              </div>
+            </div>
+            <div id="card-list" class="card-list"></div>
           </div>
-        </div>
-        <div id="card-list" class="card-list"></div>
+        </details>
 
         <details class="add-panel" id="add-panel">
           <summary>新增題目</summary>
