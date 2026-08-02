@@ -1,7 +1,7 @@
 {
-  "version": 10,
-  "updatedAt": "2026-08-02T03:42:46Z",
-  "cardCount": 169,
+  "version": 11,
+  "updatedAt": "2026-08-02T04:46:21Z",
+  "cardCount": 170,
   "cards": [
     {
       "id": "history-001",
@@ -1185,6 +1185,13 @@
       "category": "history",
       "sourceName": "來自睡路邊的公園阿伯",
       "titleKey": "你這樣操作不正確啊"
+    },
+    {
+      "id": "od-web-20260802-history-02",
+      "title": "我也曾經是少年股神",
+      "category": "history",
+      "sourceName": "來自睡路邊的公園阿伯",
+      "titleKey": "我也曾經是少年股神"
     }
   ]
 }
