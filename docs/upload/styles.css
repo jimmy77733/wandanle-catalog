@@ -125,6 +125,41 @@ input[type="text"] {
   color: var(--ink);
 }
 
+.secret-field {
+  position: relative;
+}
+
+.secret-field input {
+  padding-right: 48px;
+}
+
+.eye-btn {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 36px;
+  padding: 0;
+  border-radius: 10px;
+  background: transparent;
+  color: var(--muted);
+  box-shadow: none;
+  display: grid;
+  place-items: center;
+  font-size: 1.05rem;
+  line-height: 1;
+}
+
+.eye-btn:hover {
+  background: rgba(58, 47, 40, 0.06);
+  color: var(--ink);
+}
+
+.eye-btn[aria-pressed="true"] {
+  color: var(--yolk-deep);
+}
+
 input:focus {
   outline: 2px solid rgba(244, 185, 66, 0.55);
   border-color: var(--yolk);

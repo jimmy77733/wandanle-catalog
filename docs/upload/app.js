@@ -19,6 +19,7 @@
     preview: document.getElementById("preview"),
     errors: document.getElementById("errors"),
     pat: document.getElementById("pat"),
+    patToggle: document.getElementById("pat-toggle"),
     uploadBtn: document.getElementById("upload-btn"),
     downloadBtn: document.getElementById("download-btn"),
     clearPat: document.getElementById("clear-pat"),
@@ -85,8 +86,26 @@
     if (el.pat.value) sessionStorage.setItem(PAT_KEY, el.pat.value);
     else sessionStorage.removeItem(PAT_KEY);
   });
+  el.pat.addEventListener("input", () => {
+    if (el.pat.value) sessionStorage.setItem(PAT_KEY, el.pat.value);
+    else sessionStorage.removeItem(PAT_KEY);
+  });
+  function setPatVisible(show) {
+    el.pat.type = show ? "text" : "password";
+    if (!el.patToggle) return;
+    el.patToggle.setAttribute("aria-pressed", show ? "true" : "false");
+    el.patToggle.setAttribute("aria-label", show ? "隱藏 Token" : "顯示 Token");
+    el.patToggle.querySelector(".eye-open")?.classList.toggle("hidden", show);
+    el.patToggle.querySelector(".eye-shut")?.classList.toggle("hidden", !show);
+  }
+  if (el.patToggle) {
+    el.patToggle.addEventListener("click", () => {
+      setPatVisible(el.pat.type === "password");
+    });
+  }
   el.clearPat.addEventListener("click", () => {
     el.pat.value = "";
+    setPatVisible(false);
     sessionStorage.removeItem(PAT_KEY);
     showStatus(el.workStatus, "info", "已清除此工作階段的 Token。");
   });
