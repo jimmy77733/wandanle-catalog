@@ -13,5 +13,5 @@ window.WANDANLE_UPLOAD = {
    * 重算：echo -n '新密碼' | shasum -a 256
    */
   gateHash:
-    "eea849cd81d115c1b35aa76f3ccdf599c929467df12d7e44ee1d97c3674d5fa1",
+    "dc2b88d86d4327e61d52fc737d5a2eba53eb04bd7ce34e3a74805a267c4b72e8",
 };

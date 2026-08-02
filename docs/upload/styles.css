@@ -84,6 +84,22 @@ body {
   font-size: 1.15rem;
 }
 
+.gate-card {
+  text-align: center;
+}
+
+.gate-card h2 {
+  margin-bottom: 16px;
+}
+
+.gate-card input[type="password"] {
+  text-align: center;
+}
+
+.row-center {
+  justify-content: center;
+}
+
 .hint {
   margin: 0 0 14px;
   color: var(--muted);
