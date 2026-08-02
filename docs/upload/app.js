@@ -8,8 +8,34 @@
 
   const GATE_KEY = "wandanle_upload_gate_ok";
   const PAT_KEY = "wandanle_upload_pat";
+  const THEME_KEY = "wandanle_upload_theme";
 
   const $ = (id) => document.getElementById(id);
+
+  const applyTheme = (theme) => {
+    const next = theme === "dark" ? "dark" : "light";
+    document.documentElement.setAttribute("data-theme", next);
+    document.documentElement.style.colorScheme = next;
+    try {
+      localStorage.setItem(THEME_KEY, next);
+    } catch (_) { /* ignore */ }
+    const btn = $("theme-toggle");
+    if (btn) {
+      btn.setAttribute(
+        "aria-label",
+        next === "dark" ? "切換為淺色主題" : "切換為深色主題"
+      );
+      btn.title = next === "dark" ? "淺色模式" : "深色模式";
+    }
+  };
+
+  const currentTheme = () =>
+    document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light";
+
+  applyTheme(currentTheme());
+  $("theme-toggle")?.addEventListener("click", () => {
+    applyTheme(currentTheme() === "dark" ? "light" : "dark");
+  });
   const el = {
     gateCard: $("gate-card"),
     mainCard: $("main-card"),
@@ -248,34 +274,43 @@
     el.filterMeta.textContent = `顯示 ${list.length} / ${working.cards.length} 張`;
     el.cardList.innerHTML = "";
     list.forEach((c) => {
-      const art = document.createElement("article");
+      const art = document.createElement("details");
       art.className = `egg-card ${Core.catClass(c.category)}`;
       art.dataset.id = c.id;
       art.innerHTML = `
-        <div class="egg-top">
-          <span class="pill ${Core.catClass(c.category)}">${Core.catLabel(c.category)}</span>
-          <span class="pill">來源：${escapeHtml(c.sourceName)}</span>
-          <span class="meta-id">${escapeHtml(c.id)}</span>
-        </div>
-        <div class="field">
-          <div class="flabel">標題</div>
-          <input data-f="title" type="text" maxlength="28" value="${escapeAttr(c.title)}" />
-        </div>
-        <div class="field">
-          <div class="flabel">內容</div>
-          <textarea data-f="content" rows="3" maxlength="160">${escapeHtml(c.content)}</textarea>
-        </div>
-        <div class="field">
-          <div class="flabel">趣味標籤</div>
-          <input data-f="funFactValue" type="text" maxlength="16" value="${escapeAttr(c.funFactValue)}" />
-        </div>
-        <div class="field">
-          <div class="flabel">來源網址</div>
-          <div class="readonly">${c.sourceURL ? escapeHtml(c.sourceURL) : "（無）"}</div>
+        <summary class="egg-summary">
+          <div class="egg-top">
+            <span class="pill ${Core.catClass(c.category)}">${Core.catLabel(c.category)}</span>
+            <span class="pill">來源：${escapeHtml(c.sourceName)}</span>
+            <span class="meta-id">${escapeHtml(c.id)}</span>
+          </div>
+          <div class="egg-summary-title">${escapeHtml(c.title)}</div>
+        </summary>
+        <div class="egg-body">
+          <div class="field">
+            <div class="flabel">標題</div>
+            <input data-f="title" type="text" maxlength="28" value="${escapeAttr(c.title)}" />
+          </div>
+          <div class="field">
+            <div class="flabel">內容</div>
+            <textarea data-f="content" rows="3" maxlength="160">${escapeHtml(c.content)}</textarea>
+          </div>
+          <div class="field">
+            <div class="flabel">趣味標籤</div>
+            <input data-f="funFactValue" type="text" maxlength="16" value="${escapeAttr(c.funFactValue)}" />
+          </div>
+          <div class="field">
+            <div class="flabel">來源網址</div>
+            <div class="readonly">${c.sourceURL ? escapeHtml(c.sourceURL) : "（無）"}</div>
+          </div>
         </div>`;
+      const titlePreview = art.querySelector(".egg-summary-title");
       art.querySelectorAll("input,textarea").forEach((inp) =>
         inp.addEventListener("input", () => {
           dirty = true;
+          if (inp.dataset.f === "title" && titlePreview) {
+            titlePreview.textContent = inp.value.trim() || "（未命名）";
+          }
         })
       );
       el.cardList.appendChild(art);
@@ -451,6 +486,8 @@
     dirty = true;
     fillSourceFilters();
     renderCards();
+    const fresh = el.cardList.querySelector(`.egg-card[data-id="${CSS.escape(card.id)}"]`);
+    if (fresh) fresh.open = true;
     updateStats(working);
     el.addTitle.value = "";
     el.addContent.value = "";

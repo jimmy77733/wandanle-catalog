@@ -12,6 +12,22 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("wandanle_upload_theme");
+          var theme =
+            saved === "dark" || saved === "light"
+              ? saved
+              : window.matchMedia("(prefers-color-scheme: dark)").matches
+                ? "dark"
+                : "light";
+          document.documentElement.setAttribute("data-theme", theme);
+        } catch (_) {
+          document.documentElement.setAttribute("data-theme", "light");
+        }
+      })();
+    </script>
   </head>
   <body>
     <div class="shell">
@@ -53,7 +69,13 @@
             <span>合并進線上底稿</span>
             <input id="file-delta" type="file" accept=".json,application/json" />
           </label>
-          <button type="button" class="btn-secondary" id="load-live-btn">載入線上版</button>
+          <button type="button" class="btn-live" id="load-live-btn">
+            <span class="btn-live-icon" aria-hidden="true">☁</span>
+            <span class="btn-live-text">
+              <strong>載入線上版</strong>
+              <small>從 CDN 拉取最新圖鑑</small>
+            </span>
+          </button>
         </div>
 
         <div class="preview" id="stats" hidden>
@@ -192,6 +214,17 @@
         <a href="https://github.com/jimmy77733/wandanle-catalog/blob/main/README.md">README</a>
       </p>
     </div>
+
+    <button
+      type="button"
+      class="theme-fab"
+      id="theme-toggle"
+      aria-label="切換深色或淺色主題"
+      title="切換主題"
+    >
+      <span class="theme-fab-sun" aria-hidden="true">☀</span>
+      <span class="theme-fab-moon" aria-hidden="true">☾</span>
+    </button>
 
     <script src="./upload.config.js"></script>
     <script src="./catalog-core.js"></script>
