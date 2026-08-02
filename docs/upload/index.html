@@ -119,7 +119,13 @@
             <input id="filter-q" type="text" placeholder="標題／內容／編號" />
           </label>
         </div>
-        <p class="hint" id="filter-meta"></p>
+        <div class="filter-meta-row">
+          <p class="hint" id="filter-meta"></p>
+          <div class="row tight filter-fold-actions">
+            <button type="button" class="btn-ghost btn-mini" id="expand-all-btn">全部展開</button>
+            <button type="button" class="btn-ghost btn-mini" id="collapse-all-btn">全部收合</button>
+          </div>
+        </div>
         <div id="card-list" class="card-list"></div>
 
         <details class="add-panel" id="add-panel">

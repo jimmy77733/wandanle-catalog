@@ -67,6 +67,8 @@
     filterSource: $("filter-source"),
     filterQ: $("filter-q"),
     filterMeta: $("filter-meta"),
+    expandAllBtn: $("expand-all-btn"),
+    collapseAllBtn: $("collapse-all-btn"),
     cardList: $("card-list"),
     applyBtn: $("apply-btn"),
     dlWorkBtn: $("dl-work-btn"),
@@ -90,6 +92,8 @@
   let liveCatalog = null;
   let working = null;
   let baselineForDiff = null;
+  /** @type {number|null} */
+  let baselineVersion = null;
   let valid = false;
   let dirty = false;
 
@@ -328,10 +332,31 @@
     return escapeHtml(s).replace(/'/g, "&#39;");
   }
 
+  function setBaseline(catalog, versionHint) {
+    baselineForDiff = Core.cloneCatalog(catalog);
+    baselineVersion =
+      versionHint != null
+        ? versionHint
+        : catalog && catalog.version != null
+          ? catalog.version
+          : null;
+    refreshBaselineButtons();
+  }
+
+  function refreshBaselineButtons() {
+    el.histList.querySelectorAll("[data-act='diff']").forEach((btn) => {
+      const ver = Number(btn.dataset.version);
+      const active = baselineVersion != null && ver === baselineVersion;
+      btn.classList.toggle("btn-baseline-active", active);
+      btn.textContent = active ? "當前差異基準" : "當差異基準";
+      btn.setAttribute("aria-pressed", active ? "true" : "false");
+    });
+  }
+
   function setWorking(data, opts = {}) {
     working = Core.cloneCatalog(data);
     if (!baselineForDiff || opts.resetBaseline) {
-      baselineForDiff = liveCatalog ? Core.cloneCatalog(liveCatalog) : Core.cloneCatalog(data);
+      setBaseline(liveCatalog ? liveCatalog : data);
     }
     dirty = false;
     const errors = Core.validateCatalog(working, liveCatalog);
@@ -440,6 +465,17 @@
     });
   });
 
+  el.expandAllBtn?.addEventListener("click", () => {
+    el.cardList.querySelectorAll("details.egg-card").forEach((node) => {
+      node.open = true;
+    });
+  });
+  el.collapseAllBtn?.addEventListener("click", () => {
+    el.cardList.querySelectorAll("details.egg-card").forEach((node) => {
+      node.open = false;
+    });
+  });
+
   el.applyBtn.addEventListener("click", () => {
     collectEditsFromDOM();
     setWorking(working);
@@ -534,7 +570,7 @@
     try {
       if (!baselineForDiff) {
         await ensureLive();
-        baselineForDiff = Core.cloneCatalog(liveCatalog);
+        setBaseline(liveCatalog);
       }
       renderDiff(baselineForDiff, working);
       el.diffCard.classList.remove("hidden");
@@ -553,10 +589,7 @@
     }
   }
 
-  el.openHistBtn.addEventListener("click", async () => {
-    el.histCard.classList.remove("hidden");
-    el.histList.innerHTML = `<p class="hint">載入中…</p>`;
-    const manifest = await loadManifest();
+  function renderHistList(manifest) {
     el.histList.innerHTML = "";
     if (!manifest.length) {
       el.histList.innerHTML = `<div class="hist-item"><div><h3>尚無封存</h3><p>成功上傳後會寫入 versions/。</p></div></div>`;
@@ -564,7 +597,8 @@
     }
     manifest.forEach((entry) => {
       const item = document.createElement("div");
-      item.className = "hist-item";
+      const isActive = baselineVersion != null && entry.version === baselineVersion;
+      item.className = `hist-item${isActive ? " hist-item-baseline" : ""}`;
       item.innerHTML = `
         <div>
           <h3>版本 ${entry.version}</h3>
@@ -572,7 +606,13 @@
         </div>
         <div class="actions">
           <button type="button" class="btn-secondary btn-mini" data-act="dl">下載</button>
-          <button type="button" class="btn-ghost btn-mini" data-act="diff">當差異基準</button>
+          <button
+            type="button"
+            class="btn-ghost btn-mini${isActive ? " btn-baseline-active" : ""}"
+            data-act="diff"
+            data-version="${entry.version}"
+            aria-pressed="${isActive ? "true" : "false"}"
+          >${isActive ? "當前差異基準" : "當差異基準"}</button>
         </div>`;
       item.querySelector('[data-act="dl"]').addEventListener("click", async () => {
         try {
@@ -582,19 +622,34 @@
           showStatus(el.workStatus, "bad", String(e.message || e));
         }
       });
-      item.querySelector('[data-act="diff"]').addEventListener("click", async () => {
+      item.querySelector('[data-act="diff"]').addEventListener("click", async (ev) => {
+        const btn = ev.currentTarget;
+        btn.classList.add("is-pressed");
+        window.setTimeout(() => btn.classList.remove("is-pressed"), 180);
         try {
-          baselineForDiff = await fetchJSON(CFG.versionFileURL(entry.path));
+          const data = await fetchJSON(CFG.versionFileURL(entry.path));
+          setBaseline(data, entry.version);
           collectEditsFromDOM();
           renderDiff(baselineForDiff, working);
           el.diffCard.classList.remove("hidden");
-          showStatus(el.workStatus, "info", `差異基準已設為 version ${entry.version}`);
+          el.histList.querySelectorAll(".hist-item").forEach((node) => {
+            node.classList.remove("hist-item-baseline");
+          });
+          item.classList.add("hist-item-baseline");
+          showStatus(el.workStatus, "ok", `差異基準已設為 version ${entry.version}`);
         } catch (e) {
           showStatus(el.workStatus, "bad", String(e.message || e));
         }
       });
       el.histList.appendChild(item);
     });
+  }
+
+  el.openHistBtn.addEventListener("click", async () => {
+    el.histCard.classList.remove("hidden");
+    el.histList.innerHTML = `<p class="hint">載入中…</p>`;
+    const manifest = await loadManifest();
+    renderHistList(manifest);
     el.histCard.scrollIntoView({ behavior: "smooth", block: "start" });
   });
   el.closeHistBtn.addEventListener("click", () => el.histCard.classList.add("hidden"));
@@ -705,7 +760,13 @@
         if (!commitUrl) commitUrl = put.commit?.html_url || "";
       }
       liveCatalog = Core.cloneCatalog(working);
-      baselineForDiff = Core.cloneCatalog(working);
+      setBaseline(working, working.version);
+      updateStats(working);
+      showStatus(
+        el.workStatus,
+        "ok",
+        `載入圖鑑已同步為線上最新：version=${working.version}、${working.cards.length} 張（相對線上新增 0）`
+      );
       showStatus(
         el.publishStatus,
         "ok",
@@ -713,6 +774,9 @@
           commitUrl ? `\n${commitUrl}` : ""
         }`
       );
+      if (!el.histCard.classList.contains("hidden")) {
+        renderHistList(manifest);
+      }
     } catch (e) {
       showStatus(el.publishStatus, "bad", String(e.message || e));
     } finally {

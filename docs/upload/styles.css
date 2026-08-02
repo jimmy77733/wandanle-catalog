@@ -155,9 +155,17 @@ label { display: block; font-size: 0.85rem; font-weight: 600; margin-bottom: 6px
 input[type="password"], input[type="text"], select, textarea {
   width: 100%; padding: 12px 14px; border-radius: 14px;
   border: 1px solid var(--line); background: var(--input-bg); font: inherit; color: var(--ink);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
 }
 
 textarea { resize: vertical; min-height: 72px; }
+
+select:hover,
+input[type="password"]:hover,
+input[type="text"]:hover,
+textarea:hover {
+  border-color: rgba(224, 154, 31, 0.55);
+}
 
 input:focus, select:focus, textarea:focus {
   outline: 2px solid rgba(244, 185, 66, 0.55); border-color: var(--yolk);
@@ -181,23 +189,66 @@ input:focus, select:focus, textarea:focus {
 button {
   appearance: none; border: none; border-radius: 999px;
   padding: 12px 18px; font: inherit; font-weight: 700; cursor: pointer;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s, background 0.2s;
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    opacity 0.15s,
+    background 0.2s,
+    border-color 0.15s,
+    color 0.15s,
+    filter 0.15s;
   color: var(--ink);
 }
-button:active { transform: scale(0.98); }
-button:disabled { opacity: 0.45; cursor: not-allowed; }
+button:hover:not(:disabled) { transform: translateY(-1px); }
+button:active:not(:disabled),
+button.is-pressed:not(:disabled) { transform: scale(0.96); filter: brightness(0.96); }
+button:focus-visible {
+  outline: 2px solid var(--yolk);
+  outline-offset: 2px;
+}
+button:disabled { opacity: 0.45; cursor: not-allowed; transform: none; }
 
 .btn-primary {
   background: linear-gradient(180deg, var(--yolk), var(--yolk-deep));
   color: #2b2118; box-shadow: 0 6px 16px rgba(224, 154, 31, 0.35);
+}
+.btn-primary:hover:not(:disabled) {
+  box-shadow: 0 10px 22px rgba(224, 154, 31, 0.42);
+  filter: brightness(1.04);
 }
 .btn-secondary {
   background: var(--btn-secondary-bg);
   color: var(--ink);
   border: 1px solid var(--line);
 }
-.btn-ghost { background: transparent; color: var(--muted); border: 1px dashed var(--line); }
+.btn-secondary:hover:not(:disabled) {
+  border-color: var(--yolk);
+  box-shadow: 0 4px 14px rgba(224, 154, 31, 0.18);
+}
+.btn-ghost {
+  background: transparent;
+  color: var(--muted);
+  border: 1px dashed var(--line);
+}
+.btn-ghost:hover:not(:disabled) {
+  color: var(--ink);
+  border-color: var(--yolk);
+  background: rgba(242, 179, 61, 0.1);
+}
 .btn-mini { padding: 8px 12px; font-size: 0.82rem; }
+
+.btn-baseline-active,
+.btn-baseline-active:hover:not(:disabled) {
+  color: var(--ok);
+  border-style: solid;
+  border-color: var(--ok);
+  background: var(--status-ok-bg);
+  box-shadow: 0 0 0 1px var(--ok), 0 4px 14px rgba(47, 143, 91, 0.22);
+}
+.hist-item-baseline {
+  border-color: var(--ok);
+  box-shadow: 0 0 0 1px var(--ok);
+}
 
 /* 載入線上版 */
 .btn-live {
@@ -244,8 +295,14 @@ button:disabled { opacity: 0.45; cursor: not-allowed; }
 .drop {
   border: 2px dashed rgba(224, 154, 31, 0.45); border-radius: 18px;
   padding: 28px 16px; text-align: center; background: var(--drop-bg);
-  transition: border-color 0.2s, background 0.2s; cursor: pointer; flex: 1; min-width: 160px;
+  transition: border-color 0.2s, background 0.2s, transform 0.15s, box-shadow 0.15s;
+  cursor: pointer; flex: 1; min-width: 160px;
   color: var(--ink);
+}
+.drop:hover {
+  border-color: var(--yolk-deep);
+  box-shadow: 0 6px 16px rgba(224, 154, 31, 0.16);
+  transform: translateY(-1px);
 }
 .drop span { color: var(--muted); font-size: 0.85rem; }
 .drop-inline { padding: 18px 14px; }
@@ -280,6 +337,17 @@ button:disabled { opacity: 0.45; cursor: not-allowed; }
   display: grid; grid-template-columns: 1fr 1.2fr 1.4fr; gap: 10px; margin: 12px 0;
 }
 .filters .grow { min-width: 0; }
+
+.filter-meta-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 12px;
+  margin-bottom: 4px;
+}
+.filter-meta-row .hint { margin: 0; }
+.filter-fold-actions { margin-top: 0; }
 
 .card-list { display: flex; flex-direction: column; gap: 12px; max-height: 640px; overflow: auto; padding-right: 4px; }
 
