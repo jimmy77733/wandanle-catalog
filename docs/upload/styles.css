@@ -46,24 +46,14 @@ body {
   animation: float-in 0.7s ease both;
 }
 
-.egg {
-  width: 72px;
+.brand-mark {
+  width: 88px;
   height: 88px;
-  margin: 0 auto 10px;
-  border-radius: 50% 50% 46% 46%;
-  background: linear-gradient(180deg, #fffefb 0%, #ffe9c2 70%, var(--yolk) 100%);
+  margin: 0 auto 12px;
+  border-radius: 22px;
+  object-fit: cover;
   box-shadow: var(--shadow);
-  position: relative;
-  animation: wobble 4s ease-in-out infinite;
-}
-
-.egg::after {
-  content: "";
-  position: absolute;
-  inset: 28% 22% auto;
-  height: 28%;
-  border-radius: 50%;
-  background: radial-gradient(circle at 40% 40%, #ffe27a, var(--yolk-deep));
+  animation: soft-pop 3.6s ease-in-out infinite;
 }
 
 .brand h1 {
@@ -282,13 +272,13 @@ button:disabled {
   color: #8a5a2b;
 }
 
-@keyframes wobble {
+@keyframes soft-pop {
   0%,
   100% {
-    transform: rotate(-2deg);
+    transform: translateY(0);
   }
   50% {
-    transform: rotate(2deg);
+    transform: translateY(-4px);
   }
 }
 

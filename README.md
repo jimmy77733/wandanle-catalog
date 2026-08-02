@@ -1,38 +1,45 @@
 # 灣蛋啦｜圖鑑資料
 
-公開託管《灣蛋啦》冷知識圖鑑 JSON（**不含** iOS App 源碼）。
+公開託管 iOS App《灣蛋啦》使用的冷知識圖鑑 JSON（**不含** App 原始碼）。
 
 ## 下載
 
-- 主站（Firebase Hosting）：  
-  https://wandanle-catalog.web.app/knowledge_cards.json
-- 本倉庫備援：  
-  https://raw.githubusercontent.com/jimmy77733/wandanle-catalog/main/knowledge_cards.json
+| 來源 | URL |
+|------|-----|
+| 主站（Firebase Hosting） | https://wandanle-catalog.web.app/knowledge_cards.json |
+| 本倉庫備援（raw） | https://raw.githubusercontent.com/jimmy77733/wandanle-catalog/main/knowledge_cards.json |
 
 檔案：`knowledge_cards.json`（與 `public/knowledge_cards.json` 內容相同）。
 
-## 維護者：上傳備用站（建議主路徑）
+## 資料格式（摘要）
 
-當 Gemini Spark／Drive／Apps Script 不穩時，用 **灣蛋配送站** 驗證並以 Fine-grained PAT 寫入本 repo，再由 Action 部署 Firebase。
+根物件僅含：`version`、`updatedAt`、`cards`。  
+每張卡含：`id`、`title`、`content`、`category`（`history`｜`food`｜`geo`）、`sourceName`、`sourceURL`、`funFactValue`。
 
-- 頁面（啟用 Pages 後）：  
-  https://jimmy77733.github.io/wandanle-catalog/upload/
-- 說明：[`docs/upload/README.md`](docs/upload/README.md)（站門密碼、PAT、Pages、Cloudflare Access）
-- 寫入保護：[`docs/repo-protection.md`](docs/repo-protection.md)
+更新原則：以**完整 catalog** 覆寫；`version` 遞增；總張數不得少於上一版。部署前由 GitHub Action 再驗證一次。
 
-**公開可讀 ≠ 路人可 commit。** 寫入需要你的帳號或 PAT。
+## 怎麼更新到線上？
 
-### 啟用 GitHub Pages（一次）
+維護流程（概念）：
 
-Settings → Pages → Deploy from branch → `main`／`/docs` → 儲存。
+```text
+產出完整 knowledge_cards.json
+  → 寫入本倉庫（根目錄與 public/）
+  → GitHub Action 驗證並部署 Firebase
+  → App／網站讀取 CDN（失敗則改讀 raw）
+```
 
-## 可選：Drive → Apps Script
+實務上可透過：
 
-Gemini 在 Drive 資料夾**新建**版本化 JSON → Apps Script 取最新檔寫入本 repo → Action 部署 Firebase。  
-設定：[`automation/apps-script/README.md`](automation/apps-script/README.md)。  
-此路徑保留；不再當作唯一自動化。
+- **灣蛋配送站**（靜態驗證／發布頁）：https://jimmy77733.github.io/wandanle-catalog/upload/
+- 或具有本倉庫寫入權的 git／API 流程  
+- （可選）外部中繼區同步進本倉庫，見 [`automation/apps-script/`](automation/apps-script/)
 
-## 工作流解說（公開）
+本倉庫**公開可讀**；寫入僅限具備權限的維護者。說明見 [`docs/repo-protection.md`](docs/repo-protection.md)。
 
+配送站頁面說明：[`docs/upload/README.md`](docs/upload/README.md)。
+
+## 更多解說
+
+- 架構說明：[`docs/catalog-automation-workflow.md`](docs/catalog-automation-workflow.md)
 - PDF：[`docs/catalog-automation-workflow.pdf`](docs/catalog-automation-workflow.pdf)
-- Markdown：[`docs/catalog-automation-workflow.md`](docs/catalog-automation-workflow.md)

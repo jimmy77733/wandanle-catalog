@@ -16,18 +16,19 @@
   <body>
     <div class="shell">
       <header class="brand">
-        <div class="egg" aria-hidden="true"></div>
+        <img
+          class="brand-mark"
+          src="./brand.png"
+          width="88"
+          height="88"
+          alt="灣蛋啦"
+        />
         <h1>灣蛋配送站</h1>
         <p class="sub">たまご便 · 圖鑑 JSON 驗證與發布</p>
       </header>
 
       <section id="gate-card" class="card">
         <h2>站門密碼</h2>
-        <p class="hint">
-          通過後才顯示上傳區。這只防路人誤入；真正寫入 GitHub 仍需要你的
-          Fine-grained PAT。預設密碼請見
-          <a href="./README.md">README</a>，務必改掉。
-        </p>
         <label for="gate">密碼</label>
         <input id="gate" type="password" autocomplete="current-password" />
         <div class="row">
@@ -61,11 +62,10 @@
         </div>
         <ul class="errors" id="errors" hidden></ul>
 
-        <h2 style="margin-top: 22px">GitHub PAT</h2>
+        <h2 style="margin-top: 22px">發布授權</h2>
         <p class="hint">
-          Fine-grained Personal Access Token：僅授權 repo
-          <strong>wandanle-catalog</strong>，權限
-          <strong>Contents: Read and write</strong>。只暫存在此瀏覽器工作階段，不會寫進倉庫。
+          寫入本倉庫需要具備 <strong>Contents</strong> 讀寫權限的 GitHub
+          token（僅限本資料庫 repo）。Token 只暫存在此瀏覽器工作階段。
         </p>
         <label for="pat">Token</label>
         <input id="pat" type="password" autocomplete="off" spellcheck="false" />
@@ -86,8 +86,8 @@
         <a href="https://wandanle-catalog.web.app/knowledge_cards.json">CDN</a>
         ·
         <a href="https://github.com/jimmy77733/wandanle-catalog">GitHub</a>
-        <br />
-        路人可讀不可寫；寫入需你的帳號或 PAT。詳見 README。
+        ·
+        <a href="https://github.com/jimmy77733/wandanle-catalog/blob/main/README.md">README</a>
       </p>
     </div>
 
