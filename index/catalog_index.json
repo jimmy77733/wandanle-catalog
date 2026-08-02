@@ -1,0 +1,1183 @@
+{
+  "version": 9,
+  "updatedAt": "2026-08-02T02:00:00Z",
+  "cardCount": 168,
+  "cards": [
+    {
+      "id": "history-001",
+      "title": "全台最老的國定古蹟之一",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "titleKey": "全台最老的國定古蹟之一"
+    },
+    {
+      "id": "history-002",
+      "title": "三級古蹟其實已經改名了",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "titleKey": "三級古蹟其實已經改名了"
+    },
+    {
+      "id": "history-003",
+      "title": "台灣有活的文化資產",
+      "category": "history",
+      "sourceName": "文化部",
+      "titleKey": "台灣有活的文化資產"
+    },
+    {
+      "id": "history-004",
+      "title": "諺語：青狂驚空",
+      "category": "history",
+      "sourceName": "教育部臺灣閩南語常用詞辭典",
+      "titleKey": "諺語青狂驚空"
+    },
+    {
+      "id": "history-005",
+      "title": "呷飽未不是真的只問肚子",
+      "category": "history",
+      "sourceName": "文化部",
+      "titleKey": "呷飽未不是真的只問肚子"
+    },
+    {
+      "id": "history-006",
+      "title": "紅磚建築為何常見於老街",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "titleKey": "紅磚建築為何常見於老街"
+    },
+    {
+      "id": "history-007",
+      "title": "神社遺跡為何還留在校園",
+      "category": "history",
+      "sourceName": "文化資產觀察",
+      "titleKey": "神社遺跡為何還留在校園"
+    },
+    {
+      "id": "history-008",
+      "title": "燈塔也曾是高科技",
+      "category": "history",
+      "sourceName": "交通部航港局",
+      "titleKey": "燈塔也曾是高科技"
+    },
+    {
+      "id": "history-009",
+      "title": "老地圖上的堡不一定是城堡",
+      "category": "history",
+      "sourceName": "內政部",
+      "titleKey": "老地圖上的堡不一定是城堡"
+    },
+    {
+      "id": "history-010",
+      "title": "鐵路讓市鎮重新洗牌",
+      "category": "history",
+      "sourceName": "交通史／鐵道文化",
+      "titleKey": "鐵路讓市鎮重新洗牌"
+    },
+    {
+      "id": "history-011",
+      "title": "台灣錢淹腳目從哪來",
+      "category": "history",
+      "sourceName": "民間諺語",
+      "titleKey": "台灣錢淹腳目從哪來"
+    },
+    {
+      "id": "history-012",
+      "title": "古蹟修復不是修舊如舊而已",
+      "category": "history",
+      "sourceName": "文資修復原則",
+      "titleKey": "古蹟修復不是修舊如舊而已"
+    },
+    {
+      "id": "history-013",
+      "title": "老戲院為何有二輪",
+      "category": "history",
+      "sourceName": "影視文化史",
+      "titleKey": "老戲院為何有二輪"
+    },
+    {
+      "id": "history-014",
+      "title": "隘勇線聽起來很電玩",
+      "category": "history",
+      "sourceName": "歷史地理",
+      "titleKey": "隘勇線聽起來很電玩"
+    },
+    {
+      "id": "history-015",
+      "title": "博物館不只是放古董",
+      "category": "history",
+      "sourceName": "文化部博物館政策",
+      "titleKey": "博物館不只是放古董"
+    },
+    {
+      "id": "history-016",
+      "title": "台灣的神社數量曾很多",
+      "category": "history",
+      "sourceName": "歷史研究",
+      "titleKey": "台灣的神社數量曾很多"
+    },
+    {
+      "id": "history-017",
+      "title": "開台不只是口號",
+      "category": "history",
+      "sourceName": "移墾史",
+      "titleKey": "開台不只是口號"
+    },
+    {
+      "id": "history-018",
+      "title": "老照片裡的電線杆也是史料",
+      "category": "history",
+      "sourceName": "影像史方法",
+      "titleKey": "老照片裡的電線杆也是史料"
+    },
+    {
+      "id": "history-019",
+      "title": "義民信仰很在地",
+      "category": "history",
+      "sourceName": "民俗信仰研究",
+      "titleKey": "義民信仰很在地"
+    },
+    {
+      "id": "history-020",
+      "title": "城牆拆了路名還在",
+      "category": "history",
+      "sourceName": "都市史",
+      "titleKey": "城牆拆了路名還在"
+    },
+    {
+      "id": "history-021",
+      "title": "古蹟導覽其實是翻譯",
+      "category": "history",
+      "sourceName": "公共史學",
+      "titleKey": "古蹟導覽其實是翻譯"
+    },
+    {
+      "id": "history-022",
+      "title": "戰後眷村是獨特地景",
+      "category": "history",
+      "sourceName": "眷村文化資產",
+      "titleKey": "戰後眷村是獨特地景"
+    },
+    {
+      "id": "history-023",
+      "title": "午時水不是普通的水",
+      "category": "history",
+      "sourceName": "民俗資料",
+      "titleKey": "午時水不是普通的水"
+    },
+    {
+      "id": "history-024",
+      "title": "老街的騎樓為了什麼",
+      "category": "history",
+      "sourceName": "建築類型學",
+      "titleKey": "老街的騎樓為了什麼"
+    },
+    {
+      "id": "history-025",
+      "title": "地名裡的寮坑埔",
+      "category": "history",
+      "sourceName": "地名學",
+      "titleKey": "地名裡的寮坑埔"
+    },
+    {
+      "id": "history-026",
+      "title": "台灣燈塔有最南最北話題",
+      "category": "history",
+      "sourceName": "航港與觀光資料",
+      "titleKey": "台灣燈塔有最南最北話題"
+    },
+    {
+      "id": "history-027",
+      "title": "古蹟本體與保存區不同",
+      "category": "history",
+      "sourceName": "文資法",
+      "titleKey": "古蹟本體與保存區不同"
+    },
+    {
+      "id": "history-028",
+      "title": "隘寮地名超多的原因",
+      "category": "history",
+      "sourceName": "歷史地理",
+      "titleKey": "隘寮地名超多的原因"
+    },
+    {
+      "id": "history-029",
+      "title": "史料數位化改變挖寶方式",
+      "category": "history",
+      "sourceName": "政府資料開放平台",
+      "titleKey": "史料數位化改變挖寶方式"
+    },
+    {
+      "id": "history-030",
+      "title": "冷知識也可以很嚴謹",
+      "category": "history",
+      "sourceName": "本專案設計原則",
+      "titleKey": "冷知識也可以很嚴謹"
+    },
+    {
+      "id": "food-001",
+      "title": "全台最常見姓氏常變動前段班",
+      "category": "food",
+      "sourceName": "內政部戶政司開放資料",
+      "titleKey": "全台最常見姓氏常變動前段班"
+    },
+    {
+      "id": "food-002",
+      "title": "菜市場名也有排行榜",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "titleKey": "菜市場名也有排行榜"
+    },
+    {
+      "id": "food-003",
+      "title": "統一發票其實是消費大數據",
+      "category": "food",
+      "sourceName": "財政部發票概念資料",
+      "titleKey": "統一發票其實是消費大數據"
+    },
+    {
+      "id": "food-004",
+      "title": "夜市文化是都市基礎建設",
+      "category": "food",
+      "sourceName": "地方市集觀察",
+      "titleKey": "夜市文化是都市基礎建設"
+    },
+    {
+      "id": "food-005",
+      "title": "珍珠奶茶是台灣輸出的語言",
+      "category": "food",
+      "sourceName": "飲食文化",
+      "titleKey": "珍珠奶茶是台灣輸出的語言"
+    },
+    {
+      "id": "food-006",
+      "title": "滷味的關鍵其實是湯頭時間",
+      "category": "food",
+      "sourceName": "小吃技藝",
+      "titleKey": "滷味的關鍵其實是湯頭時間"
+    },
+    {
+      "id": "food-007",
+      "title": "刈包為什麼像漢堡又不是",
+      "category": "food",
+      "sourceName": "飲食史",
+      "titleKey": "刈包為什麼像漢堡又不是"
+    },
+    {
+      "id": "food-008",
+      "title": "雞排外酥內嫩靠溫度差",
+      "category": "food",
+      "sourceName": "炸物工藝",
+      "titleKey": "雞排外酥內嫩靠溫度差"
+    },
+    {
+      "id": "food-009",
+      "title": "豆花鹹甜戰線超長",
+      "category": "food",
+      "sourceName": "地方小吃",
+      "titleKey": "豆花鹹甜戰線超長"
+    },
+    {
+      "id": "food-010",
+      "title": "牛肉麵流派比偶像團體還多",
+      "category": "food",
+      "sourceName": "飲食流派",
+      "titleKey": "牛肉麵流派比偶像團體還多"
+    },
+    {
+      "id": "food-011",
+      "title": "蚵仔煎是沿海常識題",
+      "category": "food",
+      "sourceName": "沿海飲食",
+      "titleKey": "蚵仔煎是沿海常識題"
+    },
+    {
+      "id": "food-012",
+      "title": "便當文化等於移動式營養學",
+      "category": "food",
+      "sourceName": "日常飲食",
+      "titleKey": "便當文化等於移動式營養學"
+    },
+    {
+      "id": "food-013",
+      "title": "手搖飲糖度是精密工程",
+      "category": "food",
+      "sourceName": "手搖產業",
+      "titleKey": "手搖飲糖度是精密工程"
+    },
+    {
+      "id": "food-014",
+      "title": "刈包碗粿筒仔米糕的共同點",
+      "category": "food",
+      "sourceName": "米食文化",
+      "titleKey": "刈包碗粿筒仔米糕的共同點"
+    },
+    {
+      "id": "food-015",
+      "title": "鹹酥雞的雙重酥脆",
+      "category": "food",
+      "sourceName": "夜市炸物",
+      "titleKey": "鹹酥雞的雙重酥脆"
+    },
+    {
+      "id": "food-016",
+      "title": "愛玉是氣溫的朋友",
+      "category": "food",
+      "sourceName": "甜品工藝",
+      "titleKey": "愛玉是氣溫的朋友"
+    },
+    {
+      "id": "food-017",
+      "title": "粉圓跟珍珠不是同一種情緒",
+      "category": "food",
+      "sourceName": "飲料配料",
+      "titleKey": "粉圓跟珍珠不是同一種情緒"
+    },
+    {
+      "id": "food-018",
+      "title": "滷肉飯的肥瘦比是信仰",
+      "category": "food",
+      "sourceName": "家常菜",
+      "titleKey": "滷肉飯的肥瘦比是信仰"
+    },
+    {
+      "id": "food-019",
+      "title": "早餐店是台灣的社交基礎設施",
+      "category": "food",
+      "sourceName": "日常觀察",
+      "titleKey": "早餐店是台灣的社交基礎設施"
+    },
+    {
+      "id": "food-020",
+      "title": "貢丸湯的彈很科學",
+      "category": "food",
+      "sourceName": "食品加工常識",
+      "titleKey": "貢丸湯的彈很科學"
+    },
+    {
+      "id": "food-021",
+      "title": "芒果冰戰報每年開打",
+      "category": "food",
+      "sourceName": "水果經濟",
+      "titleKey": "芒果冰戰報每年開打"
+    },
+    {
+      "id": "food-022",
+      "title": "大腸包小腸是結構幽默",
+      "category": "food",
+      "sourceName": "台式小吃",
+      "titleKey": "大腸包小腸是結構幽默"
+    },
+    {
+      "id": "food-023",
+      "title": "麻辣鍋是調味全球化現場",
+      "category": "food",
+      "sourceName": "鍋物文化",
+      "titleKey": "麻辣鍋是調味全球化現場"
+    },
+    {
+      "id": "food-024",
+      "title": "鳳梨酥的鳳梨有時很複雜",
+      "category": "food",
+      "sourceName": "伴手禮產業",
+      "titleKey": "鳳梨酥的鳳梨有時很複雜"
+    },
+    {
+      "id": "food-025",
+      "title": "蛋餅加起司是近代發明",
+      "category": "food",
+      "sourceName": "菜單演化",
+      "titleKey": "蛋餅加起司是近代發明"
+    },
+    {
+      "id": "food-026",
+      "title": "米糕的油飯親戚很多",
+      "category": "food",
+      "sourceName": "米食系譜",
+      "titleKey": "米糕的油飯親戚很多"
+    },
+    {
+      "id": "food-027",
+      "title": "鹽酥與椒鹽是兩種宇宙",
+      "category": "food",
+      "sourceName": "炸物調味",
+      "titleKey": "鹽酥與椒鹽是兩種宇宙"
+    },
+    {
+      "id": "food-028",
+      "title": "豆干的百變身分",
+      "category": "food",
+      "sourceName": "加工豆製品",
+      "titleKey": "豆干的百變身分"
+    },
+    {
+      "id": "food-029",
+      "title": "姓氏統計也能變冷知識卡",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "titleKey": "姓氏統計也能變冷知識卡"
+    },
+    {
+      "id": "food-030",
+      "title": "發票載具改變了對獎儀式",
+      "category": "food",
+      "sourceName": "財政部",
+      "titleKey": "發票載具改變了對獎儀式"
+    },
+    {
+      "id": "geo-001",
+      "title": "台灣有超長的路名詩",
+      "category": "geo",
+      "sourceName": "內政部地政司",
+      "titleKey": "台灣有超長的路名詩"
+    },
+    {
+      "id": "geo-002",
+      "title": "極端高溫往往出現在特定盆地",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "titleKey": "極端高溫往往出現在特定盆地"
+    },
+    {
+      "id": "geo-003",
+      "title": "單日降雨可以很誇張",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "titleKey": "單日降雨可以很誇張"
+    },
+    {
+      "id": "geo-004",
+      "title": "地震測報是島嶼日常基礎建設",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "titleKey": "地震測報是島嶼日常基礎建設"
+    },
+    {
+      "id": "geo-005",
+      "title": "步道分級不是嚇你的",
+      "category": "geo",
+      "sourceName": "農業部林業及自然保育署",
+      "titleKey": "步道分級不是嚇你的"
+    },
+    {
+      "id": "geo-006",
+      "title": "坑字路名常跟河谷有關",
+      "category": "geo",
+      "sourceName": "地名／地形",
+      "titleKey": "坑字路名常跟河谷有關"
+    },
+    {
+      "id": "geo-007",
+      "title": "橋樑名字有時比橋還有故事",
+      "category": "geo",
+      "sourceName": "交通部／地方政府橋梁資料",
+      "titleKey": "橋樑名字有時比橋還有故事"
+    },
+    {
+      "id": "geo-008",
+      "title": "海岸線每年都在微調",
+      "category": "geo",
+      "sourceName": "海洋與水利觀測",
+      "titleKey": "海岸線每年都在微調"
+    },
+    {
+      "id": "geo-009",
+      "title": "離島天氣可以跟本島完全不同檔",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "titleKey": "離島天氣可以跟本島完全不同檔"
+    },
+    {
+      "id": "geo-010",
+      "title": "海拔一高溫度公式就上場",
+      "category": "geo",
+      "sourceName": "大氣科學常識",
+      "titleKey": "海拔一高溫度公式就上場"
+    },
+    {
+      "id": "geo-011",
+      "title": "崙崎坡都是地形小抄",
+      "category": "geo",
+      "sourceName": "地名學",
+      "titleKey": "崙崎坡都是地形小抄"
+    },
+    {
+      "id": "geo-012",
+      "title": "濕地是城市的海綿",
+      "category": "geo",
+      "sourceName": "環境與濕力保育",
+      "titleKey": "濕地是城市的海綿"
+    },
+    {
+      "id": "geo-013",
+      "title": "台灣河流短而陡",
+      "category": "geo",
+      "sourceName": "自然地理",
+      "titleKey": "台灣河流短而陡"
+    },
+    {
+      "id": "geo-014",
+      "title": "風櫃風口地名超直球",
+      "category": "geo",
+      "sourceName": "地方風土",
+      "titleKey": "風櫃風口地名超直球"
+    },
+    {
+      "id": "geo-015",
+      "title": "國家公園不是只有爬山",
+      "category": "geo",
+      "sourceName": "內政部國家公園署",
+      "titleKey": "國家公園不是只有爬山"
+    },
+    {
+      "id": "geo-016",
+      "title": "寮也可能在山上",
+      "category": "geo",
+      "sourceName": "歷史地理",
+      "titleKey": "寮也可能在山上"
+    },
+    {
+      "id": "geo-017",
+      "title": "都市熱島晚上更明顯",
+      "category": "geo",
+      "sourceName": "都市氣候",
+      "titleKey": "都市熱島晚上更明顯"
+    },
+    {
+      "id": "geo-018",
+      "title": "雨量站密度影響預報體感",
+      "category": "geo",
+      "sourceName": "氣象觀測",
+      "titleKey": "雨量站密度影響預報體感"
+    },
+    {
+      "id": "geo-019",
+      "title": "潮潮表是海邊行程的隱藏主線",
+      "category": "geo",
+      "sourceName": "海洋潮汐資料",
+      "titleKey": "潮潮表是海邊行程的隱藏主線"
+    },
+    {
+      "id": "geo-020",
+      "title": "台灣有雨影現象",
+      "category": "geo",
+      "sourceName": "氣候地理",
+      "titleKey": "台灣有雨影現象"
+    },
+    {
+      "id": "geo-021",
+      "title": "地標座標開放後更好玩",
+      "category": "geo",
+      "sourceName": "內政部",
+      "titleKey": "地標座標開放後更好玩"
+    },
+    {
+      "id": "geo-022",
+      "title": "溪圳溝水系三兄弟",
+      "category": "geo",
+      "sourceName": "水利地名",
+      "titleKey": "溪圳溝水系三兄弟"
+    },
+    {
+      "id": "geo-023",
+      "title": "冬季東北季風塑造北海岸性格",
+      "category": "geo",
+      "sourceName": "氣候與觀光",
+      "titleKey": "冬季東北季風塑造北海岸性格"
+    },
+    {
+      "id": "geo-024",
+      "title": "泥火山聽起來像科幻",
+      "category": "geo",
+      "sourceName": "地質景觀",
+      "titleKey": "泥火山聽起來像科幻"
+    },
+    {
+      "id": "geo-025",
+      "title": "路名重複是導航惡夢",
+      "category": "geo",
+      "sourceName": "門牌資料",
+      "titleKey": "路名重複是導航惡夢"
+    },
+    {
+      "id": "geo-026",
+      "title": "高山觀測站是寂寞的英雄",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "titleKey": "高山觀測站是寂寞的英雄"
+    },
+    {
+      "id": "geo-027",
+      "title": "河口是生態熱點也是風險帶",
+      "category": "geo",
+      "sourceName": "河川地理",
+      "titleKey": "河口是生態熱點也是風險帶"
+    },
+    {
+      "id": "geo-028",
+      "title": "段小段是地籍語言",
+      "category": "geo",
+      "sourceName": "地政資料",
+      "titleKey": "段小段是地籍語言"
+    },
+    {
+      "id": "geo-029",
+      "title": "衛星雲圖讓颱風變得可視化",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "titleKey": "衛星雲圖讓颱風變得可視化"
+    },
+    {
+      "id": "geo-030",
+      "title": "把氣象極值寫成故事就是藍蛋",
+      "category": "geo",
+      "sourceName": "中央氣象署開放資料",
+      "titleKey": "把氣象極值寫成故事就是藍蛋"
+    },
+    {
+      "id": "od-surname-陳",
+      "title": "台灣超常見的姓：陳",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "titleKey": "台灣超常見的姓陳"
+    },
+    {
+      "id": "od-surname-林",
+      "title": "台灣超常見的姓：林",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "titleKey": "台灣超常見的姓林"
+    },
+    {
+      "id": "od-surname-黃",
+      "title": "台灣超常見的姓：黃",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "titleKey": "台灣超常見的姓黃"
+    },
+    {
+      "id": "od-surname-張",
+      "title": "台灣超常見的姓：張",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "titleKey": "台灣超常見的姓張"
+    },
+    {
+      "id": "od-surname-李",
+      "title": "台灣超常見的姓：李",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "titleKey": "台灣超常見的姓李"
+    },
+    {
+      "id": "od-surname-王",
+      "title": "台灣超常見的姓：王",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "titleKey": "台灣超常見的姓王"
+    },
+    {
+      "id": "od-surname-吳",
+      "title": "台灣超常見的姓：吳",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "titleKey": "台灣超常見的姓吳"
+    },
+    {
+      "id": "od-surname-劉",
+      "title": "台灣超常見的姓：劉",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "titleKey": "台灣超常見的姓劉"
+    },
+    {
+      "id": "od-surname-蔡",
+      "title": "台灣超常見的姓：蔡",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "titleKey": "台灣超常見的姓蔡"
+    },
+    {
+      "id": "od-surname-楊",
+      "title": "台灣超常見的姓：楊",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "titleKey": "台灣超常見的姓楊"
+    },
+    {
+      "id": "od-surname-許",
+      "title": "台灣超常見的姓：許",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "titleKey": "台灣超常見的姓許"
+    },
+    {
+      "id": "od-surname-鄭",
+      "title": "台灣超常見的姓：鄭",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "titleKey": "台灣超常見的姓鄭"
+    },
+    {
+      "id": "od-surname-謝",
+      "title": "台灣超常見的姓：謝",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "titleKey": "台灣超常見的姓謝"
+    },
+    {
+      "id": "od-surname-郭",
+      "title": "台灣超常見的姓：郭",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "titleKey": "台灣超常見的姓郭"
+    },
+    {
+      "id": "od-surname-洪",
+      "title": "台灣超常見的姓：洪",
+      "category": "food",
+      "sourceName": "內政部戶政司",
+      "titleKey": "台灣超常見的姓洪"
+    },
+    {
+      "id": "od-weather-玉山",
+      "title": "氣象冷知識：玉山",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "titleKey": "氣象冷知識玉山"
+    },
+    {
+      "id": "od-weather-台北",
+      "title": "氣象冷知識：台北",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "titleKey": "氣象冷知識台北"
+    },
+    {
+      "id": "od-weather-高雄",
+      "title": "氣象冷知識：高雄",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "titleKey": "氣象冷知識高雄"
+    },
+    {
+      "id": "od-weather-花蓮",
+      "title": "氣象冷知識：花蓮",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "titleKey": "氣象冷知識花蓮"
+    },
+    {
+      "id": "od-weather-阿里山",
+      "title": "氣象冷知識：阿里山",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "titleKey": "氣象冷知識阿里山"
+    },
+    {
+      "id": "od-weather-澎湖",
+      "title": "氣象冷知識：澎湖",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "titleKey": "氣象冷知識澎湖"
+    },
+    {
+      "id": "od-weather-金門",
+      "title": "氣象冷知識：金門",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "titleKey": "氣象冷知識金門"
+    },
+    {
+      "id": "od-weather-台中",
+      "title": "氣象冷知識：台中",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "titleKey": "氣象冷知識台中"
+    },
+    {
+      "id": "od-weather-宜蘭",
+      "title": "氣象冷知識：宜蘭",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "titleKey": "氣象冷知識宜蘭"
+    },
+    {
+      "id": "od-weather-恆春",
+      "title": "氣象冷知識：恆春",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "titleKey": "氣象冷知識恆春"
+    },
+    {
+      "id": "od-weather-嘉義",
+      "title": "氣象冷知識：嘉義",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "titleKey": "氣象冷知識嘉義"
+    },
+    {
+      "id": "od-weather-基隆",
+      "title": "氣象冷知識：基隆",
+      "category": "geo",
+      "sourceName": "中央氣象署",
+      "titleKey": "氣象冷知識基隆"
+    },
+    {
+      "id": "od-heritage-赤崁樓",
+      "title": "文資亮點：赤崁樓",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "titleKey": "文資亮點赤崁樓"
+    },
+    {
+      "id": "od-heritage-龍山寺",
+      "title": "文資亮點：龍山寺",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "titleKey": "文資亮點龍山寺"
+    },
+    {
+      "id": "od-heritage-總統府",
+      "title": "文資亮點：總統府",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "titleKey": "文資亮點總統府"
+    },
+    {
+      "id": "od-heritage-淡水紅毛城",
+      "title": "文資亮點：淡水紅毛城",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "titleKey": "文資亮點淡水紅毛城"
+    },
+    {
+      "id": "od-heritage-鹿港龍山寺",
+      "title": "文資亮點：鹿港龍山寺",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "titleKey": "文資亮點鹿港龍山寺"
+    },
+    {
+      "id": "od-heritage-霧峰林家",
+      "title": "文資亮點：霧峰林家",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "titleKey": "文資亮點霧峰林家"
+    },
+    {
+      "id": "od-heritage-金門風獅爺",
+      "title": "文資亮點：金門風獅爺",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "titleKey": "文資亮點金門風獅爺"
+    },
+    {
+      "id": "od-heritage-北門",
+      "title": "文資亮點：北門",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "titleKey": "文資亮點北門"
+    },
+    {
+      "id": "od-heritage-安平古堡",
+      "title": "文資亮點：安平古堡",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "titleKey": "文資亮點安平古堡"
+    },
+    {
+      "id": "od-heritage-台中州廳",
+      "title": "文資亮點：台中州廳",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "titleKey": "文資亮點台中州廳"
+    },
+    {
+      "id": "od-heritage-松山文創園區",
+      "title": "文資亮點：松山文創園區",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "titleKey": "文資亮點松山文創園區"
+    },
+    {
+      "id": "od-heritage-華山1914",
+      "title": "文資亮點：華山1914",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "titleKey": "文資亮點華山1914"
+    },
+    {
+      "id": "od-heritage-駁二藝術特區",
+      "title": "文資亮點：駁二藝術特區",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "titleKey": "文資亮點駁二藝術特區"
+    },
+    {
+      "id": "od-heritage-九份老街",
+      "title": "文資亮點：九份老街",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "titleKey": "文資亮點九份老街"
+    },
+    {
+      "id": "od-heritage-十分老街",
+      "title": "文資亮點：十分老街",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "titleKey": "文資亮點十分老街"
+    },
+    {
+      "id": "od-gemini-20260801-history-01",
+      "title": "台北府城門的東門與西門設計",
+      "category": "history",
+      "sourceName": "台北市文化局文化資產資料庫",
+      "titleKey": "台北府城門的東門與西門設計"
+    },
+    {
+      "id": "od-gemini-20260801-history-02",
+      "title": "台灣鐵路集集線的由來",
+      "category": "history",
+      "sourceName": "交通部觀光署",
+      "titleKey": "台灣鐵路集集線的由來"
+    },
+    {
+      "id": "od-gemini-20260801-food-01",
+      "title": "蚵仔煎地瓜粉醬汁特色",
+      "category": "food",
+      "sourceName": "農業部農業知識入口網",
+      "titleKey": "蚵仔煎地瓜粉醬汁特色"
+    },
+    {
+      "id": "od-gemini-20260801-food-02",
+      "title": "凍頂烏龍茶的烘焙工藝",
+      "category": "food",
+      "sourceName": "農業部茶及飲料作物改良場",
+      "titleKey": "凍頂烏龍茶的烘焙工藝"
+    },
+    {
+      "id": "od-gemini-20260801-geo-01",
+      "title": "台灣極東點三貂角燈塔",
+      "category": "geo",
+      "sourceName": "交通部航港局",
+      "titleKey": "台灣極東點三貂角燈塔"
+    },
+    {
+      "id": "od-gemini-20260801-geo-02",
+      "title": "澎湖桶盤嶼柱狀玄武岩",
+      "category": "geo",
+      "sourceName": "澎湖國家風景區管理處",
+      "titleKey": "澎湖桶盤嶼柱狀玄武岩"
+    },
+    {
+      "id": "od-gemini-20260801-history-03",
+      "title": "淡水紅毛城的旗幟變遷史",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "titleKey": "淡水紅毛城的旗幟變遷史"
+    },
+    {
+      "id": "od-gemini-20260801-history-04",
+      "title": "台灣古道隘勇線與隘丁制度",
+      "category": "history",
+      "sourceName": "農業部林業及自然保育署",
+      "titleKey": "台灣古道隘勇線與隘丁制度"
+    },
+    {
+      "id": "od-gemini-20260801-food-03",
+      "title": "台式香腸配生蒜頭的科學道理",
+      "category": "food",
+      "sourceName": "農業部農業知識入口網",
+      "titleKey": "台式香腸配生蒜頭的科學道理"
+    },
+    {
+      "id": "od-gemini-20260801-food-04",
+      "title": "天然愛玉洗愛玉籽的凝膠機制",
+      "category": "food",
+      "sourceName": "農業部苗栗區農業改良場",
+      "titleKey": "天然愛玉洗愛玉籽的凝膠機制"
+    },
+    {
+      "id": "od-gemini-20260801-geo-03",
+      "title": "台灣高山氣候降溫率",
+      "category": "geo",
+      "sourceName": "交通部中央氣象署",
+      "titleKey": "台灣高山氣候降溫率"
+    },
+    {
+      "id": "od-gemini-20260801-geo-04",
+      "title": "台灣最南點鵝鑾鼻燈塔",
+      "category": "geo",
+      "sourceName": "交通部航港局",
+      "titleKey": "台灣最南點鵝鑾鼻燈塔"
+    },
+    {
+      "id": "od-gemini-20260801-history-05",
+      "title": "基隆清代與日治砲台群",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "titleKey": "基隆清代與日治砲台群"
+    },
+    {
+      "id": "od-gemini-20260801-history-06",
+      "title": "高雄港蓬萊商港區史蹟",
+      "category": "history",
+      "sourceName": "高雄市政府文化局",
+      "titleKey": "高雄港蓬萊商港區史蹟"
+    },
+    {
+      "id": "od-gemini-20260801-food-05",
+      "title": "彰化肉圓低溫油炸工藝",
+      "category": "food",
+      "sourceName": "農業部農業知識入口網",
+      "titleKey": "彰化肉圓低溫油炸工藝"
+    },
+    {
+      "id": "od-gemini-20260801-food-06",
+      "title": "新竹米粉的十七份風乾法",
+      "category": "food",
+      "sourceName": "新竹市政府文化局",
+      "titleKey": "新竹米粉的十七份風乾法"
+    },
+    {
+      "id": "od-gemini-20260801-geo-05",
+      "title": "野柳地質公園海蝕奇觀",
+      "category": "geo",
+      "sourceName": "交通部觀光署北海岸及觀音山國家風景區管理處",
+      "titleKey": "野柳地質公園海蝕奇觀"
+    },
+    {
+      "id": "od-gemini-20260801-geo-06",
+      "title": "太魯閣立霧溪切穿大理岩峽谷",
+      "category": "geo",
+      "sourceName": "內政部國家公園署太魯閣國家公園管理處",
+      "titleKey": "太魯閣立霧溪切穿大理岩峽谷"
+    },
+    {
+      "id": "od-gemini-20260801-history-07",
+      "title": "安平追想曲與台南安平港",
+      "category": "history",
+      "sourceName": "台南市政府文化局",
+      "titleKey": "安平追想曲與台南安平港"
+    },
+    {
+      "id": "od-gemini-20260801-history-08",
+      "title": "新竹城隍廟歷史與市集文化",
+      "category": "history",
+      "sourceName": "新竹市文化局",
+      "titleKey": "新竹城隍廟歷史與市集文化"
+    },
+    {
+      "id": "od-gemini-20260801-food-07",
+      "title": "宜蘭糕渣的熱度科學",
+      "category": "food",
+      "sourceName": "農業部農業知識入口網",
+      "titleKey": "宜蘭糕渣的熱度科學"
+    },
+    {
+      "id": "od-gemini-20260801-food-08",
+      "title": "台南虱目魚肚的清蒸與煎炸工藝",
+      "category": "food",
+      "sourceName": "農業部漁業署",
+      "titleKey": "台南虱目魚肚的清蒸與煎炸工藝"
+    },
+    {
+      "id": "od-gemini-20260801-geo-07",
+      "title": "高雄旗津海岸沙洲地形",
+      "category": "geo",
+      "sourceName": "交通部觀光署",
+      "titleKey": "高雄旗津海岸沙洲地形"
+    },
+    {
+      "id": "od-gemini-20260801-geo-08",
+      "title": "雪山山脈圈谷冰河地形",
+      "category": "geo",
+      "sourceName": "內政部國家公園署雪霸國家公園管理處",
+      "titleKey": "雪山山脈圈谷冰河地形"
+    },
+    {
+      "id": "od-gemini-20260801-history-09",
+      "title": "九份昇平戲院與金礦歷史",
+      "category": "history",
+      "sourceName": "新北市政府文化局",
+      "titleKey": "九份昇平戲院與金礦歷史"
+    },
+    {
+      "id": "od-gemini-20260801-history-10",
+      "title": "台南鹽水蜂炮的傳統禦病起源",
+      "category": "history",
+      "sourceName": "台南市政府文化局",
+      "titleKey": "台南鹽水蜂炮的傳統禦病起源"
+    },
+    {
+      "id": "od-gemini-20260801-food-09",
+      "title": "台灣傳統刨冰配料「黑糖粉粿」的植物天然黃色",
+      "category": "food",
+      "sourceName": "農業部農業知識入口網",
+      "titleKey": "台灣傳統刨冰配料黑糖粉粿的植物天然黃色"
+    },
+    {
+      "id": "od-gemini-20260801-food-10",
+      "title": "宜蘭特色小吃「蒜味肉羹」的重蒜風味",
+      "category": "food",
+      "sourceName": "宜蘭縣政府文化局",
+      "titleKey": "宜蘭特色小吃蒜味肉羹的重蒜風味"
+    },
+    {
+      "id": "od-gemini-20260801-geo-09",
+      "title": "基隆和平島公園的豆腐岩地形",
+      "category": "geo",
+      "sourceName": "交通部觀光署北海岸及觀音山國家風景區管理處",
+      "titleKey": "基隆和平島公園的豆腐岩地形"
+    },
+    {
+      "id": "od-gemini-20260801-geo-10",
+      "title": "南投日月潭的「拉魯島」與邵族聖地",
+      "category": "geo",
+      "sourceName": "交通部觀光署日月潭國家風景區管理處",
+      "titleKey": "南投日月潭的拉魯島與邵族聖地"
+    },
+    {
+      "id": "od-gemini-20260802-history-01",
+      "title": "彰化八卦山大佛與歷史風貌",
+      "category": "history",
+      "sourceName": "彰化縣政府文化局",
+      "titleKey": "彰化八卦山大佛與歷史風貌"
+    },
+    {
+      "id": "od-gemini-20260802-history-02",
+      "title": "台灣糖業鐵路「五分車」名稱由來",
+      "category": "history",
+      "sourceName": "台灣糖業公司",
+      "titleKey": "台灣糖業鐵路五分車名稱由來"
+    },
+    {
+      "id": "od-gemini-20260802-food-01",
+      "title": "台南甜味醬汁與早年糖業經濟",
+      "category": "food",
+      "sourceName": "台南市政府文化局",
+      "titleKey": "台南甜味醬汁與早年糖業經濟"
+    },
+    {
+      "id": "od-gemini-20260802-food-02",
+      "title": "擂茶的客家飲食智慧",
+      "category": "food",
+      "sourceName": "客家委員會",
+      "titleKey": "擂茶的客家飲食智慧"
+    },
+    {
+      "id": "od-gemini-20260802-geo-01",
+      "title": "屏東墾丁風吹砂的風成地形",
+      "category": "geo",
+      "sourceName": "內政部國家公園署墾丁國家公園管理處",
+      "titleKey": "屏東墾丁風吹砂的風成地形"
+    },
+    {
+      "id": "od-gemini-20260802-geo-02",
+      "title": "宜蘭龜山島活火山地形",
+      "category": "geo",
+      "sourceName": "交通部觀光署東北角及宜蘭海岸國家風景區管理處",
+      "titleKey": "宜蘭龜山島活火山地形"
+    }
+  ]
+}

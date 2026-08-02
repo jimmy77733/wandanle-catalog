@@ -16,15 +16,9 @@
   <body>
     <div class="shell">
       <header class="brand">
-        <img
-          class="brand-mark"
-          src="./brand.png"
-          width="88"
-          height="88"
-          alt="灣蛋啦"
-        />
+        <img class="brand-mark" src="./brand.png" width="88" height="88" alt="灣蛋啦" />
         <h1>灣蛋配送站</h1>
-        <p class="sub">たまご便 · 圖鑑 JSON 驗證與發布</p>
+        <p class="sub">たまご便 · 圖鑑驗證、預覽與發布</p>
       </header>
 
       <section id="gate-card" class="card gate-card">
@@ -43,70 +37,150 @@
       </section>
 
       <section id="main-card" class="card hidden">
-        <h2>選擇圖鑑 JSON</h2>
+        <h2>載入圖鑑</h2>
         <p class="hint">
-          拖曳或點選完整 <code>knowledge_cards.json</code>。會與線上版比較：禁止張數變少、禁止
-          version 倒退。
+          可載入完整 <code>knowledge_cards.json</code>，或匯入增量檔（含
+          <code>baseVersion</code>）。會與線上版比對：禁止張數變少、禁止 version 倒退。
         </p>
-        <label class="drop" id="drop">
-          <strong>把 JSON 放在這裡</strong>
-          <span>或點此選擇檔案</span>
-          <input id="file" type="file" accept=".json,application/json" />
-        </label>
+        <div class="row">
+          <label class="drop drop-inline" id="drop">
+            <strong>完整 JSON</strong>
+            <span>拖曳或點選</span>
+            <input id="file" type="file" accept=".json,application/json" />
+          </label>
+          <label class="drop drop-inline" id="drop-delta">
+            <strong>增量 delta</strong>
+            <span>合并進線上底稿</span>
+            <input id="file-delta" type="file" accept=".json,application/json" />
+          </label>
+          <button type="button" class="btn-secondary" id="load-live-btn">載入線上版</button>
+        </div>
 
-        <div class="preview" id="preview" hidden>
-          <div class="stat" id="stat-version">
-            <span class="n">—</span><span class="l">version</span>
-          </div>
-          <div class="stat" id="stat-count">
-            <span class="n">—</span><span class="l">總張數</span>
-          </div>
-          <div class="stat" id="stat-delta">
-            <span class="n">—</span><span class="l">相對線上新增</span>
-          </div>
+        <div class="preview" id="stats" hidden>
+          <div class="stat" id="stat-version"><span class="n">—</span><span class="l">版本</span></div>
+          <div class="stat" id="stat-count"><span class="n">—</span><span class="l">總張數</span></div>
+          <div class="stat" id="stat-delta"><span class="n">—</span><span class="l">相對線上新增</span></div>
         </div>
         <ul class="errors" id="errors" hidden></ul>
+        <div id="work-status" class="status"></div>
+      </section>
 
-        <h2 style="margin-top: 22px">發布授權</h2>
+      <section id="editor-card" class="card hidden">
+        <div class="section-head">
+          <h2>預覽與編輯</h2>
+          <div class="row tight">
+            <button type="button" class="btn-secondary" id="apply-btn">套用變更</button>
+            <button type="button" class="btn-secondary" id="dl-work-btn">下載工作檔</button>
+            <button type="button" class="btn-ghost" id="open-diff-btn">版本差異</button>
+            <button type="button" class="btn-ghost" id="open-hist-btn">版本紀錄</button>
+          </div>
+        </div>
+
+        <div class="filters">
+          <label>
+            種類
+            <select id="filter-cat">
+              <option value="">全部</option>
+              <option value="history">歷史與怪談</option>
+              <option value="food">美食與生活</option>
+              <option value="geo">地理與奇葩</option>
+            </select>
+          </label>
+          <label>
+            來源
+            <select id="filter-source">
+              <option value="">全部來源</option>
+            </select>
+          </label>
+          <label class="grow">
+            搜尋
+            <input id="filter-q" type="text" placeholder="標題／內容／編號" />
+          </label>
+        </div>
+        <p class="hint" id="filter-meta"></p>
+        <div id="card-list" class="card-list"></div>
+
+        <details class="add-panel" id="add-panel">
+          <summary>新增題目</summary>
+          <div class="add-grid">
+            <label>
+              種類
+              <select id="add-cat">
+                <option value="history">歷史與怪談</option>
+                <option value="food">美食與生活</option>
+                <option value="geo">地理與奇葩</option>
+              </select>
+            </label>
+            <label>
+              來源
+              <input id="add-source" list="source-list" type="text" placeholder="選擇或輸入來源" />
+              <datalist id="source-list"></datalist>
+            </label>
+            <label class="span2">
+              來源網址（可留空）
+              <input id="add-url" type="text" placeholder="https://..." />
+            </label>
+            <label class="span2">
+              標題
+              <input id="add-title" type="text" maxlength="28" />
+            </label>
+            <label class="span2">
+              內容
+              <textarea id="add-content" rows="3" maxlength="160"></textarea>
+            </label>
+            <label>
+              趣味標籤
+              <input id="add-fact" type="text" maxlength="16" />
+            </label>
+            <div class="row" style="align-items: end">
+              <button type="button" class="btn-primary" id="add-btn">加入工作檔</button>
+            </div>
+          </div>
+          <div id="add-status" class="status"></div>
+        </details>
+      </section>
+
+      <section id="diff-card" class="card hidden">
+        <div class="section-head">
+          <h2>版本差異</h2>
+          <button type="button" class="btn-ghost" id="close-diff-btn">關閉</button>
+        </div>
+        <p class="hint" id="diff-meta">相對線上版或所選歷史版的變更摘要。</p>
+        <div id="diff-list" class="diff-list"></div>
+      </section>
+
+      <section id="hist-card" class="card hidden">
+        <div class="section-head">
+          <h2>版本紀錄</h2>
+          <button type="button" class="btn-ghost" id="close-hist-btn">關閉</button>
+        </div>
+        <p class="hint">每個版本封存在倉庫 <code>versions/</code>，可下載完整檔或作為差異基準。</p>
+        <div id="hist-list" class="hist-list"></div>
+      </section>
+
+      <section id="publish-card" class="card hidden">
+        <h2>發布授權</h2>
         <p class="hint">
-          寫入本倉庫需要具備 <strong>Contents</strong> 讀寫權限的 GitHub
-          token（僅限本資料庫 repo）。Token 只暫存在此瀏覽器工作階段。
+          寫入倉庫需要具備 Contents 讀寫權限的 GitHub token（僅限本資料庫 repo）。Token
+          只暫存在此瀏覽器工作階段。成功後會更新主檔、CDN，並封存版本與索引。
         </p>
         <label for="pat">Token</label>
         <div class="secret-field">
           <input id="pat" type="password" autocomplete="off" spellcheck="false" />
-          <button
-            type="button"
-            class="eye-btn"
-            id="pat-toggle"
-            aria-label="顯示 Token"
-            title="顯示／隱藏"
-            aria-pressed="false"
-          >
+          <button type="button" class="eye-btn" id="pat-toggle" aria-label="顯示 Token" aria-pressed="false">
             <svg class="eye-open" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-              <path
-                fill="currentColor"
-                d="M12 5c-5 0-9.3 3.1-11 7 1.7 3.9 6 7 11 7s9.3-3.1 11-7c-1.7-3.9-6-7-11-7zm0 12a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-8a3 3 0 1 0 0 6 3 3 0 0 0 0-6z"
-              />
+              <path fill="currentColor" d="M12 5c-5 0-9.3 3.1-11 7 1.7 3.9 6 7 11 7s9.3-3.1 11-7c-1.7-3.9-6-7-11-7zm0 12a5 5 0 1 1 0-10 5 5 0 0 1 0 10zm0-8a3 3 0 1 0 0 6 3 3 0 0 0 0-6z" />
             </svg>
             <svg class="eye-shut hidden" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
-              <path
-                fill="currentColor"
-                d="M2.1 3.5 3.5 2.1l18.4 18.4-1.4 1.4-3.1-3.1A12.7 12.7 0 0 1 12 19c-5 0-9.3-3.1-11-7a13.4 13.4 0 0 1 4.6-5.2L2.1 3.5zM12 7a5 5 0 0 1 4.9 4l-1.7-1.7A3 3 0 0 0 12 9V7zm9.7 4.2c-.5 1.1-1.2 2.1-2.1 3l-2.1-2.1c.3-.6.5-1.2.5-1.9a5 5 0 0 0-5-5c-.7 0-1.3.2-1.9.5L9.3 3.9A12.6 12.6 0 0 1 12 5c5 0 9.3 3.1 11 7a13 13 0 0 1-1.3 2.2z"
-              />
+              <path fill="currentColor" d="M2.1 3.5 3.5 2.1l18.4 18.4-1.4 1.4-3.1-3.1A12.7 12.7 0 0 1 12 19c-5 0-9.3-3.1-11-7a13.4 13.4 0 0 1 4.6-5.2L2.1 3.5zM12 7a5 5 0 0 1 4.9 4l-1.7-1.7A3 3 0 0 0 12 9V7zm9.7 4.2c-.5 1.1-1.2 2.1-2.1 3l-2.1-2.1c.3-.6.5-1.2.5-1.9a5 5 0 0 0-5-5c-.7 0-1.3.2-1.9.5L9.3 3.9A12.6 12.6 0 0 1 12 5c5 0 9.3 3.1 11 7a13 13 0 0 1-1.3 2.2z" />
             </svg>
           </button>
         </div>
         <div class="row">
-          <button type="button" class="btn-primary" id="upload-btn" disabled>
-            上傳並發布
-          </button>
-          <button type="button" class="btn-secondary" id="download-btn" disabled>
-            只驗證下載
-          </button>
+          <button type="button" class="btn-primary" id="upload-btn" disabled>上傳並發布</button>
           <button type="button" class="btn-ghost" id="clear-pat">清除 Token</button>
         </div>
-        <div id="work-status" class="status"></div>
+        <div id="publish-status" class="status"></div>
       </section>
 
       <p class="foot">
@@ -120,6 +194,7 @@
     </div>
 
     <script src="./upload.config.js"></script>
+    <script src="./catalog-core.js"></script>
     <script src="./app.js"></script>
   </body>
 </html>

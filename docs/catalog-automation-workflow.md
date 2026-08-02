@@ -13,8 +13,8 @@
 
 ```text
 內容生產者（人工或 AI）
-  → 產出「完整」資料檔（非增量片段）
-  → 寫入公開資料倉庫（需寫入權）
+  → 完整檔，或「精簡索引 + 增量」再合并成完整檔
+  → 配送站預覽／驗證後寫入公開資料倉庫（需寫入權）
   → CI 驗證並部署 CDN
   → 客戶端：CDN → raw 備援 → 內建 seed
 ```
@@ -24,7 +24,8 @@
 | 角色 | 實作 |
 |------|------|
 | 資料倉庫 | 本 GitHub repo（公開讀） |
-| 驗證／發布輔助頁 | [灣蛋配送站](./upload/) |
+| 驗證／發布輔助頁 | [灣蛋配送站](./upload/)（預覽、編輯、版本紀錄） |
+| 版本封存／索引 | `versions/`、`index/` |
 | CI 部署 | GitHub Action → Firebase Hosting |
 | CDN | https://wandanle-catalog.web.app/knowledge_cards.json |
 | raw 備援 | https://raw.githubusercontent.com/jimmy77733/wandanle-catalog/main/knowledge_cards.json |
@@ -119,7 +120,11 @@
 | 路徑 | 說明 |
 |------|------|
 | `knowledge_cards.json` / `public/…` | 公開圖鑑 |
-| `docs/upload/` | 驗證／發布頁 |
+| `docs/upload/` | 配送站（預覽／編輯／發布） |
+| `versions/` | 完整版封存 |
+| `index/` | 精簡索引（供增量產線） |
+| `deltas/` | 增量檔示例目錄 |
+| `scripts/merge_delta.py` | 增量合并 |
 | `.github/workflows/publish.yml` | 驗證＋部署 |
 | `scripts/validate_catalog.py` | CI 驗證腳本 |
 | `automation/apps-script/` | 可選中繼同步 |

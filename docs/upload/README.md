@@ -1,29 +1,48 @@
-# 灣蛋配送站
-
-《灣蛋啦》圖鑑 JSON 的**驗證與發布頁**（GitHub Pages 靜態站）。
+# 灣蛋配送站（使用說明）
 
 網址：https://jimmy77733.github.io/wandanle-catalog/upload/
 
-## 這頁做什麼
+這是《灣蛋啦》圖鑑資料的**驗證、預覽與發布頁**。倉庫本身公開可讀；寫入線上資料需要維護者授權。
 
-1. 檢查上傳的完整 `knowledge_cards.json`（結構、`category`、id 唯一）  
-2. 與線上版比較：禁止張數變少、禁止 `version` 倒退  
-3. 預覽 version／總張數／相對線上新增數  
-4. （可選）以具備本倉庫寫入權的 GitHub token 更新 `knowledge_cards.json` 與 `public/knowledge_cards.json`  
-5. 觸發既有 GitHub Action：再驗證後部署 Firebase CDN  
+## 可以做什麼
 
-也可只做「驗證並下載」，不必寫入倉庫。
+1. **載入圖鑑**  
+   - 完整 `knowledge_cards.json`  
+   - 或增量檔（含 `baseVersion` 與新卡列表）  
+   - 或一鍵「載入線上版」
 
-專案總覽：https://github.com/jimmy77733/wandanle-catalog/blob/main/README.md
+2. **預覽與編輯（美化卡面）**  
+   - 依**種類**、**來源**篩選，並可搜尋  
+   - 可修改：**標題**、**內容**、**趣味標籤**  
+   - **種類**、**來源**、編號為唯讀（既有卡）  
+   - **套用變更**／**下載工作檔**
 
-## 誰可以寫入
+3. **新增題目**  
+   - 選擇種類（三種固定顏色分類）  
+   - 來源可從既有清單選或自行輸入  
+   - 編號自動產生  
 
-- 倉庫**公開讀取**；任意訪客可開本頁、可 fork／開 PR。  
-- **直接改 `main` 上的圖鑑檔**需要 GitHub 寫入授權（維護者帳號或 scoped token）。  
-- 頁面的站門密碼只控制「是否顯示上傳表單」，**不能**取代倉庫寫入權。  
-- 寫入保護與 Action 驗證：見 [`../repo-protection.md`](../repo-protection.md)。
+4. **版本差異／版本紀錄**  
+   - 以卡面方式查看新增、修改、刪除  
+   - 下載歷史完整檔，或指定某版當差異基準  
 
-## 技術位置
+5. **上傳並發布**  
+   - 貼上具備本倉庫寫入權限的 GitHub token  
+   - 成功後會更新公開圖鑑，並由自動化流程部署到 CDN  
 
-原始檔位於本倉庫 `docs/upload/`（Pages 來源為 `main` 的 `/docs`）。  
-Token **不會**寫進倉庫；僅暫存在使用者瀏覽器工作階段。
+## 種類中文對照
+
+| 顯示 | 內部值 |
+|------|--------|
+| 歷史與怪談 | history |
+| 美食與生活 | food |
+| 地理與奇葩 | geo |
+
+## 公開資料在哪裡
+
+- CDN：https://wandanle-catalog.web.app/knowledge_cards.json  
+- GitHub：https://github.com/jimmy77733/wandanle-catalog  
+
+專案總覽：https://github.com/jimmy77733/wandanle-catalog/blob/main/README.md  
+
+寫入保護說明：[`../repo-protection.md`](../repo-protection.md)

@@ -4,10 +4,15 @@ window.WANDANLE_UPLOAD = {
   repo: "wandanle-catalog",
   branch: "main",
   paths: ["knowledge_cards.json", "public/knowledge_cards.json"],
-  /** 線上底稿（驗證用） */
   liveCatalogURL: "https://wandanle-catalog.web.app/knowledge_cards.json",
   liveCatalogFallbackURL:
     "https://raw.githubusercontent.com/jimmy77733/wandanle-catalog/main/knowledge_cards.json",
+  manifestURL:
+    "https://raw.githubusercontent.com/jimmy77733/wandanle-catalog/main/versions/manifest.json",
+  versionFileURL: (path) =>
+    `https://raw.githubusercontent.com/jimmy77733/wandanle-catalog/main/${path}`,
+  indexURL:
+    "https://raw.githubusercontent.com/jimmy77733/wandanle-catalog/main/index/catalog_index.json",
   /**
    * 站門密碼的 SHA-256（hex，小寫）。明文不進版控。
    * 重算：echo -n '新密碼' | shasum -a 256

@@ -1,0 +1,14 @@
+{
+  "baseVersion": 9,
+  "cards": [
+    {
+      "id": "od-gemini-20990101-history-99",
+      "title": "範例增量卡請勿上線",
+      "content": "這是 merge_delta.py 的格式示範，正式使用前請刪除或改成真實內容與正確 baseVersion。",
+      "category": "history",
+      "sourceName": "示範",
+      "sourceURL": null,
+      "funFactValue": "示範"
+    }
+  ]
+}
