@@ -1,5 +1,11 @@
 [
   {
+    "version": 10,
+    "updatedAt": "2026-08-02T03:42:46Z",
+    "cardCount": 169,
+    "path": "versions/v10.json"
+  },
+  {
     "version": 9,
     "updatedAt": "2026-08-02T02:00:00Z",
     "cardCount": 168,
