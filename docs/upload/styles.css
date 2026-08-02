@@ -355,32 +355,43 @@ a.btn-ghost:hover {
 }
 .filters .grow { min-width: 0; }
 
-.list-panel {
-  margin-top: 8px;
+.list-panel,
+.add-panel {
+  margin-top: 18px;
   border-top: 1px dashed var(--line);
   padding-top: 12px;
 }
-.list-panel-summary {
+.list-panel-summary,
+.add-panel summary {
   cursor: pointer;
   font-weight: 700;
   color: var(--ink);
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
-  gap: 8px 14px;
+  column-gap: 8px;
+  row-gap: 4px;
   list-style: none;
   user-select: none;
+  margin: 0 0 10px;
+  padding: 0;
 }
-.list-panel-summary::-webkit-details-marker { display: none; }
-.list-panel-summary::marker { content: ""; }
-.list-panel-summary::before {
+.list-panel-summary::-webkit-details-marker,
+.add-panel summary::-webkit-details-marker { display: none; }
+.list-panel-summary::marker,
+.add-panel summary::marker { content: ""; }
+.list-panel-summary::before,
+.add-panel summary::before {
   content: "▸";
   display: inline-block;
-  margin-right: 2px;
+  width: 1.1em;
+  flex-shrink: 0;
+  text-align: center;
   transition: transform 0.15s ease;
   color: var(--muted);
 }
-.list-panel[open] > .list-panel-summary::before {
+.list-panel[open] > .list-panel-summary::before,
+.add-panel[open] > summary::before {
   transform: rotate(90deg);
 }
 .list-panel-title { font-size: 1rem; }
@@ -388,7 +399,7 @@ a.btn-ghost:hover {
   margin: 0;
   font-weight: 600;
 }
-.list-panel-body { margin-top: 12px; }
+.list-panel-body { margin-top: 0; }
 
 .filter-meta-row {
   display: flex;
@@ -475,27 +486,6 @@ a.btn-ghost:hover {
 }
 .field input, .field textarea { font-weight: 500; }
 
-.add-panel { margin-top: 18px; border-top: 1px dashed var(--line); padding-top: 12px; }
-.add-panel summary {
-  cursor: pointer;
-  font-weight: 700;
-  margin-bottom: 10px;
-  color: var(--ink);
-  list-style: none;
-  user-select: none;
-}
-.add-panel summary::-webkit-details-marker { display: none; }
-.add-panel summary::marker { content: ""; }
-.add-panel summary::before {
-  content: "▸";
-  display: inline-block;
-  margin-right: 6px;
-  transition: transform 0.15s ease;
-  color: var(--muted);
-}
-.add-panel[open] > summary::before {
-  transform: rotate(90deg);
-}
 .add-grid {
   display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
 }
