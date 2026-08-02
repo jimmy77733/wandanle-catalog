@@ -1,6 +1,6 @@
 {
-  "version": 8,
-  "updatedAt": "2026-08-01T08:07:18Z",
+  "version": 9,
+  "updatedAt": "2026-08-02T02:00:00Z",
   "cards": [
     {
       "id": "history-001",
@@ -1459,6 +1459,60 @@
       "sourceName": "交通部觀光署日月潭國家風景區管理處",
       "sourceURL": "https://www.sunmoonlake.gov.tw",
       "funFactValue": "邵族傳說中，祖先因追逐白鹿而發現了美麗的日月潭"
+    },
+    {
+      "id": "od-gemini-20260802-history-01",
+      "title": "彰化八卦山大佛與歷史風貌",
+      "content": "彰化八卦山大佛竣工於1961年，曾是亞洲極高的大佛像之一。八卦山周邊亦為清治時期重要戰略要地，見證了北彰化的城市發展脈絡。",
+      "category": "history",
+      "sourceName": "彰化縣政府文化局",
+      "sourceURL": "https://www.bocach.gov.tw",
+      "funFactValue": "八卦山大佛內部其實分為數層，設有講述佛陀故事的展覽空間"
+    },
+    {
+      "id": "od-gemini-20260802-history-02",
+      "title": "台灣糖業鐵路「五分車」名稱由來",
+      "content": "糖業鐵路軌距為762公釐，約為國際標準軌距（1,435公釐）的一半，因此被民間親切地稱為「五分車」。",
+      "category": "history",
+      "sourceName": "台灣糖業公司",
+      "sourceURL": "https://www.taisugar.com.tw",
+      "funFactValue": "標準軌稱為七分車，而高鐵與捷運採用的標準軌則稱為全軌"
+    },
+    {
+      "id": "od-gemini-20260802-food-01",
+      "title": "台南甜味醬汁與早年糖業經濟",
+      "content": "台南許多傳統小吃（如羹湯、米膏）口味偏甜，除了糖能提味外，也因為早期糖在府城是極富價值的經濟作物，佳餚加糖象徵富貴與殷勤待客。",
+      "category": "food",
+      "sourceName": "台南市政府文化局",
+      "sourceURL": "https://culture.tainan.gov.tw",
+      "funFactValue": "早期糖業發展使台南發展出獨特的糖蜜飲食文化"
+    },
+    {
+      "id": "od-gemini-20260802-food-02",
+      "title": "擂茶的客家飲食智慧",
+      "content": "傳統客家擂茶將茶葉、花生、芝麻等食材放入擂鉢中研磨成細粉，再沖入熱水飲用，既是解渴茶飲也是補充體力的客家傳統膳食。",
+      "category": "food",
+      "sourceName": "客家委員會",
+      "sourceURL": "https://www.hakka.gov.tw",
+      "funFactValue": "研磨時使用的「擂棍」多選用芭樂樹或苦茶樹枝幹製成"
+    },
+    {
+      "id": "od-gemini-20260802-geo-01",
+      "title": "屏東墾丁風吹砂的風成地形",
+      "content": "墾丁風吹砂因台地崖頂砂粒受到強烈東北季風吹拂吹送至崖頂，夏季雨水又將沙粒沖刷至海岸，形成極為特殊的風成與水蝕循環地形。",
+      "category": "geo",
+      "sourceName": "內政部國家公園署墾丁國家公園管理處",
+      "sourceURL": "https://www.ktnp.gov.tw",
+      "funFactValue": "沿海公路開闢後阻斷了部分沙源循環，造成風吹砂地貌縮減"
+    },
+    {
+      "id": "od-gemini-20260802-geo-02",
+      "title": "宜蘭龜山島活火山地形",
+      "content": "宜蘭外海的龜山島是台灣少數的活火山之一，島嶼周邊海底設有強烈的熱泉噴發口，形成極具特色的海洋「海底溫泉」與奶藍色陰陽海景觀。",
+      "category": "geo",
+      "sourceName": "交通部觀光署東北角及宜蘭海岸國家風景區管理處",
+      "sourceURL": "https://www.necoast-nsa.gov.tw",
+      "funFactValue": "龜山島磺煙噴氣孔與海底溫泉被稱為「龜山八景」之一"
     }
   ]
 }
