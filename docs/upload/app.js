@@ -60,6 +60,8 @@
     patToggle: $("pat-toggle"),
     uploadBtn: $("upload-btn"),
     clearPat: $("clear-pat"),
+    openDriveBtn: $("open-drive-btn"),
+    syncDriveBtn: $("sync-drive-btn"),
     statVersion: $("stat-version"),
     statCount: $("stat-count"),
     statDelta: $("stat-delta"),
@@ -705,6 +707,100 @@
     return githubPut(path, token, content, sha, message);
   }
 
+  function catalogDraftFileName(catalog) {
+    const d = new Date();
+    const ymd = [
+      d.getFullYear(),
+      String(d.getMonth() + 1).padStart(2, "0"),
+      String(d.getDate()).padStart(2, "0"),
+    ].join("");
+    return `knowledge_cards_v${catalog.version}_${ymd}.json`;
+  }
+
+  function openDriveFolder() {
+    const url = CFG.driveFolderURL;
+    if (!url) {
+      showStatus(el.publishStatus, "bad", "未設定 driveFolderURL。");
+      return;
+    }
+    window.open(url, "_blank", "noopener,noreferrer");
+  }
+
+  function guideDriveManualSync(catalog, reason, prefixMsg) {
+    const name = catalogDraftFileName(catalog);
+    const text = JSON.stringify(catalog, null, 2) + "\n";
+    downloadBlob(text, name);
+    openDriveFolder();
+    const head = prefixMsg ? `${prefixMsg}\n` : "";
+    const why = reason ? `\n（${reason}）` : "";
+    showStatus(
+      el.publishStatus,
+      "info",
+      `${head}已下載「${name}」並開啟 Drive 資料夾。\n請把該檔「拖曳新建」進「灣蛋啦圖鑑」（不要覆寫舊檔）。\nSpark／GAS 會取資料夾內最後修改最新的 knowledge_cards*.json 當底稿。${why}`
+    );
+  }
+
+  async function mirrorDriveViaWebApp() {
+    const url = (CFG.driveMirrorWebAppURL || "").trim();
+    if (!url) {
+      return { ok: false, skippedConfig: true, error: "未設定 driveMirrorWebAppURL" };
+    }
+    const secret = CFG.driveMirrorSecret || "";
+    const res = await fetch(url, {
+      method: "POST",
+      headers: { "Content-Type": "text/plain;charset=utf-8" },
+      body: JSON.stringify({ action: "mirror", secret }),
+      redirect: "follow",
+    });
+    const text = await res.text();
+    let data;
+    try {
+      data = JSON.parse(text);
+    } catch {
+      throw new Error(`Drive 鏡像回應不是 JSON（HTTP ${res.status}）：${text.slice(0, 180)}`);
+    }
+    if (!data.ok) {
+      throw new Error(data.error || "Drive 鏡像失敗");
+    }
+    return data;
+  }
+
+  async function syncDriveDraftAfterPublish(catalog, prefixMsg) {
+    const head = prefixMsg ? `${prefixMsg}\n` : "";
+    showStatus(el.publishStatus, "info", `${head}正在同步 Drive 底稿…`);
+    try {
+      const result = await mirrorDriveViaWebApp();
+      if (result.skippedConfig) {
+        guideDriveManualSync(catalog, "尚未設定 GAS Web App，改為手動引導", prefixMsg);
+        return;
+      }
+      const note = result.skipped
+        ? `Drive 底稿已是最新（${result.fileName}）。`
+        : `Drive 底稿已自動新建：${result.fileName}（v${result.version}／${result.total} 張）。`;
+      showStatus(
+        el.publishStatus,
+        "ok",
+        `${head}${note}\nGitHub／CDN 已更新；本機 seed 請另下載同步。`
+      );
+    } catch (e) {
+      guideDriveManualSync(catalog, String(e.message || e), prefixMsg);
+    }
+  }
+
+  el.syncDriveBtn?.addEventListener("click", async () => {
+    if (!working && !liveCatalog) {
+      showStatus(el.publishStatus, "bad", "請先載入圖鑑。");
+      return;
+    }
+    const catalog = working || liveCatalog;
+    el.syncDriveBtn.disabled = true;
+    try {
+      await syncDriveDraftAfterPublish(catalog);
+    } finally {
+      el.syncDriveBtn.disabled = false;
+    }
+  });
+
   el.uploadBtn.addEventListener("click", async () => {
     if (!working) return;
     collectEditsFromDOM();
@@ -769,16 +865,13 @@
         "ok",
         `載入圖鑑已同步為線上最新：version=${working.version}、${working.cards.length} 張（相對線上新增 0）`
       );
-      showStatus(
-        el.publishStatus,
-        "ok",
-        `上傳成功。Action「Publish catalog」會驗證並部署 Firebase。\n線上（Git／CDN）將更新；本機 seed 請另下載後同步。${
-          commitUrl ? `\n${commitUrl}` : ""
-        }`
-      );
       if (!el.histCard.classList.contains("hidden")) {
         renderHistList(manifest);
       }
+      const publishHead = `上傳成功。Action「Publish catalog」會驗證並部署 Firebase。${
+        commitUrl ? `\n${commitUrl}` : ""
+      }`;
+      await syncDriveDraftAfterPublish(working, publishHead);
     } catch (e) {
       showStatus(el.publishStatus, "bad", String(e.message || e));
     } finally {

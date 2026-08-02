@@ -1,5 +1,5 @@
 /**
- * 灣蛋啦圖鑑：Google Drive → GitHub（wandanle-catalog）轉發腳本
+ * 灣蛋啦圖鑑：Google Drive ↔ GitHub（wandanle-catalog）轉發腳本
  *
  * 設定（專案設定 → 指令碼屬性 Script properties）：
  *   GITHUB_TOKEN     Fine-grained PAT，僅授權 jimmy77733/wandanle-catalog Contents: Read and write
@@ -8,12 +8,15 @@
  *   GITHUB_OWNER     預設 jimmy77733
  *   GITHUB_REPO      預設 wandanle-catalog
  *   GITHUB_BRANCH    預設 main
+ *   MIRROR_SECRET    （建議）Web App 鏡像用密鑰；與配送站 upload.config.js 的 driveMirrorSecret 相同
  *
  * 為何用資料夾而不是固定檔案：
  *   部分 AI（如 Gemini Spark）的 Drive 工具只能「新建檔」或改 metadata，
  *   無法覆寫既有 JSON 內容。改為每次上傳新檔，由此腳本挑最新一份同步。
  *
- * 觸發：時間驅動（建議每 15–60 分鐘）執行 syncCatalogFromDrive
+ * 觸發：
+ *   - 時間驅動（建議每 15–60 分鐘）執行 syncCatalogFromDrive（Drive → GitHub）
+ *   - 配送站發布後呼叫 Web App mirrorCatalogToDrive（GitHub → Drive 新建底稿）
  */
 
 var DEFAULT_OWNER = 'jimmy77733';
@@ -111,6 +114,151 @@ function syncCatalogFromDrive() {
     total: catalog.cards.length,
     driveFile: picked.file.getName()
   };
+}
+
+/**
+ * GitHub → Drive：把 main 上最新 knowledge_cards.json 新建為版本檔，供 Spark 當底稿。
+ * 編輯器手動執行此函式（不檢查 MIRROR_SECRET）。Web App 請走 doGet／doPost。
+ */
+function mirrorCatalogToDrive() {
+  return mirrorCatalogToDriveCore_();
+}
+
+/** Web App 用：需通過 MIRROR_SECRET（若有設定）。 */
+function mirrorCatalogToDriveWithSecret_(providedSecret) {
+  var props = PropertiesService.getScriptProperties();
+  var expected = props.getProperty('MIRROR_SECRET');
+  if (expected) {
+    if (!providedSecret || providedSecret !== expected) {
+      throw new Error('MIRROR_SECRET 不符或未提供');
+    }
+  }
+  return mirrorCatalogToDriveCore_();
+}
+
+function mirrorCatalogToDriveCore_() {
+  var props = PropertiesService.getScriptProperties();
+  var token = props.getProperty('GITHUB_TOKEN');
+  var owner = props.getProperty('GITHUB_OWNER') || DEFAULT_OWNER;
+  var repo = props.getProperty('GITHUB_REPO') || DEFAULT_REPO;
+  var branch = props.getProperty('GITHUB_BRANCH') || DEFAULT_BRANCH;
+  var folderId = props.getProperty('DRIVE_FOLDER_ID');
+
+  if (!token) {
+    throw new Error('缺少 Script Property：GITHUB_TOKEN');
+  }
+  if (!folderId) {
+    throw new Error('缺少 Script Property：DRIVE_FOLDER_ID（鏡像必須寫入資料夾）');
+  }
+
+  var remote = fetchGitHubJson_(owner, repo, ROOT_PATH, branch, token);
+  if (!remote || !remote.catalog) {
+    throw new Error('GitHub 上找不到 ' + ROOT_PATH);
+  }
+  var catalog = validateCatalog_(JSON.stringify(remote.catalog));
+  var pretty = JSON.stringify(catalog, null, 2) + '\n';
+  var fileName = 'knowledge_cards_v' + catalog.version + '_' + todayYmd_() + '.json';
+
+  try {
+    var picked = resolveDriveCatalogFile_(props);
+    var driveRaw = picked.file.getBlob().getDataAsString('UTF-8');
+    var driveCat = validateCatalog_(driveRaw);
+    if (
+      driveCat.version === catalog.version &&
+      driveCat.cards.length === catalog.cards.length
+    ) {
+      Logger.log(
+        'Drive 最新底稿已是 version=' +
+          catalog.version +
+          '／' +
+          catalog.cards.length +
+          ' 張，跳過。檔=' +
+          picked.file.getName()
+      );
+      return {
+        ok: true,
+        skipped: true,
+        version: catalog.version,
+        total: catalog.cards.length,
+        fileName: picked.file.getName(),
+        message: 'Drive 底稿已是最新，無需新建'
+      };
+    }
+  } catch (e) {
+    Logger.log('讀取既有 Drive 底稿略過比對：' + e);
+  }
+
+  var folder = DriveApp.getFolderById(folderId);
+  var created = folder.createFile(fileName, pretty, MimeType.PLAIN_TEXT);
+  Logger.log(
+    '已新建 Drive 底稿：' +
+      created.getName() +
+      ' id=' +
+      created.getId() +
+      ' version=' +
+      catalog.version
+  );
+  return {
+    ok: true,
+    skipped: false,
+    version: catalog.version,
+    total: catalog.cards.length,
+    fileName: created.getName(),
+    fileId: created.getId(),
+    message: '已新建 Drive 底稿 ' + created.getName()
+  };
+}
+
+/** Web App：GET ?action=mirror&secret=... */
+function doGet(e) {
+  return handleMirrorHttp_(e && e.parameter ? e.parameter : {});
+}
+
+/**
+ * Web App：POST body 為 JSON 或 text/plain JSON
+ * { "action": "mirror", "secret": "..." }
+ * Content-Type 建議 text/plain，避免瀏覽器 CORS preflight。
+ */
+function doPost(e) {
+  var params = {};
+  try {
+    if (e && e.postData && e.postData.contents) {
+      params = JSON.parse(e.postData.contents);
+    }
+  } catch (err) {
+    return jsonOut_({ ok: false, error: 'JSON 解析失敗：' + err });
+  }
+  if (e && e.parameter) {
+    for (var k in e.parameter) {
+      if (Object.prototype.hasOwnProperty.call(e.parameter, k) && params[k] == null) {
+        params[k] = e.parameter[k];
+      }
+    }
+  }
+  return handleMirrorHttp_(params);
+}
+
+function handleMirrorHttp_(params) {
+  try {
+    var action = params.action || 'mirror';
+    if (action !== 'mirror') {
+      return jsonOut_({ ok: false, error: '未知 action：' + action });
+    }
+    var result = mirrorCatalogToDriveWithSecret_(params.secret || null);
+    return jsonOut_(result);
+  } catch (err) {
+    return jsonOut_({ ok: false, error: String(err.message || err) });
+  }
+}
+
+function jsonOut_(obj) {
+  return ContentService.createTextOutput(JSON.stringify(obj)).setMimeType(
+    ContentService.MimeType.JSON
+  );
+}
+
+function todayYmd_() {
+  return Utilities.formatDate(new Date(), 'Asia/Taipei', 'yyyyMMdd');
 }
 
 /** 可選：若 JSON 較小（payload < ~60KB），改打 repository_dispatch。大檔請用 syncCatalogFromDrive。 */

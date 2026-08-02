@@ -230,10 +230,27 @@ button:disabled { opacity: 0.45; cursor: not-allowed; transform: none; }
   color: var(--muted);
   border: 1px dashed var(--line);
 }
+a.btn-ghost {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border-radius: 999px;
+  font: inherit;
+  font-weight: 700;
+  text-decoration: none;
+  box-sizing: border-box;
+}
 .btn-ghost:hover:not(:disabled) {
   color: var(--ink);
   border-color: var(--yolk);
   background: rgba(242, 179, 61, 0.1);
+}
+a.btn-ghost:hover {
+  color: var(--ink);
+  border-color: var(--yolk);
+  background: rgba(242, 179, 61, 0.1);
+  transform: translateY(-1px);
 }
 .btn-mini { padding: 8px 12px; font-size: 0.82rem; }
 

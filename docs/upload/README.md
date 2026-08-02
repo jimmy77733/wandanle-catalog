@@ -29,6 +29,10 @@
 5. **上傳並發布**  
    - 貼上具備本倉庫寫入權限的 GitHub token  
    - 成功後會更新公開圖鑑，並由自動化流程部署到 CDN  
+   - 接著嘗試把線上最新**鏡像到 Google Drive 底稿**（供 Spark 每日產卡）；若未設定自動鏡像或失敗，會下載版本檔並開啟 Drive 資料夾供手動放入  
+   - 也可按「同步 Drive 底稿」「開啟 Drive 資料夾」
+
+維護者：Drive／GAS 設定見倉庫 [`automation/apps-script/README.md`](../../automation/apps-script/README.md)。
 
 ## 種類中文對照
 

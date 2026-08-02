@@ -13,6 +13,19 @@ window.WANDANLE_UPLOAD = {
     `https://raw.githubusercontent.com/jimmy77733/wandanle-catalog/main/${path}`,
   indexURL:
     "https://raw.githubusercontent.com/jimmy77733/wandanle-catalog/main/index/catalog_index.json",
+  /** Spark／GAS 底稿資料夾（手動引導用） */
+  driveFolderURL:
+    "https://drive.google.com/drive/folders/1Ayiz2ww87XYRg1nVb1ZDs5nyYF_Px7y7",
+  /**
+   * GAS Web App「鏡像 GitHub → Drive」URL（部署後貼上 …/exec）。
+   * 空白＝發布後只走引導（下載版本檔＋開啟資料夾）。
+   */
+  driveMirrorWebAppURL: "",
+  /**
+   * 與 GAS Script Property `MIRROR_SECRET` 相同。
+   * Web App URL 填好後再填；勿用與 PAT／站門相同的字串。
+   */
+  driveMirrorSecret: "",
   /**
    * 站門密碼的 SHA-256（hex，小寫）。明文不進版控。
    * 重算：echo -n '新密碼' | shasum -a 256

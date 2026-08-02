@@ -197,7 +197,8 @@
         <h2>發布授權</h2>
         <p class="hint">
           寫入倉庫需要具備 Contents 讀寫權限的 GitHub token（僅限本資料庫 repo）。Token
-          只暫存在此瀏覽器工作階段。成功後會更新主檔、CDN，並封存版本與索引。
+          只暫存在此瀏覽器工作階段。成功後會更新主檔、CDN，並封存版本與索引；接著會嘗試同步
+          Drive 底稿（供 Spark 每日產卡）。若自動同步未設定或失敗，會下載版本檔並開啟資料夾供手動放入。
         </p>
         <label for="pat">Token</label>
         <div class="secret-field">
@@ -213,6 +214,14 @@
         </div>
         <div class="row">
           <button type="button" class="btn-primary" id="upload-btn" disabled>上傳並發布</button>
+          <button type="button" class="btn-secondary" id="sync-drive-btn">同步 Drive 底稿</button>
+          <a
+            class="btn-ghost"
+            id="open-drive-btn"
+            href="https://drive.google.com/drive/folders/1Ayiz2ww87XYRg1nVb1ZDs5nyYF_Px7y7"
+            target="_blank"
+            rel="noopener noreferrer"
+          >開啟 Drive 資料夾</a>
           <button type="button" class="btn-ghost" id="clear-pat">清除 Token</button>
         </div>
         <div id="publish-status" class="status"></div>
