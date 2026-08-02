@@ -1,6 +1,6 @@
 {
-  "version": 11,
-  "updatedAt": "2026-08-02T04:46:21Z",
+  "version": 13,
+  "updatedAt": "2026-08-03T04:30:00Z",
   "cards": [
     {
       "id": "history-001",
@@ -1531,6 +1531,114 @@
       "sourceName": "來自睡路邊的公園阿伯",
       "sourceURL": null,
       "funFactValue": "殞落的股神"
+    },
+    {
+      "id": "od-gemini-20260802-history-03",
+      "title": "台南「舊府城」的竹城歷史",
+      "content": "清治時期臺灣府城最初並非石造牆，而是栽植刺竹作為第一道城防防線，後來才陸續改建為木柵與磚石城牆。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw",
+      "funFactValue": "刺竹城牆"
+    },
+    {
+      "id": "od-gemini-20260802-history-04",
+      "title": "日治時期「台灣神社」今昔",
+      "content": "昔日日治時期最高層級的「台灣神社」位於台北劍潭山，戰後改建為今日聞名的圓山大飯店，地形脈絡依然清晰可循。",
+      "category": "history",
+      "sourceName": "台北市政府文化局",
+      "sourceURL": "https://culture.gov.taipei",
+      "funFactValue": "神社改建圓山飯店"
+    },
+    {
+      "id": "od-gemini-20260802-food-03",
+      "title": "基隆特色美食「吉古拉」的日文由來",
+      "content": "基隆特產「吉古拉」就是竹輪，名稱源自日文「Chikuwa（竹輪）」的閩南語音譯，以魚漿塗抹於鐵管上炭烤而成。",
+      "category": "food",
+      "sourceName": "基隆市政府觀光及城市行銷處",
+      "sourceURL": "https://tour.klcg.gov.tw",
+      "funFactValue": "竹輪音譯"
+    },
+    {
+      "id": "od-gemini-20260802-food-04",
+      "title": "彰化美食「蚵仔炸」與王功漁港",
+      "content": "彰化沿海王功一帶盛產蚵仔，在地傳統「蚵仔炸」將鮮蚵與韭菜裹上黃豆粉與地瓜粉漿炸至金黃酥脆，為著名海港小吃。",
+      "category": "food",
+      "sourceName": "彰化縣政府旅遊資訊網",
+      "sourceURL": "https://tourism.chcg.gov.tw",
+      "funFactValue": "王功蚵藝"
+    },
+    {
+      "id": "od-gemini-20260802-geo-03",
+      "title": "花蓮石梯坪的海蝕平台與單面山",
+      "content": "花蓮豐濱石梯坪擁有發達的海蝕平台、海蝕溝與單面山景觀，火山噴發的凝灰岩經海水長期侵蝕，形成如階梯般的海岸地貌。",
+      "category": "geo",
+      "sourceName": "交通部觀光署東部海岸國家風景區管理處",
+      "sourceURL": "https://www.eastcoast-nsa.gov.tw",
+      "funFactValue": "石梯階梯地貌"
+    },
+    {
+      "id": "od-gemini-20260802-geo-04",
+      "title": "苗栗三義火炎山的惡地地形",
+      "content": "苗栗火炎山主要由厚層礫石組成，受風化侵蝕形成陡峭切割的礫石礫岩惡地與崖壁，夕陽照射下宛如烈火燃燒。",
+      "category": "geo",
+      "sourceName": "農業部林業及自然保育署",
+      "sourceURL": "https://www.forest.gov.tw",
+      "funFactValue": "礫岩惡地"
+    },
+    {
+      "id": "od-gemini-20260803-history-01",
+      "title": "清代「彰化縣城」的磚石化歷程",
+      "content": "彰化縣城於清代初建時僅為刺竹圍籬，歷經林爽文事件與多次修築後，於道光年間改建為完整磚石城牆，設有四座城門與城樓。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw",
+      "funFactValue": "磚石城牆"
+    },
+    {
+      "id": "od-gemini-20260803-history-02",
+      "title": "臺灣第一條輕便鐵道「台車」歷史",
+      "content": "日治時期廣泛應用於山區林業、礦業與農產品運輸的「人力台車」，在公路普及前曾是許多偏遠山村唯一的客貨運輸工具。",
+      "category": "history",
+      "sourceName": "交通部鐵道局",
+      "sourceURL": "https://www.rb.gov.tw",
+      "funFactValue": "山林台車"
+    },
+    {
+      "id": "od-gemini-20260803-food-01",
+      "title": "新竹城隍廟小吃「紅糟肉圓」的客家風味",
+      "content": "新竹紅糟肉圓特色在於內餡豬肉以紅糟醃製入味，並加入在地新鮮竹筍丁，低溫油泡後呈現外皮Q彈與淡淡發酵酒香。",
+      "category": "food",
+      "sourceName": "新竹市文化局",
+      "sourceURL": "https://www.hccg.gov.tw",
+      "funFactValue": "紅糟醃肉"
+    },
+    {
+      "id": "od-gemini-20260803-food-02",
+      "title": "台南古早味甜點「香餅（椪餅）」的月子餅傳說",
+      "content": "台南經典傳統香餅以黑糖黑香作餡，烘烤時自然膨脹成球狀，早期府城婦女常將香餅敲破加入雞蛋與麻油煎熟作為坐月子補品。",
+      "category": "food",
+      "sourceName": "台南市政府文化局",
+      "sourceURL": "https://culture.tainan.gov.tw",
+      "funFactValue": "月子椪餅"
+    },
+    {
+      "id": "od-gemini-20260803-geo-01",
+      "title": "高雄泥火山「滾水坪」的地質奇觀",
+      "content": "高雄燕巢與田寮一帶地層蘊含高壓泥漿與天然氣，氣體夾帶泥漿噴出地表形成「泥火山」，為北高雄極具特色的地質景觀。",
+      "category": "geo",
+      "sourceName": "農業部林業及自然保育署",
+      "sourceURL": "https://www.forest.gov.tw",
+      "funFactValue": "泥火山噴發"
+    },
+    {
+      "id": "od-gemini-20260803-geo-02",
+      "title": "澎湖奎壁山「摩西分海」潮間帶沙洲",
+      "content": "澎湖湖西鄉奎壁山至赤嶼之間擁有約300公尺長的玄武岩礫石沙洲，退潮時海水向兩側褪去露出礫石道，形似傳說中的摩西分海。",
+      "category": "geo",
+      "sourceName": "交通部觀光署澎湖國家風景區管理處",
+      "sourceURL": "https://www.penghu-nsa.gov.tw",
+      "funFactValue": "潮間帶分海"
     }
   ]
 }
