@@ -9,6 +9,7 @@ on:
       - "firebase.json"
       - ".firebaserc"
       - ".github/workflows/publish.yml"
+      - "scripts/validate_catalog.py"
   workflow_dispatch:
   repository_dispatch:
     types: [catalog-update]
@@ -49,24 +50,8 @@ jobs:
           mkdir -p public
           cp knowledge_cards.json public/knowledge_cards.json
 
-      - name: Validate JSON
-        run: |
-          python3 - <<'PY'
-          import json
-          from pathlib import Path
-          d = json.loads(Path("knowledge_cards.json").read_text(encoding="utf-8"))
-          assert set(d) == {"version", "updatedAt", "cards"}, set(d)
-          ids = [c["id"] for c in d["cards"]]
-          assert len(ids) == len(set(ids)), "duplicate id"
-          allowed = {"history", "food", "geo"}
-          need = {"id","title","content","category","sourceName","sourceURL","funFactValue"}
-          for c in d["cards"]:
-              assert set(c.keys()) == need, c.get("id")
-              assert c["category"] in allowed, c["id"]
-              assert c["sourceURL"] is None or isinstance(c["sourceURL"], str)
-              assert c["sourceURL"] != ""
-          print("OK", d["version"], len(ids))
-          PY
+      - name: Validate JSON (schema + non-regression)
+        run: python3 scripts/validate_catalog.py
 
       - name: Commit dispatch updates
         if: github.event_name == 'repository_dispatch'

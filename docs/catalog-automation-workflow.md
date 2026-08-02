@@ -3,9 +3,15 @@
 **適用對象：** 要把「AI／人工產出的靜態 JSON」自動送到公開 CDN，供 App 或網站抓取的人。
 
 **參考實作：** [jimmy77733/wandanle-catalog](https://github.com/jimmy77733/wandanle-catalog)  
-**文件版本：** 2026-08-01（與現行實作一致：Drive **新建版本檔** + 資料夾最新檔同步）
+**文件版本：** 2026-08-02（主備用改為靜態上傳站；Drive／GAS 仍為可選）
 
 > **隱私：** 密鑰、檔案／資料夾 ID、私人信箱皆以 `••••` 隱碼。公開 URL 與公開 repo 名稱可保留為可驗證實例。
+
+### 主備用：靜態上傳站
+
+AI 產出完整 JSON → 維護者在 [灣蛋配送站](./upload/)（GitHub Pages）驗證並以 Fine-grained PAT 寫入本 repo → Action 驗證／部署。  
+說明見 [`upload/README.md`](./upload/README.md)；寫入保護見 [`repo-protection.md`](./repo-protection.md)。  
+下文 Drive → Apps Script 路徑**保留為可選**。
 
 ---
 
