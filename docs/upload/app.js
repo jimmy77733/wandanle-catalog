@@ -98,6 +98,8 @@
   let baselineVersion = null;
   let valid = false;
   let dirty = false;
+  /** 工作階段內自行輸入的來源（加入題目後也會留在下拉清單） */
+  const extraSources = new Set();
 
   function showStatus(node, kind, text) {
     node.className = `status show ${kind}`;
@@ -227,11 +229,31 @@
     );
   }
 
+  function rememberSource(name) {
+    const s = String(name || "").trim();
+    if (s) extraSources.add(s);
+    return s;
+  }
+
+  function collectSourceNames() {
+    const names = new Set(extraSources);
+    if (working) {
+      working.cards.forEach((c) => {
+        const s = String(c.sourceName || "").trim();
+        if (s) names.add(s);
+      });
+    }
+    const typed = String(el.addSource?.value || "").trim();
+    if (typed) names.add(typed);
+    return [...names].sort((a, b) => a.localeCompare(b, "zh-Hant"));
+  }
+
   function fillSourceFilters() {
-    const sources = [...new Set(working.cards.map((c) => c.sourceName))].sort((a, b) =>
-      a.localeCompare(b, "zh-Hant")
-    );
-    const cur = el.filterSource.value;
+    if (!working && !extraSources.size) return;
+    rememberSource(el.addSource?.value);
+    const sources = collectSourceNames();
+    const curFilter = el.filterSource.value;
+    const curAdd = el.addSource.value;
     el.filterSource.innerHTML = `<option value="">全部來源</option>`;
     sources.forEach((s) => {
       const opt = document.createElement("option");
@@ -239,13 +261,15 @@
       opt.textContent = s;
       el.filterSource.appendChild(opt);
     });
-    if (sources.includes(cur)) el.filterSource.value = cur;
+    if (sources.includes(curFilter)) el.filterSource.value = curFilter;
     el.sourceList.innerHTML = "";
     sources.forEach((s) => {
       const opt = document.createElement("option");
       opt.value = s;
+      opt.textContent = s;
       el.sourceList.appendChild(opt);
     });
+    if (curAdd) el.addSource.value = curAdd;
   }
 
   function collectEditsFromDOM() {
@@ -522,6 +546,7 @@
     }
     working.cards.push(card);
     dirty = true;
+    rememberSource(card.sourceName);
     fillSourceFilters();
     renderCards();
     const listPanel = $("card-list-panel");
@@ -533,7 +558,17 @@
     el.addContent.value = "";
     el.addFact.value = "";
     el.addUrl.value = "";
+    // 保留來源，方便連續新增；並確保新來源已在 datalist
+    el.addSource.value = card.sourceName;
+    fillSourceFilters();
     showStatus(el.addStatus, "ok", `已新增：${card.title}（${card.id}）`);
+  });
+
+  el.addSource?.addEventListener("change", () => {
+    if (rememberSource(el.addSource.value)) fillSourceFilters();
+  });
+  el.addSource?.addEventListener("blur", () => {
+    if (rememberSource(el.addSource.value)) fillSourceFilters();
   });
 
   function renderDiff(base, next) {
