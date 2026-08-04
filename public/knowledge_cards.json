@@ -1,6 +1,6 @@
 {
-  "version": 13,
-  "updatedAt": "2026-08-03T04:30:00Z",
+  "version": 14,
+  "updatedAt": "2026-08-04T05:00:00Z",
   "cards": [
     {
       "id": "history-001",
@@ -1639,6 +1639,60 @@
       "sourceName": "交通部觀光署澎湖國家風景區管理處",
       "sourceURL": "https://www.penghu-nsa.gov.tw",
       "funFactValue": "潮間帶分海"
+    },
+    {
+      "id": "od-gemini-20260804-history-01",
+      "title": "清代「淡水廳城」的竹圍與石城",
+      "content": "新竹古稱竹塹，清乾隆年間築城時先栽種刺竹作為防禦，後於道光年間改建為磚石城牆，設有四座城門，今僅存東門（迎曦門）。",
+      "category": "history",
+      "sourceName": "新竹市文化局",
+      "sourceURL": "https://www.hccg.gov.tw",
+      "funFactValue": "竹塹迎曦門"
+    },
+    {
+      "id": "od-gemini-20260804-history-02",
+      "title": "臺灣縱貫鐵路「十六份勝興車站」歷史",
+      "content": "苗栗勝興車站建於1906年，位於台鐵舊山線最高點，全株建築採木造結構且不用一釘一鉚，為北臺灣縱貫鐵路經典古蹟車站。",
+      "category": "history",
+      "sourceName": "交通部觀光署",
+      "sourceURL": "https://www.taiwan.net.tw",
+      "funFactValue": "舊山線最高點"
+    },
+    {
+      "id": "od-gemini-20260804-food-01",
+      "title": "宜蘭傳統名菜「西魯肉」的大白菜與蛋酥",
+      "content": "西魯肉是宜蘭傳統辦桌國宴菜，以大白菜、香菇、肉絲為基底熬煮，關鍵在於最後撒上一層香氣四溢的金黃炸蛋酥提味。",
+      "category": "food",
+      "sourceName": "宜蘭縣政府文化局",
+      "sourceURL": "https://www.ilccb.gov.tw",
+      "funFactValue": "炸蛋酥提味"
+    },
+    {
+      "id": "od-gemini-20260804-food-02",
+      "title": "屏東萬巒豬腳的滷汁與中藥材工藝",
+      "content": "萬巒豬腳選用優質前腿，加入特製中藥材香料與醬油慢火熬滷，特色在於皮脆肉Q且不油膩，搭配特製蒜蓉沾醬更顯風味。",
+      "category": "food",
+      "sourceName": "屏東縣政府觀光傳播處",
+      "sourceURL": "https://www.pthg.gov.tw",
+      "funFactValue": "萬巒皮Q肉香"
+    },
+    {
+      "id": "od-gemini-20260804-geo-01",
+      "title": "南投竹山「太極峽谷」的崖壁與瀑布地形",
+      "content": "太極峽谷位於南投竹山加走寮溪上游，河流下切穿過堅硬砂岩地層，形成近乎垂直的V型深邃狹谷與連綿瀑布景觀。",
+      "category": "geo",
+      "sourceName": "農業部林業及自然保育署",
+      "sourceURL": "https://www.forest.gov.tw",
+      "funFactValue": "深邃砂岩峽谷"
+    },
+    {
+      "id": "od-gemini-20260804-geo-02",
+      "title": "金門古寧頭海岸「貓公石」紅褐色鐵質岩",
+      "content": "金門西北海岸古寧頭一帶分佈有獨特的「貓公石」，為富含鐵質的蜂窩狀蜂巢多孔紅褐色蜂窩岩，由含鐵地下水風化沉澱形成。",
+      "category": "geo",
+      "sourceName": "金門國家公園管理處",
+      "sourceURL": "https://www.kmnp.gov.tw",
+      "funFactValue": "蜂窩狀貓公石"
     }
   ]
 }
