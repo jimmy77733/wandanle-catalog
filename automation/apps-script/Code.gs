@@ -8,15 +8,19 @@
  *   GITHUB_OWNER     預設 jimmy77733
  *   GITHUB_REPO      預設 wandanle-catalog
  *   GITHUB_BRANCH    預設 main
- *   MIRROR_SECRET    （建議）Web App 鏡像用密鑰；與配送站 upload.config.js 的 driveMirrorSecret 相同
+ *   MIRROR_SECRET    （建議）Web App 密鑰；與配送站 upload.config.js 的 driveMirrorSecret 相同
+ *   GEMINI_API_KEY   （備援）方案 B：GAS 直接呼叫 Gemini API 產卡時需要
  *
  * 為何用資料夾而不是固定檔案：
  *   部分 AI（如 Gemini Spark）的 Drive 工具只能「新建檔」或改 metadata，
- *   無法覆寫既有 JSON 內容。改為每次上傳新檔，由此腳本挑最新一份同步。
+ *   無法覆寫既有 JSON 內容；且 Spark 寫入／搬移 Drive 會跳出「需要確認」。
+ *   改為：Spark／外部只交完整 JSON 給本 Web App ingest，由此腳本 DriveApp.createFile。
  *
  * 觸發：
  *   - 時間驅動（建議每 15–60 分鐘）執行 syncCatalogFromDrive（Drive → GitHub）
- *   - 配送站發布後呼叫 Web App mirrorCatalogToDrive（GitHub → Drive 新建底稿）
+ *   - 配送站發布後呼叫 Web App action=mirror（GitHub → Drive 新建底稿）
+ *   - Spark Custom app／手動 POST action=ingest（完整 JSON → Drive 新建）
+ *   - 備援：時間驅動 runDailyCatalogViaGeminiApi（Gemini API → Drive → GitHub）
  */
 
 var DEFAULT_OWNER = 'jimmy77733';
@@ -209,21 +213,23 @@ function mirrorCatalogToDriveCore_() {
   };
 }
 
-/** Web App：GET ?action=mirror&secret=... */
+/** Web App：GET ?action=mirror|latestDraft|ingest&secret=... */
 function doGet(e) {
-  return handleMirrorHttp_(e && e.parameter ? e.parameter : {});
+  return handleWebAppHttp_(e && e.parameter ? e.parameter : {}, null);
 }
 
 /**
  * Web App：POST body 為 JSON 或 text/plain JSON
- * { "action": "mirror", "secret": "..." }
+ * { "action": "mirror"|"ingest"|"latestDraft", "secret": "...", "catalog": {...} }
  * Content-Type 建議 text/plain，避免瀏覽器 CORS preflight。
  */
 function doPost(e) {
   var params = {};
+  var rawBody = null;
   try {
     if (e && e.postData && e.postData.contents) {
-      params = JSON.parse(e.postData.contents);
+      rawBody = e.postData.contents;
+      params = JSON.parse(rawBody);
     }
   } catch (err) {
     return jsonOut_({ ok: false, error: 'JSON 解析失敗：' + err });
@@ -235,17 +241,160 @@ function doPost(e) {
       }
     }
   }
-  return handleMirrorHttp_(params);
+  return handleWebAppHttp_(params, rawBody);
 }
 
-function handleMirrorHttp_(params) {
+/**
+ * 外部（Spark Custom app／curl）交完整 catalog JSON → Drive 新建版本檔。
+ * 編輯器可呼叫 ingestCatalogToDrive(rawOrObject)；Web App 用 action=ingest。
+ */
+function ingestCatalogToDrive(rawOrObject) {
+  return ingestCatalogToDriveCore_(rawOrObject, { sync: true });
+}
+
+function ingestCatalogToDriveWithSecret_(providedSecret, rawOrObject, syncAfter) {
+  assertMirrorSecret_(providedSecret);
+  return ingestCatalogToDriveCore_(rawOrObject, {
+    sync: syncAfter !== false
+  });
+}
+
+function ingestCatalogToDriveCore_(rawOrObject, opts) {
+  opts = opts || {};
+  var props = PropertiesService.getScriptProperties();
+  var folderId = props.getProperty('DRIVE_FOLDER_ID');
+  if (!folderId) {
+    throw new Error('缺少 Script Property：DRIVE_FOLDER_ID');
+  }
+  if (rawOrObject == null || rawOrObject === '') {
+    throw new Error('缺少 catalog JSON（參數 catalog 或 body）');
+  }
+
+  var raw =
+    typeof rawOrObject === 'string' ? rawOrObject : JSON.stringify(rawOrObject);
+  var catalog = validateCatalog_(raw);
+  var pretty = JSON.stringify(catalog, null, 2) + '\n';
+  var fileName = 'knowledge_cards_v' + catalog.version + '_' + todayYmd_() + '.json';
+
+  try {
+    var picked = resolveDriveCatalogFile_(props);
+    var driveCat = validateCatalog_(picked.file.getBlob().getDataAsString('UTF-8'));
+    assertNotRegressing_(driveCat, catalog);
+  } catch (e) {
+    var msg = String(e.message || e);
+    if (msg.indexOf('拒絕覆寫') === 0) {
+      throw e;
+    }
+    Logger.log('ingest 比對既有 Drive 底稿略過：' + e);
+  }
+
+  try {
+    var token = props.getProperty('GITHUB_TOKEN');
+    if (token) {
+      var owner = props.getProperty('GITHUB_OWNER') || DEFAULT_OWNER;
+      var repo = props.getProperty('GITHUB_REPO') || DEFAULT_REPO;
+      var branch = props.getProperty('GITHUB_BRANCH') || DEFAULT_BRANCH;
+      var remote = fetchGitHubJson_(owner, repo, ROOT_PATH, branch, token);
+      if (remote && remote.catalog) {
+        assertNotRegressing_(remote.catalog, catalog);
+      }
+    }
+  } catch (e2) {
+    var msg2 = String(e2.message || e2);
+    if (msg2.indexOf('拒絕覆寫') === 0) {
+      throw e2;
+    }
+    Logger.log('ingest 比對 GitHub 略過：' + e2);
+  }
+
+  var folder = DriveApp.getFolderById(folderId);
+  var created = folder.createFile(fileName, pretty, MimeType.PLAIN_TEXT);
+  Logger.log(
+    'ingest 已新建：' + created.getName() + ' version=' + catalog.version
+  );
+
+  var syncResult = null;
+  if (opts.sync) {
+    try {
+      syncResult = syncCatalogFromDrive();
+    } catch (syncErr) {
+      Logger.log('ingest 後 sync 失敗（檔已在 Drive）：' + syncErr);
+      syncResult = { error: String(syncErr.message || syncErr) };
+    }
+  }
+
+  return {
+    ok: true,
+    skipped: false,
+    version: catalog.version,
+    total: catalog.cards.length,
+    fileName: created.getName(),
+    fileId: created.getId(),
+    message: '已新建 Drive 底稿 ' + created.getName(),
+    sync: syncResult
+  };
+}
+
+/** 給 Spark／外部讀底稿，避免用 Spark Drive 工具讀寫。 */
+function latestDraftCatalog() {
+  return latestDraftCatalogCore_();
+}
+
+function latestDraftCatalogWithSecret_(providedSecret) {
+  assertMirrorSecret_(providedSecret);
+  return latestDraftCatalogCore_();
+}
+
+function latestDraftCatalogCore_() {
+  var props = PropertiesService.getScriptProperties();
+  var picked = resolveDriveCatalogFile_(props);
+  var raw = picked.file.getBlob().getDataAsString('UTF-8');
+  var catalog = validateCatalog_(raw);
+  return {
+    ok: true,
+    fileName: picked.file.getName(),
+    fileId: picked.file.getId(),
+    updated: picked.file.getLastUpdated(),
+    version: catalog.version,
+    total: catalog.cards.length,
+    catalog: catalog
+  };
+}
+
+function assertMirrorSecret_(providedSecret) {
+  var expected = PropertiesService.getScriptProperties().getProperty('MIRROR_SECRET');
+  if (expected) {
+    if (!providedSecret || providedSecret !== expected) {
+      throw new Error('MIRROR_SECRET 不符或未提供');
+    }
+  }
+}
+
+function handleWebAppHttp_(params, rawBody) {
   try {
     var action = params.action || 'mirror';
-    if (action !== 'mirror') {
-      return jsonOut_({ ok: false, error: '未知 action：' + action });
+    if (action === 'mirror') {
+      return jsonOut_(mirrorCatalogToDriveWithSecret_(params.secret || null));
     }
-    var result = mirrorCatalogToDriveWithSecret_(params.secret || null);
-    return jsonOut_(result);
+    if (action === 'latestDraft') {
+      return jsonOut_(latestDraftCatalogWithSecret_(params.secret || null));
+    }
+    if (action === 'ingest') {
+      var catalogPayload = params.catalog != null ? params.catalog : params.data;
+      if (catalogPayload == null && rawBody) {
+        try {
+          var parsed = JSON.parse(rawBody);
+          if (parsed && (parsed.version != null || parsed.cards)) {
+            catalogPayload = parsed;
+          }
+        } catch (ignore) {}
+      }
+      var syncAfter = params.sync !== false && params.sync !== 'false';
+      return jsonOut_(
+        ingestCatalogToDriveWithSecret_(params.secret || null, catalogPayload, syncAfter)
+      );
+    }
+    return jsonOut_({ ok: false, error: '未知 action：' + action });
   } catch (err) {
     return jsonOut_({ ok: false, error: String(err.message || err) });
   }
@@ -259,6 +408,79 @@ function jsonOut_(obj) {
 
 function todayYmd_() {
   return Utilities.formatDate(new Date(), 'Asia/Taipei', 'yyyyMMdd');
+}
+
+/**
+ * 備援方案 B：不經 Spark UI，由時間觸發呼叫 Gemini API 產完整庫後寫入 Drive 並同步 GitHub。
+ * 需 Script Property：GEMINI_API_KEY、DRIVE_FOLDER_ID、GITHUB_TOKEN。
+ * 編輯器先手動跑通後再設每日觸發。
+ */
+function runDailyCatalogViaGeminiApi() {
+  var props = PropertiesService.getScriptProperties();
+  var apiKey = props.getProperty('GEMINI_API_KEY');
+  if (!apiKey) {
+    throw new Error('缺少 Script Property：GEMINI_API_KEY（方案 B 備援用）');
+  }
+
+  var draft = latestDraftCatalogCore_();
+  var prompt =
+    '你是《灣蛋啦》圖鑑產卡機器人。根據下列完整 catalog JSON 底稿，' +
+    '追加 6 張新卡（history/food/geo 各 2），保留全部舊卡，' +
+    'version = 底稿 version + 1，總張數不得變少。' +
+    '只輸出完整 JSON 物件（根鍵僅 version, updatedAt, cards），不要 markdown 代碼塊。\n\n' +
+    '底稿：\n' +
+    JSON.stringify(draft.catalog);
+
+  var endpoint =
+    'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=' +
+    encodeURIComponent(apiKey);
+  var res = UrlFetchApp.fetch(endpoint, {
+    method: 'post',
+    contentType: 'application/json',
+    payload: JSON.stringify({
+      contents: [{ role: 'user', parts: [{ text: prompt }] }],
+      generationConfig: { temperature: 0.7, maxOutputTokens: 8192 }
+    }),
+    muteHttpExceptions: true
+  });
+  var code = res.getResponseCode();
+  if (code < 200 || code >= 300) {
+    throw new Error('Gemini API 失敗 HTTP ' + code + ' ' + res.getContentText());
+  }
+  var body = JSON.parse(res.getContentText());
+  var text =
+    body &&
+    body.candidates &&
+    body.candidates[0] &&
+    body.candidates[0].content &&
+    body.candidates[0].content.parts
+      ? body.candidates[0].content.parts
+          .map(function (p) {
+            return p.text || '';
+          })
+          .join('')
+      : '';
+  if (!text) {
+    throw new Error('Gemini API 未回傳文字');
+  }
+  var jsonText = extractJsonObject_(text);
+  var ingestResult = ingestCatalogToDriveCore_(jsonText, { sync: true });
+  Logger.log('runDailyCatalogViaGeminiApi 完成：' + ingestResult.fileName);
+  return ingestResult;
+}
+
+function extractJsonObject_(text) {
+  var t = String(text).trim();
+  var fence = t.match(/```(?:json)?\s*([\s\S]*?)```/);
+  if (fence) {
+    t = fence[1].trim();
+  }
+  var start = t.indexOf('{');
+  var end = t.lastIndexOf('}');
+  if (start < 0 || end <= start) {
+    throw new Error('回應中找不到 JSON 物件');
+  }
+  return t.slice(start, end + 1);
 }
 
 /** 可選：若 JSON 較小（payload < ~60KB），改打 repository_dispatch。大檔請用 syncCatalogFromDrive。 */
