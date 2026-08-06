@@ -1,6 +1,6 @@
 {
-  "version": 16,
-  "updatedAt": "2026-08-06T01:08:59Z",
+  "version": 17,
+  "updatedAt": "2026-08-06T14:04:08Z",
   "cards": [
     {
       "id": "history-001",
@@ -1801,6 +1801,60 @@
       "sourceName": "交通部觀光署日月潭國家風景區管理處",
       "sourceURL": "https://www.sunmoonlake.gov.tw",
       "funFactValue": "邵族祖靈聖地"
+    },
+    {
+      "id": "od-gemini-20260806-history-05",
+      "title": "彰化扇形車庫是亞洲唯二",
+      "content": "彰化扇形車庫建於1922年，以中央轉車台旋轉引導蒸汽火車進入各軌道，現為全台唯一且亞洲唯二仍運作中的扇形車庫。",
+      "category": "history",
+      "sourceName": "交通部臺灣鐵路管理局",
+      "sourceURL": "https://www.railway.gov.tw",
+      "funFactValue": "亞洲唯二動態庫"
+    },
+    {
+      "id": "od-gemini-20260806-history-06",
+      "title": "金門戰地神秘洋樓「得月樓」",
+      "content": "位於金門水頭聚落的得月樓建於1931年，由南洋僑商出資興建，設有槍孔、暗道與偽裝主樓，防範當時盛行的海盜襲擊。",
+      "category": "history",
+      "sourceName": "金門國家公園管理處",
+      "sourceURL": "https://www.kmnp.gov.tw",
+      "funFactValue": "防海盜槍樓"
+    },
+    {
+      "id": "od-gemini-20260806-food-05",
+      "title": "基隆廟口「鼎邊螖」的名字秘密",
+      "content": "鼎邊螖傳統做法是將米漿沿著熱鐵鍋邊「螖」（爬滑）成薄片，再剪塊與高湯、蝦仁羹及金針一同煮成鮮美湯品。",
+      "category": "food",
+      "sourceName": "基隆市觀光旅遊網",
+      "sourceURL": "https://tour.klcg.gov.tw",
+      "funFactValue": "米漿沿鍋滑"
+    },
+    {
+      "id": "od-gemini-20260806-food-06",
+      "title": "嘉義雞肉飯用的其實是火雞",
+      "content": "二戰後美軍帶入火雞，嘉義店家發現火雞肉質較一般土雞粗粗不易爛，且撕成絲後吸附雞油與油蔥醬汁特別香濃。",
+      "category": "food",
+      "sourceName": "嘉義市政府觀光新聞處",
+      "sourceURL": "https://travel.chiayi.gov.tw",
+      "funFactValue": "火雞肉吸醬"
+    },
+    {
+      "id": "od-gemini-20260806-geo-05",
+      "title": "屏東墾丁「風吹砂」神奇地貌",
+      "content": "風吹砂因冬天強烈東北季風將沙粒吹上崖頂，夏天雨水又將沙粒沖刷入海，形成季風與地形共同作用的砂丘景觀。",
+      "category": "geo",
+      "sourceName": "墾丁國家公園管理處",
+      "sourceURL": "https://www.ktnp.gov.tw",
+      "funFactValue": "季風風吹砂"
+    },
+    {
+      "id": "od-gemini-20260806-geo-06",
+      "title": "花蓮太魯閣九曲洞燕子口崖壁",
+      "content": "立霧溪切穿大理岩形成近乎垂直的峽谷地形，崖壁上常有地下水湧出的溶洞，早期吸引大量洋燕在此築巢而得名。",
+      "category": "geo",
+      "sourceName": "太魯閣國家公園管理處",
+      "sourceURL": "https://www.taroko.gov.tw",
+      "funFactValue": "大理岩峽谷"
     }
   ]
 }
