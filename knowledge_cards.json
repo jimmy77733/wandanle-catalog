@@ -1,6 +1,6 @@
 {
-  "version": 14,
-  "updatedAt": "2026-08-04T05:00:00Z",
+  "version": 16,
+  "updatedAt": "2026-08-06T01:08:59Z",
   "cards": [
     {
       "id": "history-001",
@@ -1693,6 +1693,114 @@
       "sourceName": "金門國家公園管理處",
       "sourceURL": "https://www.kmnp.gov.tw",
       "funFactValue": "蜂窩狀貓公石"
+    },
+    {
+      "id": "od-gemini-20260806-history-01",
+      "title": "台灣最早的自來水系統",
+      "content": "台北水源地（今自來水園區）於1909年完工通水，引入新店溪水經沈澱過濾後供給台北城，奠定台灣近代公共衛生與水道建設基礎。",
+      "category": "history",
+      "sourceName": "臺北自來水事業處",
+      "sourceURL": "https://waterpark.water.gov.taipei",
+      "funFactValue": "自來水園區"
+    },
+    {
+      "id": "od-gemini-20260806-history-02",
+      "title": "台灣第一條客運電路台車",
+      "content": "烏來台車最初興建於1928年日治時期，原本是用於運輸木材與造林資材，後來轉型為載運觀光客的輕便軌道設施。",
+      "category": "history",
+      "sourceName": "農業部林業及自然保育署",
+      "sourceURL": "https://www.forest.gov.tw",
+      "funFactValue": "烏來台車"
+    },
+    {
+      "id": "od-gemini-20260806-food-01",
+      "title": "彰化肉圓的油炸低溫溫油學",
+      "content": "彰化肉圓主要以地瓜粉製作外皮，內餡包入豬肉與竹筍，低溫油泡熟透後再以大火逼油，創造出外皮軟Q微酥的獨特口感。",
+      "category": "food",
+      "sourceName": "彰化縣旅遊資訊網",
+      "sourceURL": "https://tourism.chcg.gov.tw",
+      "funFactValue": "低溫油泡"
+    },
+    {
+      "id": "od-gemini-20260806-food-02",
+      "title": "宜蘭糕渣的「外冷內熱」",
+      "content": "宜蘭國宴名菜糕渣是以高湯混合高麗菜泥、雞肉泥與太白粉熬煮成型，切塊裹粉炸過。看似冷卻的外表下，內餡極為燙口。",
+      "category": "food",
+      "sourceName": "宜蘭縣政府文化局",
+      "sourceURL": "https://www.ilccb.gov.tw",
+      "funFactValue": "看似冷卻實則燙口"
+    },
+    {
+      "id": "od-gemini-20260806-geo-01",
+      "title": "台東知本溫泉泉質特色",
+      "content": "知本溫泉屬於弱鹼性碳酸氫鈉泉，泉質無色無味，富含礦物質，早年平埔族原住民便已知曉此地湧出自然溫泉。",
+      "category": "geo",
+      "sourceName": "交通部觀光署東海岸國家風景區管理處",
+      "sourceURL": "https://www.eastcoast-nsa.gov.tw",
+      "funFactValue": "美人湯"
+    },
+    {
+      "id": "od-gemini-20260806-geo-02",
+      "title": "新北鼻頭角步道的台版小萬里長城",
+      "content": "鼻頭角步道沿著東北角海岸山脊興建，步道兩側俯瞰太平洋與海蝕平台，木棧道蜿蜒於稜線上，被譽為「台版小萬里長城」。",
+      "category": "geo",
+      "sourceName": "交通部觀光署東北角暨宜蘭海岸國家風景區管理處",
+      "sourceURL": "https://www.necoast-nsa.gov.tw",
+      "funFactValue": "鼻頭角步道"
+    },
+    {
+      "id": "od-gemini-20260806-history-03",
+      "title": "台灣第一座自來水廠與水道頭",
+      "content": "台北水道水源地（現自來水博物館）於1909年完工，標誌著台灣邁入現代公衛抽水與淨水時代，有效降低當時流行傳染病。",
+      "category": "history",
+      "sourceName": "臺北自來水事業處",
+      "sourceURL": "https://www.water.gov.taipei",
+      "funFactValue": "1909年完工"
+    },
+    {
+      "id": "od-gemini-20260806-history-04",
+      "title": "日治時期「台灣神社」變圓山大飯店",
+      "content": "今圓山大飯店現址在日治時期原為「台灣神社」，戰後改建為接待外賓的圓山大飯店，留有神祕地下避難通道。",
+      "category": "history",
+      "sourceName": "圓山大飯店",
+      "sourceURL": "https://www.grand-hotel.org",
+      "funFactValue": "神社變飯店"
+    },
+    {
+      "id": "od-gemini-20260806-food-03",
+      "title": "台南「虱目魚」名字由來傳說",
+      "content": "傳說鄭成功抵台時民間獻上此魚，鄭問「什麼魚」，因台語諧音演變成「虱目魚」，其魚肚油脂豐富為台南代表美食。",
+      "category": "food",
+      "sourceName": "臺南市政府觀光旅遊局",
+      "sourceURL": "https://www.twtainan.net",
+      "funFactValue": "什麼魚諧音"
+    },
+    {
+      "id": "od-gemini-20260806-food-04",
+      "title": "新竹貢丸彈牙的秘密打漿工藝",
+      "content": "新竹貢丸傳統採新鮮後腿肉，經重木槌「摃」（槌打）成肉漿，使蛋白質膠質化，煮熟後特別Q彈有勁。",
+      "category": "food",
+      "sourceName": "新竹市觀光旅遊網",
+      "sourceURL": "https://tourism.hccg.gov.tw",
+      "funFactValue": "重槌打漿"
+    },
+    {
+      "id": "od-gemini-20260806-geo-03",
+      "title": "高雄田寮月世界泥岩惡地",
+      "content": "田寮月世界屬於強鹼性泥岩荒漠地形，經雨水侵蝕形成鋸齒狀山脊與光禿溝谷，地貌如月球表面而得名。",
+      "category": "geo",
+      "sourceName": "高雄旅遊網",
+      "sourceURL": "https://khh.travel",
+      "funFactValue": "月球般惡地"
+    },
+    {
+      "id": "od-gemini-20260806-geo-04",
+      "title": "南投日月潭「拉魯島」的聖地歷史",
+      "content": "日月潭中央的拉魯島（昔稱光華島）是邵族祖靈聖地，隨著日月潭水庫興建水位上升，現受保護禁止一般遊客登島。",
+      "category": "geo",
+      "sourceName": "交通部觀光署日月潭國家風景區管理處",
+      "sourceURL": "https://www.sunmoonlake.gov.tw",
+      "funFactValue": "邵族祖靈聖地"
     }
   ]
 }
