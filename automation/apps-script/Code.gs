@@ -12,15 +12,13 @@
  *   GEMINI_API_KEY   （備援）方案 B：GAS 直接呼叫 Gemini API 產卡時需要
  *
  * 為何用資料夾而不是固定檔案：
- *   部分 AI（如 Gemini Spark）的 Drive 工具只能「新建檔」或改 metadata，
- *   無法覆寫既有 JSON 內容；且 Spark 寫入／搬移 Drive 會跳出「需要確認」。
- *   改為：Spark／外部只交完整 JSON 給本 Web App ingest，由此腳本 DriveApp.createFile。
+ *   Spark 的 Drive 工具只能「新建檔」、無法覆寫既有 JSON；每日由 Spark 新建
+ *   knowledge_cards_v{N}_{日期}.json（可能需手動按「允許」），再由本腳本同步。
  *
  * 觸發：
  *   - 時間驅動（建議每 15–60 分鐘）執行 syncCatalogFromDrive（Drive → GitHub）
  *   - 配送站發布後呼叫 Web App action=mirror（GitHub → Drive 新建底稿）
- *   - Spark Custom app／手動 POST action=ingest（完整 JSON → Drive 新建）
- *   - 備援：時間驅動 runDailyCatalogViaGeminiApi（Gemini API → Drive → GitHub）
+ *   - （可選遺留）action=ingest／latestDraft；主線不依賴 Custom app／MCP
  */
 
 var DEFAULT_OWNER = 'jimmy77733';

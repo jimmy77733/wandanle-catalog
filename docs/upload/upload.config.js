@@ -21,7 +21,7 @@ window.WANDANLE_UPLOAD = {
    * 空白＝發布後只走引導（下載版本檔＋開啟資料夾）。
    */
   driveMirrorWebAppURL:
-    "https://script.google.com/macros/s/AKfycbzbYeKGRa-uUQuHzFpwEae6fKDJ1ufgC7e6SS30EZpDE84QIW6DZlHv-EiA0vd6aaQeTw/exec",
+    "https://script.google.com/macros/s/AKfycbwy62pm_ZkJw55bJlCd0zZaaHEERtK4131Yp2__5QQgtF0u3YZTsH6GT7eMgCd5bGeyfQ/exec",
   /**
    * 與 GAS Script Property `MIRROR_SECRET` 相同。
    * Web App URL 填好後再填；勿用與 PAT／站門相同的字串。
