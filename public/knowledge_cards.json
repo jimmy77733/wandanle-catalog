@@ -1,6 +1,6 @@
 {
-  "version": 17,
-  "updatedAt": "2026-08-06T14:04:08Z",
+  "version": 18,
+  "updatedAt": "2026-08-06T20:53:45Z",
   "cards": [
     {
       "id": "history-001",
@@ -1855,6 +1855,60 @@
       "sourceName": "太魯閣國家公園管理處",
       "sourceURL": "https://www.taroko.gov.tw",
       "funFactValue": "大理岩峽谷"
+    },
+    {
+      "id": "od-gemini-20260807-history-01",
+      "title": "淡水紅毛城旗幟變遷九國史",
+      "content": "淡水紅毛城最早由西班牙人建立、荷蘭人重構，後歷經清朝、英國領事館、美國與澳洲代管，升過九種不同旗幟，見證台灣外事變遷。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw",
+      "funFactValue": "九國旗幟變遷"
+    },
+    {
+      "id": "od-gemini-20260807-history-02",
+      "title": "台南「安平古堡」與熱蘭遮城",
+      "content": "安平古堡前身為1624年荷蘭人興建的「熱蘭遮城」，為台灣最早的要塞建築，現今留存的原物為數段荷蘭磚砌老城牆。",
+      "category": "history",
+      "sourceName": "臺南市政府文化局",
+      "sourceURL": "https://culture.tainan.gov.tw",
+      "funFactValue": "1624熱蘭遮"
+    },
+    {
+      "id": "od-gemini-20260807-food-01",
+      "title": "彰化貓鼠麵的名字由來",
+      "content": "貓鼠麵創辦人陳木榮因身材瘦小靈敏被稱為「貓鼠」（台語發音），後來便以此作為麵店名稱，湯頭以豬後腿肉燥與蛤蜊熬煮極為鮮美。",
+      "category": "food",
+      "sourceName": "彰化縣旅遊資訊網",
+      "sourceURL": "https://tourism.chcg.gov.tw",
+      "funFactValue": "老闆綽號貓鼠"
+    },
+    {
+      "id": "od-gemini-20260807-food-02",
+      "title": "台中太陽餅的酥皮多層秘密",
+      "content": "太陽餅傳統以豬油揉製麥芽糖餡，餅皮採用油皮包油酥的多層折疊工藝，烘烤後膨脹成層層金黃酥鬆的口感。",
+      "category": "food",
+      "sourceName": "臺中觀光旅遊網",
+      "sourceURL": "https://travel.taichung.gov.tw",
+      "funFactValue": "折疊油酥皮"
+    },
+    {
+      "id": "od-gemini-20260807-geo-01",
+      "title": "澎湖吉貝嶼沙尾地形形成學",
+      "content": "吉貝沙尾是由潮汐與沿岸流將碎貝殼、珊瑚礁碎屑堆積形成的沙嘴地形，長達數百公尺伸入藍海，隨季節潮汐微幅變動。",
+      "category": "geo",
+      "sourceName": "交通部觀光署澎湖國家風景區管理處",
+      "sourceURL": "https://www.penghu-nsa.gov.tw",
+      "funFactValue": "珊瑚碎屑沙嘴"
+    },
+    {
+      "id": "od-gemini-20260807-geo-02",
+      "title": "宜蘭龜山島的活火山特徵",
+      "content": "龜山島為全台唯二的活火山之一，海底擁有世界罕見的「海底熱泉」噴口，湧出強酸高溫泉水與硫磺氣泡，形成夢幻牛奶海景象。",
+      "category": "geo",
+      "sourceName": "交通部觀光署東北角暨宜蘭海岸國家風景區管理處",
+      "sourceURL": "https://www.necoast-nsa.gov.tw",
+      "funFactValue": "海底熱泉牛奶海"
     }
   ]
 }
