@@ -1,6 +1,6 @@
 {
-  "version": 18,
-  "updatedAt": "2026-08-06T20:53:45Z",
+  "version": 19,
+  "updatedAt": "2026-08-07T23:30:24Z",
   "cards": [
     {
       "id": "history-001",
@@ -1909,6 +1909,60 @@
       "sourceName": "交通部觀光署東北角暨宜蘭海岸國家風景區管理處",
       "sourceURL": "https://www.necoast-nsa.gov.tw",
       "funFactValue": "海底熱泉牛奶海"
+    },
+    {
+      "id": "od-gemini-20260808-history-01",
+      "title": "台灣第一條客運鐵路",
+      "content": "清治時期劉銘傳推動興建的基隆至新竹鐵路，於1891年通車至台北，是台灣客運鐵路的起點。",
+      "category": "history",
+      "sourceName": "國史館臺灣文獻館",
+      "sourceURL": "https://www.th.gov.tw",
+      "funFactValue": "1891年通車"
+    },
+    {
+      "id": "od-gemini-20260808-history-02",
+      "title": "台灣最早的西式醫院",
+      "content": "1865年馬雅各醫師於高雄旗津建立醫館，後遷至台南，為台灣現代西醫發展的先驅。",
+      "category": "history",
+      "sourceName": "文化部臺灣大百科全書",
+      "sourceURL": null,
+      "funFactValue": "馬雅各醫館"
+    },
+    {
+      "id": "od-gemini-20260808-food-01",
+      "title": "愛玉子的凝膠秘密",
+      "content": "愛玉是台灣特有亞種植物，籽洗出的凝膠需含有鈣鎂等礦物質的水質才能凝固，純水洗反而凝不起來。",
+      "category": "food",
+      "sourceName": "農業部林業試驗所",
+      "sourceURL": "https://www.tfri.gov.tw",
+      "funFactValue": "需礦物質水"
+    },
+    {
+      "id": "od-gemini-20260808-food-02",
+      "title": "傳統薑汁番茄的靈魂沾醬",
+      "content": "南部特色吃法將切塊黑葉番茄沾老薑末、醬油膏與糖粉調製的沾醬，鹹甜辛香別具風味。",
+      "category": "food",
+      "sourceName": "農業部高雄區農業改良場",
+      "sourceURL": null,
+      "funFactValue": "薑醬油膏"
+    },
+    {
+      "id": "od-gemini-20260808-geo-01",
+      "title": "台灣最高的高山湖泊",
+      "content": "雪山翠池海拔約3,520公尺，是台灣最高的冰斗湖，終年不涸，周邊環繞珍貴的玉山圓柏純林。",
+      "category": "geo",
+      "sourceName": "雪霸國家公園管理處",
+      "sourceURL": "https://www.spnp.gov.tw",
+      "funFactValue": "海拔3520m"
+    },
+    {
+      "id": "od-gemini-20260808-geo-02",
+      "title": "全台唯一的泥火山國家地質公園",
+      "content": "高雄烏山頂泥火山擁有最典型的錐狀泥火山地形，因天然氣與泥漿噴發而形成獨特的景觀。",
+      "category": "geo",
+      "sourceName": "農業部林業及自然保育署",
+      "sourceURL": null,
+      "funFactValue": "泥火山地形"
     }
   ]
 }
