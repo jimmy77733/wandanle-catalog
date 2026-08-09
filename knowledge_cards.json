@@ -1,6 +1,6 @@
 {
-  "version": 19,
-  "updatedAt": "2026-08-07T23:30:24Z",
+  "version": 20,
+  "updatedAt": "2026-08-09T01:38:47Z",
   "cards": [
     {
       "id": "history-001",
@@ -1963,6 +1963,60 @@
       "sourceName": "農業部林業及自然保育署",
       "sourceURL": null,
       "funFactValue": "泥火山地形"
+    },
+    {
+      "id": "od-gemini-20260809-history-01",
+      "title": "台灣古老的石滬捕魚",
+      "content": "澎湖雙心石滬等石滬群利用潮汐漲退原理將魚群困於石牆內，是結合海洋智慧與生態永續的傳統漁法。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw",
+      "funFactValue": "潮汐捕魚"
+    },
+    {
+      "id": "od-gemini-20260809-history-02",
+      "title": "台灣茶外銷的「Formosa Tea」",
+      "content": "19世紀約翰·陶德與李春生合作推廣烏龍茶外銷紐約，打響 Formosa Tea 知名度，大稻埕因而躍升商業重鎮。",
+      "category": "history",
+      "sourceName": "國史館臺灣文獻館",
+      "sourceURL": null,
+      "funFactValue": "外銷大稻埕"
+    },
+    {
+      "id": "od-gemini-20260809-food-01",
+      "title": "太陽餅名稱的由來",
+      "content": "太陽餅源自台中麥芽餅，因金黃色圓形外觀酷似太陽，加上知名店家「太陽堂」的推廣而得名。",
+      "category": "food",
+      "sourceName": "台中市政府觀光旅遊局",
+      "sourceURL": "https://travel.taichung.gov.tw",
+      "funFactValue": "金黃圓形"
+    },
+    {
+      "id": "od-gemini-20260809-food-02",
+      "title": "台南牛肉湯的鮮甜秘訣",
+      "content": "台南牛肉湯採用當日現宰溫體牛肉，以溫熱高湯直接沖燙，鎖住肉汁新鮮度與嫩實口感。",
+      "category": "food",
+      "sourceName": "台南市政府觀光旅遊局",
+      "sourceURL": null,
+      "funFactValue": "現宰溫體牛"
+    },
+    {
+      "id": "od-gemini-20260809-geo-01",
+      "title": "台灣大的高山湖泊日月潭",
+      "content": "日月潭是台灣最大的天然半天然湖泊，因東半部形如日輪、西半部狀如彎月而得名，湖光山色世界聞名。",
+      "category": "geo",
+      "sourceName": "交通部觀光署日月潭國家風景區管理處",
+      "sourceURL": "https://www.sunmoonlake.gov.tw",
+      "funFactValue": "日月地形"
+    },
+    {
+      "id": "od-gemini-20260809-geo-02",
+      "title": "全台唯一的柱狀玄武岩地景",
+      "content": "澎湖群島因火山熔岩冷卻收縮，形成極具壯觀的節理柱狀玄武岩牆，是世界級的地質景觀。",
+      "category": "geo",
+      "sourceName": "農業部林業及自然保育署",
+      "sourceURL": null,
+      "funFactValue": "熔岩冷卻節理"
     }
   ]
 }
