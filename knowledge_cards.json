@@ -1,6 +1,6 @@
 {
-  "version": 20,
-  "updatedAt": "2026-08-09T01:38:47Z",
+  "version": 21,
+  "updatedAt": "2026-08-09T23:54:04Z",
   "cards": [
     {
       "id": "history-001",
@@ -2017,6 +2017,60 @@
       "sourceName": "農業部林業及自然保育署",
       "sourceURL": null,
       "funFactValue": "熔岩冷卻節理"
+    },
+    {
+      "id": "od-gemini-20260810-history-01",
+      "title": "臺灣第一座自來水廠",
+      "content": "日治時期巴爾頓與濱野彌四郎設計建設的臺北水道（今自來水博物館），開啟臺灣現代化公共衛生與自來水供水系統。",
+      "category": "history",
+      "sourceName": "臺北自來水事業處",
+      "sourceURL": "https://waterland.water.gov.taipei",
+      "funFactValue": "1909年通水"
+    },
+    {
+      "id": "od-gemini-20260810-history-02",
+      "title": "澎湖跨海大橋的興建歷史",
+      "content": "1970年完工的澎湖跨海大橋連接白沙與西嶼，曾是東亞最長跨海大橋，大幅改善澎湖離島間的陸路交通。",
+      "category": "history",
+      "sourceName": "交通部觀光署澎湖國家風景區管理處",
+      "sourceURL": null,
+      "funFactValue": "1970通車"
+    },
+    {
+      "id": "od-gemini-20260810-food-01",
+      "title": "臺灣地瓜圓的發源地",
+      "content": "地瓜圓源自新北市瑞芳區九份，將蒸熟地瓜揉入木薯粉後切塊煮熟，口感軟Q彈牙，成為九份代表性傳統甜品。",
+      "category": "food",
+      "sourceName": "新北市觀光旅遊網",
+      "sourceURL": "https://newtaipei.travel",
+      "funFactValue": "九份特色甜品"
+    },
+    {
+      "id": "od-gemini-20260810-food-02",
+      "title": "東港櫻花蝦的珍貴之處",
+      "content": "臺灣屏東東港是全球少數能捕撈櫻花蝦的產地之一，體型小巧呈粉紅色，曬乾後香味濃郁，是極具代表性的海鮮珍品。",
+      "category": "food",
+      "sourceName": "農業部漁業署",
+      "sourceURL": null,
+      "funFactValue": "全球少數產地"
+    },
+    {
+      "id": "od-gemini-20260810-geo-01",
+      "title": "全台最長的大橋",
+      "content": "國道三號的溪州大橋長達4,500公尺，跨越濁水溪連接彰化與雲林，是臺灣目前長度最長的公路橋梁。",
+      "category": "geo",
+      "sourceName": "交通部高速公路局",
+      "sourceURL": "https://www.freeway.gov.tw",
+      "funFactValue": "長度4500m"
+    },
+    {
+      "id": "od-gemini-20260810-geo-02",
+      "title": "火炎山的惡地地貌",
+      "content": "苗栗三義火炎山由礫岩與砂岩組成，因風化侵蝕形成銳利的山脊與崩塌斷崖，夕陽照射下宛如熊熊烈火。",
+      "category": "geo",
+      "sourceName": "農業部林業及自然保育署",
+      "sourceURL": null,
+      "funFactValue": "礫岩惡地地形"
     }
   ]
 }
