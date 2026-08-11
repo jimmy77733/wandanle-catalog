@@ -1,6 +1,6 @@
 {
-  "version": 21,
-  "updatedAt": "2026-08-09T23:54:04Z",
+  "version": 22,
+  "updatedAt": "2026-08-11T00:17:24Z",
   "cards": [
     {
       "id": "history-001",
@@ -520,7 +520,7 @@
       "title": "豆干的百變身分",
       "content": "滷炒炸燙都可以，是宵夜裡的萬用角色。",
       "category": "food",
-      "sourceName": "加工豆製品",
+      "sourceName": "加工豆制品",
       "sourceURL": null,
       "funFactValue": "豆干"
     },
@@ -2071,6 +2071,60 @@
       "sourceName": "農業部林業及自然保育署",
       "sourceURL": null,
       "funFactValue": "礫岩惡地地形"
+    },
+    {
+      "id": "od-gemini-20260811-history-01",
+      "title": "台灣首座公立博物館「臺灣總督府博物館」",
+      "content": "位於台北二二八和平紀念公園內的國立臺灣博物館，成立於1908年，是台灣歷史最悠久的公立博物館，採希臘多立克柱式古典建築風格。",
+      "category": "history",
+      "sourceName": "國立臺灣博物館",
+      "sourceURL": "https://www.ntm.gov.tw",
+      "funFactValue": "1908年成立"
+    },
+    {
+      "id": "od-gemini-20260811-history-02",
+      "title": "台南「林百貨」的五層樓仔傳奇",
+      "content": "建於1932年的林百貨（俗稱五層樓仔）是台灣第二家、南台灣第一家百貨公司，也是台灣首座設有指針式電梯與頂樓神社的百貨。",
+      "category": "history",
+      "sourceName": "台南市政府文化局",
+      "sourceURL": "https://culture.tainan.gov.tw",
+      "funFactValue": "指針電梯與頂樓神社"
+    },
+    {
+      "id": "od-gemini-20260811-food-01",
+      "title": "花蓮扁食的皮薄肉鮮特色",
+      "content": "花蓮扁食以手工擀製薄透如紙的麵皮包裹新鮮黑豬後腿肉，清湯加入油蔥與芹菜提味，成為花蓮在地最具代表性的傳統麵食。",
+      "category": "food",
+      "sourceName": "花蓮縣觀光資訊網",
+      "sourceURL": "https://tour-hualien.hl.gov.tw",
+      "funFactValue": "皮薄如紙"
+    },
+    {
+      "id": "od-gemini-20260811-food-02",
+      "title": "澎湖黑糖糕的祭祀傳承",
+      "content": "澎湖黑糖糕源自日治時期琉球傳統糕點「琉球糕」，早期為居民祭祀神明的必備供品，現已演變為澎湖經典的名產伴手禮。",
+      "category": "food",
+      "sourceName": "澎湖國家風景區管理處",
+      "sourceURL": null,
+      "funFactValue": "琉球糕演變"
+    },
+    {
+      "id": "od-gemini-20260811-geo-01",
+      "title": "台灣最高的瀑布「摩天瀑布」與加走寮溪",
+      "content": "位於南投竹山與嘉義阿里山交界附近的摩天瀑布落差達百餘公尺，是台灣落差極大的高山瀑布之一，展現深谷切穿的雄偉地貌。",
+      "category": "geo",
+      "sourceName": "農業部林業及自然保育署",
+      "sourceURL": "https://www.forest.gov.tw",
+      "funFactValue": "百餘公尺高落差"
+    },
+    {
+      "id": "od-gemini-20260811-geo-02",
+      "title": "墾丁「龍坑生態保護區」的珊瑚礁礁岩",
+      "content": "龍坑部位於墾丁國家公園鵝鑾鼻東側，擁有發達的隆起珊瑚礁、峽谷、崩崖與裙礁地形，是研究熱帶海岸地質與植物的寶庫。",
+      "category": "geo",
+      "sourceName": "墾丁國家公園管理處",
+      "sourceURL": "https://www.ktnp.gov.tw",
+      "funFactValue": "隆起珊瑚礁峽谷"
     }
   ]
 }
