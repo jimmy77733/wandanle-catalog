@@ -1,6 +1,6 @@
 {
-  "version": 22,
-  "updatedAt": "2026-08-11T00:17:24Z",
+  "version": 23,
+  "updatedAt": "2026-08-12T00:09:41Z",
   "cards": [
     {
       "id": "history-001",
@@ -2125,6 +2125,60 @@
       "sourceName": "墾丁國家公園管理處",
       "sourceURL": "https://www.ktnp.gov.tw",
       "funFactValue": "隆起珊瑚礁峽谷"
+    },
+    {
+      "id": "od-gemini-20260812-history-01",
+      "title": "臺灣第一座公共圖書館「臺灣文庫」",
+      "content": "1901年創立於台北的「臺灣文庫」是臺灣最早的現代公共圖書館，後演變為臺灣總督府圖書館（今國立臺灣圖書館的前身）。",
+      "category": "history",
+      "sourceName": "國立臺灣圖書館",
+      "sourceURL": "https://www.ntl.edu.tw",
+      "funFactValue": "1901年創立"
+    },
+    {
+      "id": "od-gemini-20260812-history-02",
+      "title": "台南「赤崁樓」與九座赑屃御碑",
+      "content": "赤崁樓前排列著九座清乾隆年間皇帝賜頒的「赑屃御碑」，傳說龍生九子之一的赑屃喜好負重，基座形似巨龜。",
+      "category": "history",
+      "sourceName": "台南市政府文化局",
+      "sourceURL": "https://culture.tainan.gov.tw",
+      "funFactValue": "乾隆賜御碑"
+    },
+    {
+      "id": "od-gemini-20260812-food-01",
+      "title": "新竹摃丸名稱的台語由來",
+      "content": "新竹摃丸的「摃」（gòng）源自台語重槌捶打豬肉漿的動作，經反覆捶打使肉漿蛋白質膠質化，打造出特有的彈牙口感。",
+      "category": "food",
+      "sourceName": "新竹市政府觀光旅遊網",
+      "sourceURL": "https://tourism.hccg.gov.tw",
+      "funFactValue": "捶打動詞「摃」"
+    },
+    {
+      "id": "od-gemini-20260812-food-02",
+      "title": "台南碗粿的核心「黑醬油與虱目魚高湯」",
+      "content": "台南傳統碗粿將在來米漿加入肉燥汁攪拌蒸熟，淋上以黑醬油與高湯熬製的甘甜醬汁，呈現深色鹹香口感。",
+      "category": "food",
+      "sourceName": "台南市政府觀光旅遊局",
+      "sourceURL": null,
+      "funFactValue": "黑醬油甘甜醬汁"
+    },
+    {
+      "id": "od-gemini-20260812-geo-01",
+      "title": "全台唯一的泥火山國家地質公園",
+      "content": "高雄烏山頂泥火山擁有全台最典型的錐狀泥火山地形，濃稠泥漿受地下天然氣高壓噴出，冷卻堆積成錐狀丘體。",
+      "category": "geo",
+      "sourceName": "農業部林業及自然保育署",
+      "sourceURL": "https://www.forest.gov.tw",
+      "funFactValue": "錐狀泥火山"
+    },
+    {
+      "id": "od-gemini-20260812-geo-02",
+      "title": "宜蘭「梅花湖」的湖泊地形與吊橋",
+      "content": "梅花湖位於宜蘭冬山鄉，為三面環山的天然蓄水湖泊，因湖面形狀似五瓣梅花而得名，周邊設有環湖步道與吊橋景觀。",
+      "category": "geo",
+      "sourceName": "宜蘭縣政府工商旅遊處",
+      "sourceURL": "https://travel.yilan.tw",
+      "funFactValue": "五瓣梅花形湖面"
     }
   ]
 }
