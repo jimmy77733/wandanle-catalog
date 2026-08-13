@@ -1,6 +1,6 @@
 {
-  "version": 23,
-  "updatedAt": "2026-08-12T00:09:41Z",
+  "version": 24,
+  "updatedAt": "2026-08-13T00:10:03Z",
   "cards": [
     {
       "id": "history-001",
@@ -2179,6 +2179,60 @@
       "sourceName": "宜蘭縣政府工商旅遊處",
       "sourceURL": "https://travel.yilan.tw",
       "funFactValue": "五瓣梅花形湖面"
+    },
+    {
+      "id": "od-gemini-20260813-history-01",
+      "title": "高雄「打狗英國領事館」與官邸",
+      "content": "建於1865年的打狗英國領事館官邸位於哨船頭山頂，為臺灣現存年代最早的西式近代建築之一，可俯瞰高雄港景色。",
+      "category": "history",
+      "sourceName": "高雄市政府文化局",
+      "sourceURL": "https://khcc.kcg.gov.tw",
+      "funFactValue": "1865年西式官邸"
+    },
+    {
+      "id": "od-gemini-20260813-history-02",
+      "title": "臺灣第一座鐵路隧道「獅球嶺隧道」",
+      "content": "位於基隆的獅球嶺隧道（劉銘傳隧道）於1890年貫通，是臺灣第一座鐵路隧道，也被列為國定古蹟。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw",
+      "funFactValue": "1890年貫通"
+    },
+    {
+      "id": "od-gemini-20260813-food-01",
+      "title": "台南小吃「牛肉湯」的當日溫體牛處理工藝",
+      "content": "台南牛肉湯使用清晨現宰的溫體牛肉，經精細去筋去脂後薄切，淋上高溫牛骨高湯即時沖熟，保持牛肉極致鮮嫩口感。",
+      "category": "food",
+      "sourceName": "台南市政府觀光旅遊局",
+      "sourceURL": "https://www.twtainan.net",
+      "funFactValue": "清晨現宰薄切"
+    },
+    {
+      "id": "od-gemini-20260813-food-02",
+      "title": "屏東「萬巒豬腳」的中藥材香料慢滷",
+      "content": "萬巒豬腳選用豬前腿，搭配八角、桂皮等十多種中藥材與醬油慢火沉滷，皮脆肉Q且不油膩，沾蒜蓉醬更顯提味。",
+      "category": "food",
+      "sourceName": "屏東縣政府觀光傳播處",
+      "sourceURL": null,
+      "funFactValue": "中藥材沉滷"
+    },
+    {
+      "id": "od-gemini-20260813-geo-01",
+      "title": "南投「日月潭」拉魯島與邵族祖靈聖地",
+      "content": "日月潭中央的拉魯島（Lalu）是邵族祖靈聖地，興建水庫蓄水後湖水上升使島嶼面積微縮，現劃為原住民文化保護區。",
+      "category": "geo",
+      "sourceName": "交通部觀光署日月潭國家風景區管理處",
+      "sourceURL": "https://www.sunmoonlake.gov.tw",
+      "funFactValue": "邵族祖靈島"
+    },
+    {
+      "id": "od-gemini-20260813-geo-02",
+      "title": "澎湖「桶盤嶼」的柱狀玄武岩壁",
+      "content": "桶盤嶼擁有一整圈陡峭垂直的柱狀玄武岩節理，因火山熔岩冷卻收縮形成五角或六角柱體，被譽為澎湖的黃石公園。",
+      "category": "geo",
+      "sourceName": "交通部觀光署澎湖國家風景區管理處",
+      "sourceURL": "https://www.penghu-nsa.gov.tw",
+      "funFactValue": "六角柱狀玄武岩"
     }
   ]
 }
