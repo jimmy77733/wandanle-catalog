@@ -1,6 +1,6 @@
 {
-  "version": 24,
-  "updatedAt": "2026-08-13T00:10:03Z",
+  "version": 25,
+  "updatedAt": "2026-08-13T23:33:09Z",
   "cards": [
     {
       "id": "history-001",
@@ -2233,6 +2233,60 @@
       "sourceName": "交通部觀光署澎湖國家風景區管理處",
       "sourceURL": "https://www.penghu-nsa.gov.tw",
       "funFactValue": "六角柱狀玄武岩"
+    },
+    {
+      "id": "od-gemini-20260814-history-01",
+      "title": "臺灣第一座現代化燈塔「鵝鑾鼻燈塔」",
+      "content": "建於1883年的鵝鑾鼻燈塔是臺灣本島最南端的燈塔，因早期地處原住民衝突區域，也是世界上少見設有槍眼與壕溝的武裝燈塔。",
+      "category": "history",
+      "sourceName": "交通部航港局",
+      "sourceURL": "https://www.motcmpb.gov.tw",
+      "funFactValue": "1883武裝燈塔"
+    },
+    {
+      "id": "od-gemini-20260814-history-02",
+      "title": "台北「中山堂」與臺灣光復簽署地",
+      "content": "台北市中山堂（原台北公會堂）建於1936年，採折衷主義現代建築風格，曾是二次大戰後受降典禮與國民大會的重要歷史會場。",
+      "category": "history",
+      "sourceName": "台北市文化局",
+      "sourceURL": "https://culture.gov.taipei",
+      "funFactValue": "1936台北公會堂"
+    },
+    {
+      "id": "od-gemini-20260814-food-01",
+      "title": "宜蘭特色名菜「卜肉」的油炸由來",
+      "content": "宜蘭三星名產「卜肉」源自台語「爆肉」（po̍k-bah）諧音，將豬里肌肉裹上麵粉與蛋黃特調麵糊油炸，口感酥香軟嫩。",
+      "category": "food",
+      "sourceName": "宜蘭縣政府文化局",
+      "sourceURL": "https://www.ilccb.gov.tw",
+      "funFactValue": "台語爆肉諧音"
+    },
+    {
+      "id": "od-gemini-20260814-food-02",
+      "title": "台中大甲芋頭的軟糯香甜秘訣",
+      "content": "大甲芋頭種植於大安溪與大甲溪沖積平原，水源豐富且土壤肥沃，產出的檳榔心芋口感鬆軟綿密，成為芋頭酥與甜品首選。",
+      "category": "food",
+      "sourceName": "農業部臺中區農業改良場",
+      "sourceURL": "https://www.tdares.gov.tw",
+      "funFactValue": "大安溪沖積平原"
+    },
+    {
+      "id": "od-gemini-20260814-geo-01",
+      "title": "新北石門「石門洞」的海蝕拱門地貌",
+      "content": "石門洞是經海水長期侵蝕形成的天然海蝕洞（海蝕拱門），後隨地殼隆起上升至海平面之上，成為觀察臺灣海岸隆起的地質教室。",
+      "category": "geo",
+      "sourceName": "交通部觀光署北海岸及觀音山國家風景區管理處",
+      "sourceURL": "https://www.northguan-nsa.gov.tw",
+      "funFactValue": "隆起海蝕拱門"
+    },
+    {
+      "id": "od-gemini-20260814-geo-02",
+      "title": "花蓮豐濱「親不知子海上古道」海蝕斷崖",
+      "content": "位於花蓮豐濱鄉的親不知子斷崖垂直聳立於太平洋岸邊，早期原住民在險峻大理石崖壁上開鑿古道，步道底下即是洶湧海浪。",
+      "category": "geo",
+      "sourceName": "花蓮縣觀光資訊網",
+      "sourceURL": "https://tour-hualien.hl.gov.tw",
+      "funFactValue": "垂直大理石斷崖"
     }
   ]
 }
