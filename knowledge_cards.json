@@ -1,6 +1,6 @@
 {
-  "version": 25,
-  "updatedAt": "2026-08-13T23:33:09Z",
+  "version": 26,
+  "updatedAt": "2026-08-14T23:53:45Z",
   "cards": [
     {
       "id": "history-001",
@@ -2287,6 +2287,60 @@
       "sourceName": "花蓮縣觀光資訊網",
       "sourceURL": "https://tour-hualien.hl.gov.tw",
       "funFactValue": "垂直大理石斷崖"
+    },
+    {
+      "id": "od-gemini-20260815-history-01",
+      "title": "臺灣第一座國家公園「墾丁國家公園」",
+      "content": "成立於1984年的墾丁國家公園是臺灣第一座成立的國家公園，三面臨海，涵蓋了陸域與海域多樣生態與珊瑚礁地質景觀。",
+      "category": "history",
+      "sourceName": "內政部國家公園署墾丁國家公園管理處",
+      "sourceURL": "https://www.ktnp.gov.tw",
+      "funFactValue": "1984首座國家公園"
+    },
+    {
+      "id": "od-gemini-20260815-history-02",
+      "title": "新竹市「竹塹城迎曦門」古城門",
+      "content": "竹塹城東門（迎曦門）建於清道光九年（1829年），為新竹市現存唯一的城門遺跡，見證了北臺灣最早聚落城郭的防禦史。",
+      "category": "history",
+      "sourceName": "新竹市文化局",
+      "sourceURL": "https://culture.hccg.gov.tw",
+      "funFactValue": "1829迎曦門"
+    },
+    {
+      "id": "od-gemini-20260815-food-01",
+      "title": "彰化名產「肉圓」的低溫油泡熟成技術",
+      "content": "彰化肉圓以地瓜粉與太白粉製作外皮，蒸熟後浸入溫熱油鍋中「低溫油泡」，保持外皮軟Q透亮且內餡豬肉筍丁鮮香多汁。",
+      "category": "food",
+      "sourceName": "彰化縣政府旅遊資訊網",
+      "sourceURL": "https://tourism.chcg.gov.tw",
+      "funFactValue": "低溫油泡熟成"
+    },
+    {
+      "id": "od-gemini-20260815-food-02",
+      "title": "嘉義「火雞肉飯」的紅蔥頭與雞油澆汁",
+      "content": "嘉義火雞肉飯選用肉質結實的火雞肉切絲或切丁，白飯上淋上以自煉火雞油、香蔥油與純釀醬油熬煮的特調醬汁，香氣濃郁。",
+      "category": "food",
+      "sourceName": "嘉義市政府觀光新聞處",
+      "sourceURL": "https://travel.chiayi.gov.tw",
+      "funFactValue": "自煉火雞油蔥"
+    },
+    {
+      "id": "od-gemini-20260815-geo-01",
+      "title": "苗栗「三義斷層」與關刀山大地震遺址",
+      "content": "1935年新竹台中大地震（關刀山地震）造成魚藤坪斷橋（龍騰斷橋）震毀，紅磚砌成的拱橋殘拱成為臺灣著名地震地質遺構。",
+      "category": "geo",
+      "sourceName": "農業部農村發展及水土保持署",
+      "sourceURL": "https://www.ardswc.gov.tw",
+      "funFactValue": "1935大地震遺構"
+    },
+    {
+      "id": "od-gemini-20260815-geo-02",
+      "title": "台東成功「三仙台」的海蝕柱與八拱跨海步橋",
+      "content": "三仙台是由火山集塊岩構成的離岸小島，因長期海水侵蝕形成海蝕洞與海蝕柱地貌，跨海的八拱波浪步橋如巨龍伏臥海面。",
+      "category": "geo",
+      "sourceName": "交通部觀光署東部海岸國家風景區管理處",
+      "sourceURL": "https://www.eastcoast-nsa.gov.tw",
+      "funFactValue": "八拱波浪跨海步橋"
     }
   ]
 }
