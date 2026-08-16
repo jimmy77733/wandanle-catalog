@@ -1,6 +1,6 @@
 {
-  "version": 26,
-  "updatedAt": "2026-08-14T23:53:45Z",
+  "version": 27,
+  "updatedAt": "2026-08-16T00:17:53Z",
   "cards": [
     {
       "id": "history-001",
@@ -2341,6 +2341,60 @@
       "sourceName": "交通部觀光署東部海岸國家風景區管理處",
       "sourceURL": "https://www.eastcoast-nsa.gov.tw",
       "funFactValue": "八拱波浪跨海步橋"
+    },
+    {
+      "id": "od-gemini-20260816-history-01",
+      "title": "臺灣第一座西式砲台「億載金城」",
+      "content": "建於1876年（清光緒二年）的二鯤鯓砲台（億載金城），由沈葆楨聘請法國工程師設計，為全臺第一座配備阿姆斯壯大砲的西洋幾何形狀堡壘。",
+      "category": "history",
+      "sourceName": "台南市政府文化局",
+      "sourceURL": "https://culture.tainan.gov.tw",
+      "funFactValue": "1876全台首座西式砲台"
+    },
+    {
+      "id": "od-gemini-20260816-history-02",
+      "title": "新竹市「新竹州廳」的紅磚折衷官廳建築",
+      "content": "完工於1927年的新竹州廳採用洋風紅磚與洗石子裝飾，融合巴洛克與現代主義風格，是臺灣少數至今仍作為地方政府辦公廳舍的國定古蹟。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw",
+      "funFactValue": "1927活化官廳古蹟"
+    },
+    {
+      "id": "od-gemini-20260816-food-01",
+      "title": "基隆特色小吃「鼎邊趖」的米漿繞鍋工藝",
+      "content": "基隆廟口名吃「鼎邊趖」的「趖」（sô）指緩慢爬行，將在來米漿沿著滾燙大鐵鼎邊緣澆淋一圈快速烘熟滑入湯中，口感滑嫩微Q。",
+      "category": "food",
+      "sourceName": "基隆市文化觀光局",
+      "sourceURL": "https://www.klccab.gov.tw",
+      "funFactValue": "米漿繞鼎邊緣烘熟"
+    },
+    {
+      "id": "od-gemini-20260816-food-02",
+      "title": "台南古早味「椪餅」與月子麻油煎蛋",
+      "content": "台南傳統椪餅以黑糖與白糖為內餡烘烤膨脹，早期常在餅中央挖洞打入雞蛋，以麻油慢煎至熟透，被稱為「月內餅」，是昔日婦女坐月子的滋補甜品。",
+      "category": "food",
+      "sourceName": "台南旅遊網",
+      "sourceURL": "https://www.twtainan.net",
+      "funFactValue": "黑糖麻油煎蛋月內餅"
+    },
+    {
+      "id": "od-gemini-20260816-geo-01",
+      "title": "宜蘭礁溪「五峰旗瀑布」三層水瀑地質",
+      "content": "五峰旗瀑布座落於礁溪斷層帶與硬質砂岩夾頁岩地層中，因地層落差形成三層梯級式瀑布群，水勢奔騰且富含負離子。",
+      "category": "geo",
+      "sourceName": "農業部林業及自然保育署宜蘭分署",
+      "sourceURL": "https://yilan.forest.gov.tw",
+      "funFactValue": "三層梯級斷層瀑布"
+    },
+    {
+      "id": "od-gemini-20260816-geo-02",
+      "title": "屏東車城「海口沙漠」的季節性落山風沙丘",
+      "content": "車城海口沙漠是由強勁的冬季恆春落山風將海灘細沙吹拂堆積而形成的濱海沙丘地景，展現強烈地形風作用的自然力學。",
+      "category": "geo",
+      "sourceName": "交通部觀光署大鵬灣國家風景區管理處",
+      "sourceURL": "https://www.dbnsa.gov.tw",
+      "funFactValue": "落山風吹積沙丘"
     }
   ]
 }
