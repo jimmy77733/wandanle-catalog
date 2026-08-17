@@ -1,6 +1,6 @@
 {
-  "version": 27,
-  "updatedAt": "2026-08-16T00:17:53Z",
+  "version": 28,
+  "updatedAt": "2026-08-17T00:02:10Z",
   "cards": [
     {
       "id": "history-001",
@@ -2395,6 +2395,60 @@
       "sourceName": "交通部觀光署大鵬灣國家風景區管理處",
       "sourceURL": "https://www.dbnsa.gov.tw",
       "funFactValue": "落山風吹積沙丘"
+    },
+    {
+      "id": "od-gemini-20260817-history-01",
+      "title": "高雄「旗後砲台」的威震天南門額",
+      "content": "建於1875年（清光緒元年）的高雄旗後砲台，入口為中國傳統八字門，門額原題「威震天南」，融合中式營門與西洋砲台配置。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw",
+      "funFactValue": "1875威震天南旗後砲台"
+    },
+    {
+      "id": "od-gemini-20260817-history-02",
+      "title": "臺中「臺中刑務所演武場」的日式武道建築",
+      "content": "興建於1937年的臺中刑務所演武場（現為歷史建築道禾六藝文化館），是臺中市僅存的日治時期武德殿與演武場建築。",
+      "category": "history",
+      "sourceName": "臺中市文化資產處",
+      "sourceURL": "https://www.tchac.taichung.gov.tw",
+      "funFactValue": "1937刑務所演武場"
+    },
+    {
+      "id": "od-gemini-20260817-food-01",
+      "title": "新竹「水潤餅」的肉桂香古早味軟餅",
+      "content": "新竹獨有的傳統糕餅「水潤餅」，成分僅有麵粉、糖、鹽、水與天然肉桂粉，口感軟Q濕潤，原是城隍爺出巡時的平安獻禮。",
+      "category": "food",
+      "sourceName": "新竹市文化局",
+      "sourceURL": "https://culture.hccg.gov.tw",
+      "funFactValue": "肉桂香平安水潤餅"
+    },
+    {
+      "id": "od-gemini-20260817-food-02",
+      "title": "台南白河「蓮子羹」的產地甘甜清熱甜品",
+      "content": "台南白河為臺灣蓮花重要產地，現採新鮮白蓮子以冰糖慢火燉煮成蓮子湯或蓮子羹，口感鬆綿細緻、清甜回甘。",
+      "category": "food",
+      "sourceName": "台南旅遊網",
+      "sourceURL": "https://www.twtainan.net",
+      "funFactValue": "白河現採鬆綿蓮子"
+    },
+    {
+      "id": "od-gemini-20260817-geo-01",
+      "title": "台東成功「石雨傘」的平衡岩海蝕奇景",
+      "content": "台東成功鎮海岸的「石雨傘」是由石灰質砂岩與礫岩構成的延伸海岬，因海水長期侵蝕差異，上方硬岩如傘面平覆於細長岩柱上。",
+      "category": "geo",
+      "sourceName": "交通部觀光署東部海岸國家風景區管理處",
+      "sourceURL": "https://www.eastcoast-nsa.gov.tw",
+      "funFactValue": "差異侵蝕平衡岩"
+    },
+    {
+      "id": "od-gemini-20260817-geo-02",
+      "title": "新北貢寮「三貂角燈塔」臺灣極東點",
+      "content": "三貂角燈塔座落於臺灣本島的最東端海岬，是臺灣本島每日迎接第一道曙光的地點，守護太平洋與東海交會的航道。",
+      "category": "geo",
+      "sourceName": "交通部航港局",
+      "sourceURL": "https://www.motcmpb.gov.tw",
+      "funFactValue": "臺灣極東第一道曙光"
     }
   ]
 }
