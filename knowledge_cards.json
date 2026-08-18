@@ -1,6 +1,6 @@
 {
-  "version": 28,
-  "updatedAt": "2026-08-17T00:02:10Z",
+  "version": 29,
+  "updatedAt": "2026-08-17T23:43:35Z",
   "cards": [
     {
       "id": "history-001",
@@ -2449,6 +2449,60 @@
       "sourceName": "交通部航港局",
       "sourceURL": "https://www.motcmpb.gov.tw",
       "funFactValue": "臺灣極東第一道曙光"
+    },
+    {
+      "id": "od-gemini-20260818-history-01",
+      "title": "新竹市「新竹火車站」全台現存最古老車站",
+      "content": "完工於1913年（大正二年）的新竹火車站，由建築師松崎萬長設計，採巴洛克與哥德式建築風格，是臺灣現役歷史最悠久的國定古蹟火車站。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw",
+      "funFactValue": "1913現存最老火車站"
+    },
+    {
+      "id": "od-gemini-20260818-history-02",
+      "title": "台南「原臺南水道」的淨水池與蝙蝠生態",
+      "content": "完工於1922年的臺南水道淨水池區，以天然石材與紅磚砌築，具歐式城堡風格，退役後內部成為保育類臺灣葉鼻蝠的重要棲息地。",
+      "category": "history",
+      "sourceName": "臺南山上花園水道博物館",
+      "sourceURL": "https://waterworks.tainan.gov.tw",
+      "funFactValue": "1922歐風水道古蹟與蝙蝠"
+    },
+    {
+      "id": "od-gemini-20260818-food-01",
+      "title": "宜蘭特色「糕渣」外冷內熱的滾燙工藝",
+      "content": "宜蘭著名小吃「糕渣」將雞肉、豬肉及蝦仁熬成濃高湯，拌入太白粉漿慢火攪拌冷卻凝固後切塊裹粉油炸，外表溫涼內部卻極為滾燙鮮濃。",
+      "category": "food",
+      "sourceName": "宜蘭縣政府文化局",
+      "sourceURL": "https://www.ilccb.gov.tw",
+      "funFactValue": "外冷內燙濃郁高湯凍"
+    },
+    {
+      "id": "od-gemini-20260818-food-02",
+      "title": "新竹北埔「客家擂茶」的三生湯飲茶文化",
+      "content": "北埔客家擂茶將茶葉、芝麻、花生等原料放入陶製擂缽中研磨成細粉，沖入熱開水並加入玄米與堅果，具生津止渴、充飢兼提神特色。",
+      "category": "food",
+      "sourceName": "客家委員會",
+      "sourceURL": "https://www.hakka.gov.tw",
+      "funFactValue": "陶缽手工研磨擂茶"
+    },
+    {
+      "id": "od-gemini-20260818-geo-01",
+      "title": "花蓮「清水斷崖」千米臨海垂直峭壁",
+      "content": "蘇花公路旁的清水斷崖高達數百至上千公尺，由堅硬大理岩與片麻岩構成，幾近90度垂直拔起於太平洋海面，被列為臺灣八景之一。",
+      "category": "geo",
+      "sourceName": "內政部國家公園署太魯閣國家公園管理處",
+      "sourceURL": "https://www.taroko.gov.tw",
+      "funFactValue": "千米臨海大理石斷崖"
+    },
+    {
+      "id": "od-gemini-20260818-geo-02",
+      "title": "高雄燕巢「雞冠山」的單面山石灰岩刃脊",
+      "content": "燕巢雞冠山因地層受到造山運動擠壓直立，差異侵蝕使堅硬石灰岩突露於泥岩之上，山頂如雞冠般陡峭突起，為臺灣典型單面山鋸齒奇景。",
+      "category": "geo",
+      "sourceName": "農業部林業及自然保育署屏東分署",
+      "sourceURL": "https://pingtung.forest.gov.tw",
+      "funFactValue": "鋸齒單面山石灰岩刃脊"
     }
   ]
 }
