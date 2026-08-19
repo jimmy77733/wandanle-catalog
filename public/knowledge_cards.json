@@ -1,6 +1,6 @@
 {
-  "version": 29,
-  "updatedAt": "2026-08-17T23:43:35Z",
+  "version": 30,
+  "updatedAt": "2026-08-19T00:02:34Z",
   "cards": [
     {
       "id": "history-001",
@@ -2503,6 +2503,60 @@
       "sourceName": "農業部林業及自然保育署屏東分署",
       "sourceURL": "https://pingtung.forest.gov.tw",
       "funFactValue": "鋸齒單面山石灰岩刃脊"
+    },
+    {
+      "id": "od-gemini-20260819-history-01",
+      "title": "台南「孔廟」全臺首學的泮宮坊與大成殿",
+      "content": "建於1665年（明鄭永曆十九年）的臺南孔子廟，為全臺灣最早設立的儒學官學學校與孔廟，門額題有「全臺首學」，是國定古蹟。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw",
+      "funFactValue": "1665全臺首學孔子廟"
+    },
+    {
+      "id": "od-gemini-20260819-history-02",
+      "title": "高雄「打狗鐵道故事館」高雄港驛",
+      "content": "打狗停車場（後稱高雄港站）啟用於1900年，是臺灣縱貫鐵路的南部端點與最早現代化海陸聯運樞紐，現轉型為鐵道文化園區。",
+      "category": "history",
+      "sourceName": "高雄市政府文化局",
+      "sourceURL": "https://culture.khcc.gov.tw",
+      "funFactValue": "1900縱貫鐵路海陸聯運端點"
+    },
+    {
+      "id": "od-gemini-20260819-food-01",
+      "title": "彰化鹿港「麵線糊」的赤肉條與手工拉絲",
+      "content": "鹿港傳統麵線糊選用日曬手工紅麵線，搭配以太白粉醃製滑嫩的豬後腿肉赤肉條與小蝦米，湯頭勾芡濃稠滑順，淋上烏醋與香菜風味獨特。",
+      "category": "food",
+      "sourceName": "彰化縣政府旅遊資訊網",
+      "sourceURL": "https://tourism.chcg.gov.tw",
+      "funFactValue": "鹿港日曬紅麵線赤肉條"
+    },
+    {
+      "id": "od-gemini-20260819-food-02",
+      "title": "南投埔里「茭白筍」美人腿的清甜脆嫩",
+      "content": "埔里因甘甜純淨山泉水與盆地日夜溫差，產出全臺逾八成的優質茭白筍，外皮白嫩如美腿，肉質細緻脆甜，水煮沾美乃滋即可品嚐原味。",
+      "category": "food",
+      "sourceName": "農業部農糧署",
+      "sourceURL": "https://www.afa.gov.tw",
+      "funFactValue": "埔里泉水美人腿茭白筍"
+    },
+    {
+      "id": "od-gemini-20260819-geo-01",
+      "title": "台南七股「七股鹽山」與潟湖沙洲地形",
+      "content": "七股鹽場曾是臺灣最大的曬鹽場，停曬後堆疊出六層樓高的鹽山地景，周邊擁有臺灣最大的潟湖「七股潟湖」與網仔寮汕沙洲。",
+      "category": "geo",
+      "sourceName": "交通部觀光署雲嘉南濱海國家風景區管理處",
+      "sourceURL": "https://swcoast-nsa.travel",
+      "funFactValue": "全臺最大鹽場與潟湖沙洲"
+    },
+    {
+      "id": "od-gemini-20260819-geo-02",
+      "title": "花蓮光復「大農大富平地森林園區」縱谷綠廊",
+      "content": "位於花東縱谷中央的大農大富平地森林園區占地超過一千公頃，是臺灣首座平地森林園區，擁有大片楓香林道與豐富低海拔鳥類生態。",
+      "category": "geo",
+      "sourceName": "農業部林業及自然保育署花蓮分署",
+      "sourceURL": "https://hualien.forest.gov.tw",
+      "funFactValue": "千公頃縱谷平地森林"
     }
   ]
 }
