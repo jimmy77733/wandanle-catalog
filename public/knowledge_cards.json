@@ -1,6 +1,6 @@
 {
-  "version": 30,
-  "updatedAt": "2026-08-19T00:02:34Z",
+  "version": 31,
+  "updatedAt": "2026-08-19T23:36:50Z",
   "cards": [
     {
       "id": "history-001",
@@ -2557,6 +2557,60 @@
       "sourceName": "農業部林業及自然保育署花蓮分署",
       "sourceURL": "https://hualien.forest.gov.tw",
       "funFactValue": "千公頃縱谷平地森林"
+    },
+    {
+      "id": "od-gemini-20260820-history-01",
+      "title": "新北淡水「紅毛城」九面旗幟的政權更迭史",
+      "content": "淡水紅毛城最早由西班牙人於1628年建為聖多明哥城，後由荷蘭人重建為安東尼堡，歷經明鄭、清廷、英國領事館租用等，見證超過三百年的臺灣近代涉外史。",
+      "category": "history",
+      "sourceName": "新北市立淡水古蹟博物館",
+      "sourceURL": "https://www.tshs.ntpc.gov.tw",
+      "funFactValue": "1628淡水紅毛城"
+    },
+    {
+      "id": "od-gemini-20260820-history-02",
+      "title": "屏東恆春「恆春古城」全臺保存最完整的清代城池",
+      "content": "建於1875年（清光緒元年）的恆春縣城，擁有東、西、南、北四座城門及砲台城牆遺跡，是全臺灣現存最完整的清代四合一古城池建築。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw",
+      "funFactValue": "1875全臺唯一完整四城門"
+    },
+    {
+      "id": "od-gemini-20260820-food-01",
+      "title": "苗栗客家「水粄」鹹甜雙風味米食",
+      "content": "客家傳統米食水粄以在來米磨漿蒸製而成，鹹水粄鋪滿菜脯乾、香菇、蝦米與絞肉碎；甜水粄則融入黑糖或紅糖，口感滑嫩細緻。",
+      "category": "food",
+      "sourceName": "客家委員會",
+      "sourceURL": "https://www.hakka.gov.tw",
+      "funFactValue": "客家在來米漿鹹甜水粄"
+    },
+    {
+      "id": "od-gemini-20260820-food-02",
+      "title": "台東成功「旗魚料理」生魚片與旗魚丸鮮甜工藝",
+      "content": "台東成功漁港因黑潮暖流交會，以鏢旗魚傳統漁法聞名，盛產白皮旗魚與劍旗魚，油脂豐厚甘甜，手打旗魚丸彈牙脆口。",
+      "category": "food",
+      "sourceName": "台東觀光旅遊網",
+      "sourceURL": "https://tour.taitung.gov.tw",
+      "funFactValue": "成功鏢旗魚手打丸"
+    },
+    {
+      "id": "od-gemini-20260820-geo-01",
+      "title": "新北金山「燭臺雙嶼」的海蝕柱奇觀",
+      "content": "金山岬外海的燭臺雙嶼高約60公尺，原為突出的海岬，因地層擠壓與海水長年侵蝕形成海蝕拱門，後頂部崩塌孤立為兩座並列的燭臺狀海蝕柱。",
+      "category": "geo",
+      "sourceName": "交通部觀光署北海岸及觀音山國家風景區管理處",
+      "sourceURL": "https://www.northguan-nsa.gov.tw",
+      "funFactValue": "夫妻石燭臺海蝕柱"
+    },
+    {
+      "id": "od-gemini-20260820-geo-02",
+      "title": "屏東恆春「出火特別景觀區」天然氣泥岩裂隙",
+      "content": "恆春出火是因地下泥岩層裂隙中蘊藏天然氣逸出地表，經點燃後長年火苗不熄，形成夜晚地表跳動火焰的特殊地質景觀。",
+      "category": "geo",
+      "sourceName": "內政部國家公園署墾丁國家公園管理處",
+      "sourceURL": "https://www.ktnp.gov.tw",
+      "funFactValue": "泥岩天然氣出火奇景"
     }
   ]
 }
