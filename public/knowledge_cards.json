@@ -1,6 +1,6 @@
 {
-  "version": 31,
-  "updatedAt": "2026-08-19T23:36:50Z",
+  "version": 32,
+  "updatedAt": "2026-08-21T00:05:18Z",
   "cards": [
     {
       "id": "history-001",
@@ -2611,6 +2611,60 @@
       "sourceName": "內政部國家公園署墾丁國家公園管理處",
       "sourceURL": "https://www.ktnp.gov.tw",
       "funFactValue": "泥岩天然氣出火奇景"
+    },
+    {
+      "id": "od-gemini-20260821-history-01",
+      "title": "台南「安平古堡」熱蘭遮城三層半圓堡殘蹟",
+      "content": "始建於1624年的熱蘭遮城是荷蘭東印度公司統治臺灣的行政樞紐，現存紅磚古城牆外牆殘壁以糯米、糖漿、蚵灰汁與紅糖水疊砌，見證大航海時代臺灣歷史起點。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw",
+      "funFactValue": "1624熱蘭遮城糯米蚵灰城牆"
+    },
+    {
+      "id": "od-gemini-20260821-history-02",
+      "title": "澎湖「天后宮」全臺灣歷史最悠久的媽祖廟",
+      "content": "澎湖天后宮是全臺灣歷史最悠久的媽祖廟，廟內藏有明神宗萬曆三十二年（1604年）「沈有容諭退紅毛番韋麻郎等」石碑，為臺灣現存最早的官方歷史石碑。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw",
+      "funFactValue": "1604沈有容諭退紅毛番碑"
+    },
+    {
+      "id": "od-gemini-20260821-food-01",
+      "title": "台南安平「蝦捲」火燒蝦與豬網油包覆鮮味",
+      "content": "傳統安平蝦捲精選肉質緊實鮮甜的在地火燒蝦，混合魚漿、芹菜與蔥花，外層以豬網油（豬腹膜）包裹後裹粉高溫酥炸，外酥內嫩多汁，沾芥末醬油膏是經典吃法。",
+      "category": "food",
+      "sourceName": "台南旅遊網",
+      "sourceURL": "https://www.twtainan.net",
+      "funFactValue": "火燒蝦與豬網油酥炸蝦捲"
+    },
+    {
+      "id": "od-gemini-20260821-food-02",
+      "title": "雲林北港「鴨肉羹」生炒大火焦香與筍絲甘甜",
+      "content": "北港傳統鴨肉羹將切片帶皮嫩鴨肉以洋蔥、蒜頭與辣椒大火快炒爆香，逼出鑊氣焦香後加入清甜筍絲高湯勾芡，淋上五印醋提升層次，是朝天宮香客必嚐美味。",
+      "category": "food",
+      "sourceName": "雲林縣政府文化觀光處",
+      "sourceURL": "https://tour.yunlin.gov.tw",
+      "funFactValue": "北港快炒鑊氣鴨肉羹"
+    },
+    {
+      "id": "od-gemini-20260821-geo-01",
+      "title": "新北瑞芳「陰陽海」礦物離子與海水交織雙色奇景",
+      "content": "水湳洞陰陽海因金瓜石山區富含黃鐵礦與硫砷銅礦，雨水滲入礦脈形成含高濃度鐵離子的酸性礦水流入海灣，氧化後形成懸浮黃褐色氫氧化鐵，與外海湛藍海水形成黃藍分明的雙色海景。",
+      "category": "geo",
+      "sourceName": "新北市觀光旅遊網",
+      "sourceURL": "https://newtaipei.travel",
+      "funFactValue": "金瓜石礦物離子黃藍陰陽海"
+    },
+    {
+      "id": "od-gemini-20260821-geo-02",
+      "title": "台東鹿野「鹿野高台」河階斷崖與熱氣球熱對流",
+      "content": "鹿野高台為卑南溪侵蝕沉積形成的隆起河階臺地，標高約350公尺，擁有視野開闊的草生地與卑南溪谷穩定上升氣流，是全臺熱氣球飛行與飛行傘運動的重要聖地。",
+      "category": "geo",
+      "sourceName": "交通部觀光署花東縱谷國家風景區管理處",
+      "sourceURL": "https://www.erv-nsa.gov.tw",
+      "funFactValue": "卑南溪河階臺地熱氣球聖地"
     }
   ]
 }
