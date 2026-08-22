@@ -1,6 +1,6 @@
 {
-  "version": 32,
-  "updatedAt": "2026-08-21T00:05:18Z",
+  "version": 33,
+  "updatedAt": "2026-08-21T23:59:05Z",
   "cards": [
     {
       "id": "history-001",
@@ -2665,6 +2665,60 @@
       "sourceName": "交通部觀光署花東縱谷國家風景區管理處",
       "sourceURL": "https://www.erv-nsa.gov.tw",
       "funFactValue": "卑南溪河階臺地熱氣球聖地"
+    },
+    {
+      "id": "od-gemini-20260822-history-01",
+      "title": "台北「撫臺街洋樓」延平南路上的石木混合歐風街屋",
+      "content": "建於1910年的撫臺街洋樓，是台北舊城區內現存唯一日治初期的洋式店鋪木石混合建築，一樓為唭哩岸石拱廊，二樓為木造，屋頂採法式曼薩爾（Mansard）高斜斜頂與老虎窗設計。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw",
+      "funFactValue": "1910台北城內石木洋式店鋪"
+    },
+    {
+      "id": "od-gemini-20260822-history-02",
+      "title": "雲林虎尾「虎尾糖廠鐵橋」全臺現存三段式鋼桁架鐵道橋",
+      "content": "建於1907年的虎尾糖廠鐵橋（原名番薯莊板頭厝鐵道），橫跨北港溪，兼具糖業載運甘蔗與客運功能，為全臺現存罕見結合不同時期三種鋼桁架構造的百年鐵道橋梁。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw",
+      "funFactValue": "1907北港溪三段桁架鐵道橋"
+    },
+    {
+      "id": "od-gemini-20260822-food-01",
+      "title": "嘉義「砂鍋魚頭」高湯慢熬扁魚大白菜與酥炸大頭鰱",
+      "content": "嘉義傳統砂鍋魚頭將新鮮大頭鰱魚頭裹粉高溫酥炸封住肉汁，放入以扁魚、金鉤蝦爆香並加入大量大白菜、木耳、豆腐與特製沙茶熬煮的濃郁高湯中燉煮，湯頭甘醇鮮香。",
+      "category": "food",
+      "sourceName": "嘉義市政府觀光新聞處",
+      "sourceURL": "https://travel.chiayi.gov.tw",
+      "funFactValue": "酥炸大頭鰱與扁魚沙茶湯"
+    },
+    {
+      "id": "od-gemini-20260822-food-02",
+      "title": "台南「麻豆文旦」老欉柑橘精油與甘甜多汁果肉",
+      "content": "台南麻豆因曾文溪流域肥沃沖積土與排水良好的微酸性土壤，培育出樹齡數十年的老欉文旦，果形小巧呈底寬頂尖洋梨狀，果肉細緻柔軟多汁、甜中帶微酸且富含甘美柚香。",
+      "category": "food",
+      "sourceName": "農業部農糧署",
+      "sourceURL": "https://www.afa.gov.tw",
+      "funFactValue": "麻豆老欉洋梨形甘甜文旦"
+    },
+    {
+      "id": "od-gemini-20260822-geo-01",
+      "title": "南投竹山「太極峽谷」加走寮溪深切石杭峽谷",
+      "content": "位於南投竹山加走寮溪上游的太極峽谷（原名石杭峽谷），因溪水千萬年強烈下切堅硬砂岩地層，形成高達上百公尺的垂直峭壁、急流深潭與千層瀑布，有「西部太魯閣」之稱。",
+      "category": "geo",
+      "sourceName": "交通部觀光署日月潭國家風景區管理處",
+      "sourceURL": "https://www.sunmoonlake.gov.tw",
+      "funFactValue": "加走寮溪百年深切石杭峽谷"
+    },
+    {
+      "id": "od-gemini-20260822-geo-02",
+      "title": "新北石碇「千島湖」翡翠水庫蓄水淹沒山脊水鄉",
+      "content": "石碇千島湖位於翡翠水庫上游北勢溪流域，水庫興建蓄水後，原本起伏的丘陵山脊與茶園部分沒入水中，形成如繁星散落般的湖光山色島嶼地景，水質清澈碧綠。",
+      "category": "geo",
+      "sourceName": "新北市觀光旅遊網",
+      "sourceURL": "https://newtaipei.travel",
+      "funFactValue": "翡翠水庫北勢溪蜿蜒湖丘"
     }
   ]
 }
