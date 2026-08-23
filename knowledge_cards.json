@@ -1,6 +1,6 @@
 {
-  "version": 33,
-  "updatedAt": "2026-08-21T23:59:05Z",
+  "version": 34,
+  "updatedAt": "2026-08-23T00:25:03Z",
   "cards": [
     {
       "id": "history-001",
@@ -2719,6 +2719,60 @@
       "sourceName": "新北市觀光旅遊網",
       "sourceURL": "https://newtaipei.travel",
       "funFactValue": "翡翠水庫北勢溪蜿蜒湖丘"
+    },
+    {
+      "id": "od-gemini-20260823-history-01",
+      "title": "台南「原臺南地方法院」全臺現存唯一日治地方法院巨型巴洛克古蹟",
+      "content": "建於1912年的原臺南地方法院（現為司法博物館），由森山松之助設計，擁有華麗的愛奧尼克柱式門廊、圓頂與採光天塔（已修復倒置裝置），與總統府、國立臺灣博物館並列為日治臺灣三大經典巴洛克式官廳建築。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw",
+      "funFactValue": "1912全臺唯一日治地院巴洛克建築"
+    },
+    {
+      "id": "od-gemini-20260823-history-02",
+      "title": "高雄「鳳儀書院」全臺灣現存規模最大的清代書院古蹟",
+      "content": "建於1814年（清嘉慶十九年）的鳳儀書院，位於高雄鳳山，設有照壁、頭門、講堂、廳事及左右學舍共三十七間，是全臺灣現存歷史最悠久且規模最宏偉的清代文教書院建築。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw",
+      "funFactValue": "1814全臺現存最大清代書院"
+    },
+    {
+      "id": "od-gemini-20260823-food-01",
+      "title": "宜蘭羅東「包心粉圓」紅豆夾心與冷熱交融吃法",
+      "content": "發源於宜蘭羅東夜市的包心粉圓，將整顆萬丹紅豆包裹於地瓜粉漿中反覆滾圓煮透，外皮晶瑩Q彈、內餡紅豆綿密甘甜，熱騰騰粉圓澆淋於雪沙冰或仙草凍上，創造外冰內溫的獨特口感。",
+      "category": "food",
+      "sourceName": "宜蘭勁好玩（宜蘭縣政府）",
+      "sourceURL": "https://travel.yilan.tw",
+      "funFactValue": "萬丹紅豆夾心雙層冷熱粉圓"
+    },
+    {
+      "id": "od-gemini-20260823-food-02",
+      "title": "金門「高粱牛肉乾」酒糟飼育黃牛與中藥溫炒工藝",
+      "content": "金門牛肉乾精選食用釀造金門高粱酒後富含蛋白質酒糟的在地金門黃牛，肉質纖維緊實油花細緻，搭配多味漢方中藥香料慢火炒焙烘乾，肉香濃郁且帶有獨特酒糟回甘香氣。",
+      "category": "food",
+      "sourceName": "金門觀光旅遊網",
+      "sourceURL": "https://kinmen.travel",
+      "funFactValue": "高粱酒糟黃牛肉乾中藥慢焙"
+    },
+    {
+      "id": "od-gemini-20260823-geo-01",
+      "title": "花蓮豐濱「石梯坪」世界級海蝕階梯與壺穴地質",
+      "content": "石梯坪由火山噴發凝灰岩與凝灰角礫岩經地殼隆起與海浪長年侵蝕而成，呈現一層層如巨大階梯般的海蝕平台、海蝕崖、隆起珊瑚礁，以及全臺灣最發達且密集的單面山與海蝕壺穴景觀。",
+      "category": "geo",
+      "sourceName": "交通部觀光署東部海岸國家風景區管理處",
+      "sourceURL": "https://www.eastcoast-nsa.gov.tw",
+      "funFactValue": "凝灰岩海蝕階梯與壺穴群"
+    },
+    {
+      "id": "od-gemini-20260823-geo-02",
+      "title": "新北烏來「烏來瀑布」南勢溪源頭高崖雙階斷層懸瀑",
+      "content": "烏來瀑布位於新北市烏來區南勢溪左岸支流烏來溪注入南勢溪處，落差約80公尺、寬約10公尺，為典型的斷層構造懸谷型瀑布，水流沿著堅硬漸新世砂岩峭壁如白練傾瀉而下，水氣蒸騰。",
+      "category": "geo",
+      "sourceName": "新北市觀光旅遊網",
+      "sourceURL": "https://newtaipei.travel",
+      "funFactValue": "80公尺高崖斷層懸谷飛瀑"
     }
   ]
 }
