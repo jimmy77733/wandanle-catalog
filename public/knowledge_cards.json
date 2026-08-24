@@ -1,6 +1,6 @@
 {
-  "version": 34,
-  "updatedAt": "2026-08-23T00:25:03Z",
+  "version": 35,
+  "updatedAt": "2026-08-23T23:33:20Z",
   "cards": [
     {
       "id": "history-001",
@@ -2773,6 +2773,60 @@
       "sourceName": "新北市觀光旅遊網",
       "sourceURL": "https://newtaipei.travel",
       "funFactValue": "80公尺高崖斷層懸谷飛瀑"
+    },
+    {
+      "id": "od-gemini-20260824-history-01",
+      "title": "台南「北極殿」明鄭永曆年間大上帝廟與全臺最古老古鐘",
+      "content": "建於1665年（明鄭永曆十九年）的台南北極殿（俗稱大上帝廟），主祀玄天上帝，為全臺歷史最悠久的玄天上帝廟之一，廟內珍藏康熙年間寧靖王朱術桂所敬獻的「威靈赫奕」匾額與全臺現存最古老的清代銅鐘。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw",
+      "funFactValue": "1665全臺玄天上帝開基大上帝廟"
+    },
+    {
+      "id": "od-gemini-20260824-history-02",
+      "title": "嘉義「阿里山林業鐵路」全臺唯一登山鐵道與之字形折返工法",
+      "content": "始建於1906年的阿里山林業鐵路，為世界著名的高山登山窄軌鐵路之一，全線自海拔30公尺的嘉義站攀升至2216公尺的阿里山站，運用了之字形折返（Switchback）、螺旋形登山（Spiral）及特殊傘齒輪蒸汽機車（Shay）三大世界級登山鐵路工程技術。",
+      "category": "history",
+      "sourceName": "農業部林業及自然保育署阿里山林業鐵路及文化資產管理處",
+      "sourceURL": "https://afrch.forest.gov.tw",
+      "funFactValue": "1906世界級高山窄軌林業鐵路"
+    },
+    {
+      "id": "od-gemini-20260824-food-01",
+      "title": "台東「金針花料理」產地現採鮮甜金針湯與酥炸金針",
+      "content": "台東太麻里金針山與花蓮富里六十石山為臺灣主要金針產區，產地夏季盛開之際，採收含苞待放的高山金針花，搭配排骨煮湯清甜回甘，或裹上薄薄粉漿高溫酥炸成「炸金針」，口感外酥內脆、清爽不油膩。",
+      "category": "food",
+      "sourceName": "農業部農糧署",
+      "sourceURL": "https://www.afa.gov.tw",
+      "funFactValue": "高山無硫鮮金針排骨湯與酥炸花苞"
+    },
+    {
+      "id": "od-gemini-20260824-food-02",
+      "title": "新北石門「劉家肉粽」北海岸十八王公竹葉包香",
+      "content": "源於北海岸石門十八王公廟香客祭拜習俗的石門肉粽，以生糯米經醬油、紅蔥頭拌炒入味後包入五花肉、香菇、蛋黃，再以高山桂竹葉或麻竹葉包覆蒸熟，糯米粒粒分明Q彈且透出濃郁竹葉清香。",
+      "category": "food",
+      "sourceName": "新北市觀光旅遊網",
+      "sourceURL": "https://newtaipei.travel",
+      "funFactValue": "十八王公炒香生米桂竹葉肉粽"
+    },
+    {
+      "id": "od-gemini-20260824-geo-01",
+      "title": "屏東「龍磐公園」崩崖地形與太平洋開闊石灰岩溶蝕台地",
+      "content": "位於恆春半島東南海岸的龍磐公園，全區為隆起的珊瑚礁石灰岩台地，因地下水長年溶蝕石灰岩層形成溶洞、滲穴（Doline）、石芽與裂溝，近海處更因重力作用發生巨大石灰岩塊滑落崩塌，形成壯觀的崩崖（Slump）地貌。",
+      "category": "geo",
+      "sourceName": "內政部國家公園署墾丁國家公園管理處",
+      "sourceURL": "https://www.ktnp.gov.tw",
+      "funFactValue": "隆起珊瑚礁石灰岩溶蝕崩崖"
+    },
+    {
+      "id": "od-gemini-20260824-geo-02",
+      "title": "花蓮秀林「白楊步道水濂洞」地下湧泉直瀉岩壁天然奇景",
+      "content": "位於太魯閣國家公園白楊步道盡頭的水濂洞，為早年台電開鑿水力發電導水隧道時不慎貫穿地下水脈所形成，清澈冰涼的地下湧泉自大理石岩壁頂端裂隙如簾幕般傾瀉而下，形成隧道內罕見的純天然淋浴奇觀。",
+      "category": "geo",
+      "sourceName": "內政部國家公園署太魯閣國家公園管理處",
+      "sourceURL": "https://www.taroko.gov.tw",
+      "funFactValue": "太魯閣大理石隧道地下湧泉水濂洞"
     }
   ]
 }
