@@ -1,6 +1,6 @@
 {
-  "version": 35,
-  "updatedAt": "2026-08-23T23:33:20Z",
+  "version": 36,
+  "updatedAt": "2026-08-24T23:36:50Z",
   "cards": [
     {
       "id": "history-001",
@@ -2827,6 +2827,60 @@
       "sourceName": "內政部國家公園署太魯閣國家公園管理處",
       "sourceURL": "https://www.taroko.gov.tw",
       "funFactValue": "太魯閣大理石隧道地下湧泉水濂洞"
+    },
+    {
+      "id": "od-gemini-20260825-history-01",
+      "title": "高雄「旗後燈塔」全臺唯一八角形磚造頂部圓筒燈塔",
+      "content": "始建於1883年的高雄燈塔（旗後燈塔），位於旗後山頂，日治時期1918年改建為白色八角形磚造巴洛克風格燈塔，頂部為圓筒狀並設有環繞陽台，是臺灣少見融合清代基座與日治西洋磚造風格的航海指引國定古蹟。",
+      "category": "history",
+      "sourceName": "交通部航港局",
+      "sourceURL": "https://www.motcmpb.gov.tw",
+      "funFactValue": "1883白色八角形西洋磚造燈塔"
+    },
+    {
+      "id": "od-gemini-20260825-history-02",
+      "title": "台北「紀州庵」新店溪畔日治時期料亭與文學森林",
+      "content": "建於1917年的紀州庵，原為日治時期平松家族在台北新店溪畔開設的著名高級河畔料亭支店，戰後轉為公務員宿舍並成為作家王文興等人的居所與文學創作搖籃，現保存修復為日式木造長廊「離屋」並轉型為文學森林。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw",
+      "funFactValue": "1917新店溪畔高級料亭木造離屋"
+    },
+    {
+      "id": "od-gemini-20260825-food-01",
+      "title": "南投竹山「竹筍包」鮮採麻竹筍番薯粉皮在地傳統手藝",
+      "content": "南投竹山特產竹筍包，外皮採用在地優質紅心地瓜與地瓜粉揉製而成，呈現天然金黃橙色且Q軟彈牙，內餡包裹鮮採麻竹筍丁、香菇、豬後腿絞肉與油蔥酥大火炒香，蒸熟後外皮晶透軟糯、筍香濃郁鮮甜。",
+      "category": "food",
+      "sourceName": "南投縣政府觀光處",
+      "sourceURL": "https://travel.nantou.gov.tw",
+      "funFactValue": "竹山紅心地瓜皮鮮麻竹筍鹹香包"
+    },
+    {
+      "id": "od-gemini-20260825-food-02",
+      "title": "澎湖「風櫃仙人掌冰」鮮紅果肉酸甜冰涼海島滋味",
+      "content": "澎湖仙人掌（金武扇仙人掌）於荷蘭統治時期引進海島落地生根，夏季成熟的仙人掌果實（俗稱澎湖紅蘋果）果肉呈現艷麗深紫紅色，去刺榨汁後調製成仙人掌冰淇淋與雪酪，口感酸甜濃郁、清涼消暑。",
+      "category": "food",
+      "sourceName": "澎湖國家風景區管理處",
+      "sourceURL": "https://www.penghu-nsa.gov.tw",
+      "funFactValue": "金武扇仙人掌紫紅果肉酸甜雪酪"
+    },
+    {
+      "id": "od-gemini-20260825-geo-01",
+      "title": "台東「金崙溫泉」金崙溪畔弱鹼性碳酸氫鈉泉",
+      "content": "位於台東太麻里金崙溪下游的弱鹼性碳酸氫鈉泉，泉質清澈透明、無色無味，富含碳酸氫根離子與多種微量礦物質，出水溫度約在70至90度之間，洗後肌膚觸感滑潤細緻，有「美人湯」之美譽。",
+      "category": "geo",
+      "sourceName": "交通部觀光署東部海岸國家風景區管理處",
+      "sourceURL": "https://www.eastcoast-nsa.gov.tw",
+      "funFactValue": "金崙溪高溫弱鹼性碳酸氫鈉美人泉"
+    },
+    {
+      "id": "od-gemini-20260825-geo-02",
+      "title": "苗栗苑裡「火炎山惡地」礫岩膠結不良厚層沖蝕尖峰",
+      "content": "火炎山地質主要由更新世紅土與巨厚卵石礫石層構成，因礫石間膠結鬆散脆弱，經長年風化與豪雨強烈切割侵蝕，形成無數深邃險峻的V形谷、尖銳如鋸齒狀的刀刃峰林及崩塌殘壁，夕陽照射下宛如烈火燃燒。",
+      "category": "geo",
+      "sourceName": "農業部林業及自然保育署",
+      "sourceURL": "https://www.forest.gov.tw",
+      "funFactValue": "厚層礫岩膠結風化劇烈侵蝕V形谷"
     }
   ]
 }
