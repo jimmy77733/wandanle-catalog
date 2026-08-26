@@ -1,6 +1,6 @@
 {
-  "version": 36,
-  "updatedAt": "2026-08-24T23:36:50Z",
+  "version": 37,
+  "updatedAt": "2026-08-25T23:53:31Z",
   "cards": [
     {
       "id": "history-001",
@@ -2881,6 +2881,60 @@
       "sourceName": "農業部林業及自然保育署",
       "sourceURL": "https://www.forest.gov.tw",
       "funFactValue": "厚層礫岩膠結風化劇烈侵蝕V形谷"
+    },
+    {
+      "id": "od-gemini-20260826-history-01",
+      "title": "台南「原臺南廳長官邸」明治時期和洋雙拼木造日式官舍",
+      "content": "建於1898至1906年間的原臺南廳長官邸，為日治初期臺南最高行政長官之居所，建築形式採「和洋並置」風格，洋館供公務接待、和館供日常起居，洋館部分設有精緻雕花的托架、木百葉窗與古典壁爐，是全臺少數保存完整的高階官舍古蹟。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw",
+      "funFactValue": "1900和洋雙拼古典壁爐官舍古蹟"
+    },
+    {
+      "id": "od-gemini-20260826-history-02",
+      "title": "新竹市「原新竹州立圖書館」全臺現存近代折衷主義官設圖書館",
+      "content": "建於1925年的原新竹州立圖書館，是為了紀念大正十二年裕仁皇太子（後來的昭和天皇）巡視新竹而籌建，建築採折衷主義風格，立面使用紅磚與洗石子水平飾帶，入口採圓拱門廊，內部無柱大開間設計展現近代圖書館空間機能。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw",
+      "funFactValue": "1925近代折衷主義無柱大開間圖書館"
+    },
+    {
+      "id": "od-gemini-20260826-food-01",
+      "title": "嘉義「白醋涼麵」寬扁黃麵澆淋美乃滋的獨門吃法",
+      "content": "嘉義在地涼麵最大的特色在於使用寬扁的黃油麵，醬汁除了常見的芝麻醬、醬油與蒜泥外，必定淋上一大杓特製「白醋」（在地對台式美乃滋的稱呼），酸甜滑順的白醋乳化了濃郁芝麻醬，吃起來清涼開胃不膩口。",
+      "category": "food",
+      "sourceName": "嘉義市觀光旅遊網",
+      "sourceURL": "https://travel.chiayi.gov.tw",
+      "funFactValue": "寬扁麵條淋白醋美乃滋芝麻醬涼麵"
+    },
+    {
+      "id": "od-gemini-20260826-food-02",
+      "title": "高雄美濃「野蓮料理」清甜爽脆水生野菜大火快炒",
+      "content": "美濃為全臺灣野蓮（水鱉科龍骨瓣莕菜）最大的產區，生長於清澈無污染的湧泉深潭中，農民需整株沉浸水中採收長達一公尺以上的嫩莖。以高溫快炒破布子、薑絲或樹子肉絲，保持其極度爽脆、多汁清甜的獨特口感。",
+      "category": "food",
+      "sourceName": "農業部農糧署",
+      "sourceURL": "https://www.afa.gov.tw",
+      "funFactValue": "湧泉深潭採收一公尺長爽脆野蓮"
+    },
+    {
+      "id": "od-gemini-20260826-geo-01",
+      "title": "新北貢寮「鼻頭角海蝕地質」海蝕平台與蕈狀岩小野柳",
+      "content": "鼻頭角岬角凸出於東海海域，地質受東北季風強風與太平洋海浪長年侵蝕切割，形成發達的海蝕崖、海蝕凹壁、海蝕溝與寬闊的海蝕平台，平台上散布如蕈菇般的地質奇觀，有「小野柳」與「天然地質教室」之稱。",
+      "category": "geo",
+      "sourceName": "交通部觀光署東北角及宜蘭海岸國家風景區管理處",
+      "sourceURL": "https://www.necoast-nsa.gov.tw",
+      "funFactValue": "岬角海蝕凹壁與蕈狀岩群天然教室"
+    },
+    {
+      "id": "od-gemini-20260826-geo-02",
+      "title": "花蓮光復「馬太鞍濕地」湧泉沼澤生態與阿美族巴拉告捕魚工法",
+      "content": "馬太鞍濕地由馬錫山山腳下終年不斷的伏流湧泉匯集而成，孕育出近百種水生植物與豐富魚貝鳥類。阿美族人發展出獨特的「Palakaw（巴拉告）」三層生態捕魚法，利用竹筒與樹枝分層構築魚蝦棲地，展現與自然共存的永續生態智慧。",
+      "category": "geo",
+      "sourceName": "花蓮縣政府觀光處",
+      "sourceURL": "https://tour-hualien.hl.gov.tw",
+      "funFactValue": "天然湧泉沼澤與阿美族巴拉告生態工法"
     }
   ]
 }
