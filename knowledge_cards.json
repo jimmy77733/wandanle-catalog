@@ -1,6 +1,6 @@
 {
-  "version": 42,
-  "updatedAt": "2026-08-31T00:09:52Z",
+  "version": 43,
+  "updatedAt": "2026-08-31T23:57:18Z",
   "cards": [
     {
       "id": "history-001",
@@ -3205,6 +3205,60 @@
       "sourceName": "東部海岸國家風景區管理處",
       "sourceURL": "https://www.eastcoast-nsa.gov.tw",
       "funFactValue": "退潮黑沙沉積水膜倒映湛藍天空之鏡"
+    },
+    {
+      "id": "od-gemini-20260901-history-01",
+      "title": "彰化鹿港「文武廟」清代文昌祠與武廟共構之官設建築群",
+      "content": "鹿港文武廟建於清道光年間，罕見將祭祀文昌帝君的文祠與祭祀關聖帝君的武廟並列共構，並附設文開書院，見證清代鹿港文風鼎盛與地方士紳重視文教的歷史。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw/",
+      "funFactValue": "文武共構"
+    },
+    {
+      "id": "od-gemini-20260901-history-02",
+      "title": "台北萬華「西門紅樓」日治時期全臺第一座公營八角堂市場",
+      "content": "興建於1908年的西門紅樓，由建築師近藤十郎設計，以獨特「八卦造」八角樓做為入口引導人流，後方搭配「十字造」排樓作為菜市場，是日治時期台灣最前衛的現代化公有市場。",
+      "category": "history",
+      "sourceName": "台北市文化局",
+      "sourceURL": "https://www.culture.gov.taipei/",
+      "funFactValue": "八卦十字"
+    },
+    {
+      "id": "od-gemini-20260901-food-01",
+      "title": "屏東東港「雙糕潤」糯米漿與黑糖交疊雙層炊蒸海港甜點",
+      "content": "東港著名點心雙糕潤相傳由兩兄弟為嫁妹研發，底層與頂層使用黑糖糯米漿，中層夾入純白糯米，透過高溫反覆蒸炊出軟Q不黏牙且黑糖香濃郁的傳統點心。",
+      "category": "food",
+      "sourceName": "農業部農糧署",
+      "sourceURL": "https://www.afa.gov.tw/",
+      "funFactValue": "雙層炊蒸"
+    },
+    {
+      "id": "od-gemini-20260901-food-02",
+      "title": "嘉義民雄「鵝肉料理」鮮甜鹽水白斬與甘甜鵝高湯料理工藝",
+      "content": "民雄火車站前的鵝肉街全台聞名，以新鮮現宰溫體鵝肉搭配精準火候燜煮，保留肉質鮮嫩多汁，並以汆燙鵝肉的原汁高湯烹調麵條與米血，成為經典在地風味。",
+      "category": "food",
+      "sourceName": "嘉義縣文化觀光局",
+      "sourceURL": "https://tbnsa.gov.tw/",
+      "funFactValue": "鮮嫩白斬"
+    },
+    {
+      "id": "od-gemini-20260901-geo-01",
+      "title": "宜蘭蘇澳「豆腐岬」全臺最早被發現陸連島與沙頸岬地形",
+      "content": "豆腐岬由陸連島與沙頸岬連成，因弧狀海灣內特殊的礁岩狀似豆腐塊而得名，海灣具備天然防波屏障，孕育了高達上百種珊瑚品種與豐富的海洋生態。",
+      "category": "geo",
+      "sourceName": "交通部觀光署東北角及宜蘭海岸國家風景區管理處",
+      "sourceURL": "https://www.necoast-nsa.gov.tw/",
+      "funFactValue": "陸連沙頸"
+    },
+    {
+      "id": "od-gemini-20260901-geo-02",
+      "title": "高雄鼓山「柴山石灰岩洞」隆起珊瑚礁岩溶洞與鐘乳石奇景",
+      "content": "柴山（壽山）屬於更新世隆起珊瑚礁地質，地下蘊藏豐富的石灰岩溶洞系統，雨水溶蝕碳酸鈣形成石筍、石柱與鐘乳石，見證臺灣板塊擠壓與造山運動的活躍抬升。",
+      "category": "geo",
+      "sourceName": "國家自然公園管理處",
+      "sourceURL": "https://np.cpami.gov.tw/",
+      "funFactValue": "珊瑚礁溶洞"
     }
   ]
 }
