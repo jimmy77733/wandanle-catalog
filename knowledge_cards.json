@@ -1,6 +1,6 @@
 {
-  "version": 43,
-  "updatedAt": "2026-08-31T23:57:18Z",
+  "version": 44,
+  "updatedAt": "2026-09-01T23:33:57Z",
   "cards": [
     {
       "id": "history-001",
@@ -3259,6 +3259,60 @@
       "sourceName": "國家自然公園管理處",
       "sourceURL": "https://np.cpami.gov.tw/",
       "funFactValue": "珊瑚礁溶洞"
+    },
+    {
+      "id": "od-gemini-20260902-history-01",
+      "title": "新北淡水「滬尾礮臺」劉銘傳親題「北門鎖鑰」之現代化防禦海防堡壘",
+      "content": "1886年中法戰爭結束後，台灣首任巡撫劉銘傳為強化台灣海防，於淡水大庄埔高地修築「滬尾礮臺」。其營門至今仍嵌有劉銘傳親題的「北門鎖鑰」石額，內部更保留罕見的厚實覆土甬道與兵房結構，見證了台灣近代海防軍事現代化的關鍵轉折。",
+      "category": "history",
+      "sourceName": "文化部文化資產局",
+      "sourceURL": "https://nchdb.boch.gov.tw/",
+      "funFactValue": "北門鎖鑰"
+    },
+    {
+      "id": "od-gemini-20260902-history-02",
+      "title": "苗栗通霄「通霄神社」虎頭山腰日式鳥居與燕尾脊拜殿之歷史融合地景",
+      "content": "建於1937年的通霄神社座落於苗栗虎頭山腰，保有鳥居、參道、拜殿及社務所等結構。戰後拜殿改為忠烈祠使用，並在日式木造構架上加設了閩南式燕尾翹脊屋頂，讓神社建築呈現獨特跨時代文化交疊的歷史樣貌。",
+      "category": "history",
+      "sourceName": "苗栗縣政府文化觀光局",
+      "sourceURL": "https://www.mlc.gov.tw/",
+      "funFactValue": "燕尾脊神社"
+    },
+    {
+      "id": "od-gemini-20260902-food-01",
+      "title": "新北三峽「金牛角麵包」兩端酥脆中間奶香層疊的手作經典烘焙小吃",
+      "content": "三峽知名的金牛角麵包源自1958年當地烘焙師傅的巧思，將歐式牛角外型與中式油酥層疊製法融合，經高溫烘烤後兩端角尖呈現如餅乾般的扎實酥脆，本體則保有濃郁奶香與柔韌嚼勁，成為造訪三峽老街不可錯過的經典名產。",
+      "category": "food",
+      "sourceName": "新北市觀光旅遊網",
+      "sourceURL": "https://newtaipei.travel/",
+      "funFactValue": "兩端酥脆"
+    },
+    {
+      "id": "od-gemini-20260902-food-02",
+      "title": "台中清水「筒仔米糕」長糯米炊蒸透亮與肥瘦三層肉倒扣油香經典",
+      "content": "清水米糕自日治時期傳承至今，是台中海線極具代表性的古早味。店家選用陳年長糯米置入小鐵筒炊蒸，筒底鋪上慢火細滷的五花肉片與油蔥酥，出爐倒扣於碗中，米粒晶瑩分明且吸飽肉汁油脂，再佐以特調海山醬或辣醬，香氣層次豐富。",
+      "category": "food",
+      "sourceName": "臺中觀光旅遊網",
+      "sourceURL": "https://travel.taichung.gov.tw/",
+      "funFactValue": "筒仔倒扣"
+    },
+    {
+      "id": "od-gemini-20260902-geo-01",
+      "title": "台東東河「登仙峽」馬武窟溪深切海岸山脈石灰岩巨壁與獼猴生態峽谷",
+      "content": "位於台東東河鄉泰源幽谷入口處的登仙峽，由馬武窟溪長年切割堅硬的火山集塊岩與石灰岩層而成，兩岸峭壁直立如刀削。這裡不僅是進入泰源盆地的天然隘口，也是全台著名的臺灣獼猴野外棲息與觀察熱點。",
+      "category": "geo",
+      "sourceName": "交通部觀光署東部海岸國家風景區管理處",
+      "sourceURL": "https://www.eastcoast-nsa.gov.tw/",
+      "funFactValue": "馬武窟峽谷"
+    },
+    {
+      "id": "od-gemini-20260902-geo-02",
+      "title": "新北萬里「駱駝峰」砂岩風化海蝕單峰地貌與俯瞰東澳漁港之海角奇景",
+      "content": "萬里東澳漁港旁的駱駝峰是一座由大寮層砂岩組成的天然岬角，因形似一隻伏臥在海岸邊的駱駝而得名。經過長年東北季風與海浪劇烈風化，岩壁呈現層理分明與金黃色紋理，站在峰頂還能將野柳岬角與太平洋海天一線景色盡收眼底。",
+      "category": "geo",
+      "sourceName": "交通部觀光署北海岸及觀音山國家風景區管理處",
+      "sourceURL": "https://www.northguan-nsa.gov.tw/",
+      "funFactValue": "砂岩駱駝"
     }
   ]
 }
